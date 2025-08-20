@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Relatórios</title>
+  <link rel="stylesheet" href="relatorios.css"/>
+</head>
+<body>
+  <main class="container">
+    <h1>RELATÓRIOS</h1>
+    <div class="filtros">
+      <label>De <input type="date" id="dataInicio"/></label>
+      <label>até <input type="date" id="dataFim"/></label>
+      <button id="btnGerar">GERAR</button>
+    </div>
+
+    <hr id="linha" hidden/>
+
+    <section id="resultado" class="resultado" hidden>
+      <div class="valores">
+        <p>Total de Despesas: <span id="totalDespesas">R$ 0,00</span></p>
+        <p>Total de Receitas: <span id="totalReceitas">R$ 0,00</span></p>
+        <p>Saldo: <span id="saldo">R$ 0,00</span></p>
+      </div>
+      <div class="grafico">
+        <p>Despesas por categoria:</p>
+        <svg id="doughnutChart" width="400" height="250" viewBox="0 0 80 50"></svg>
+      </div>
+    </section>
+  </main>
+  <script src="relatorios.js"></script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+# name: Testes de Documentação
+
+# on:
+#   push:
+#     branches: [ feature/testes-automatizados ]
+#   pull_request:
+#     branches: [ feature/testes-automatizados ]
+
+# jobs:
+#   test:
+#     runs-on: ubuntu-latest
+
+#     steps:
+#     - uses: actions/checkout@v4
+
+#     - name: Setup Node.js
+#       uses: actions/setup-node@v4
+#       with:
+#         node-version: '20'
+
+#     - name: Instalar dependências
+#       run: |
+#         cd testes-automatizados
+#         npm install
+
+#     - name: Executar testes de documentação
+#       run: |
+#         cd testes-automatizados
+#         npm run test:docs
+#         npm run test:reporter
+
+#     - name: Commit de atualização
+#       if: success()
+#       run: |
+#         git config --local user.email "lucasferreiralimax@gmail.com"
+#         git config --local user.name "lucasferreiralimax"
+#         git add .
+#         git commit -m "docs: auto update testes evidencias" || echo "Sem alterações para commit"
+#         git push
+
+#   deploy:
+#     needs: test
+#     runs-on: ubuntu-latest
+#     if: success()
+
+#     steps:
+#     - uses: actions/checkout@v4
+
+#     - name: Deploy para GitHub Pages
+#       uses: peaceiris/actions-gh-pages@v4
+#       with:
+#         github_token: ${{ secrets.GITHUB_TOKEN }}
+#         publish_dir: .
+#         publish_branch: gh-pages

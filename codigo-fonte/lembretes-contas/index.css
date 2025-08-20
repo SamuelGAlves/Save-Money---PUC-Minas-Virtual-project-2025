@@ -1,0 +1,100 @@
+.body {
+  display: flex;
+  min-height: 100vh;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.aVencer {
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  padding-left: 15%;
+  color: #5B725F;
+}
+
+.container {
+  width: 250px;
+  padding: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8%;
+  background-color: #f5f5f5;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 100px;
+  margin-left: 230px;
+  margin-top: 1%;
+}
+
+.container h2 {
+  margin-top: 0;
+  font-size: 20px;
+}
+
+.container p {
+  margin: 4px 0;
+}
+
+.menu-lateral {
+  font-family: Arial, Helvetica, sans-serif;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 200px;
+  background-color: #A5CFAD;
+  padding-top: 20px;
+}
+
+.menu-lateral ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.menu-lateral ul li {
+  margin: 20px 0;
+}
+
+.menu-lateral ul li a {
+  color: black;
+  text-decoration: none;
+  padding: 10px 20px;
+  display: block;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+.menu-lateral ul li a:hover {
+  color: white;
+  background-color: #5B725F;
+}
+
+.menu-lateral ul li .icon {
+  margin-right: 10px;
+}
+
+.menu-lateral {
+  transition: width 0.3s ease;
+  overflow: hidden;
+}
+
+.menu-lateral.menu-fechado {
+  width: 70px;
+}
+
+.menu-lateral .menu-text {
+  transition: opacity 0.3s ease, margin 0.3s ease;
+  white-space: nowrap;
+}
+
+.menu-lateral.menu-fechado .menu-text {
+  opacity: 0;
+  margin-left: -100px;
+  pointer-events: none;
+}
+
+.menu-lateral .toggle-button {
+  border: none;
+  background: none;
+  width: 60px;
+}
+

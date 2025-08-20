@@ -1,0 +1,1069 @@
+{
+  "common": {
+    "currency": "EUR",
+    "language": "es-ES",
+    "actions": {
+      "edit": "Editar",
+      "delete": "Eliminar",
+      "save": "Guardar",
+      "cancel": "Cancelar",
+      "confirm": "Confirmar",
+      "close": "Cerrar",
+      "add": "Agregar nuevo elemento",
+      "select": "Modo Selección"
+    },
+    "filters": {
+      "search": "Buscar",
+      "sort": "Ordenar",
+      "status": "Estado",
+      "show": "Mostrar filtros",
+      "hide": "Ocultar filtros",
+      "sortOptions": {
+        "value-desc": "Mayor valor",
+        "value-asc": "Menor valor",
+        "date-desc": "Fecha más reciente",
+        "date-asc": "Fecha más antigua"
+      },
+      "clear": "Limpiar"
+    },
+    "status": {
+      "active": "Activo",
+      "finished": "Finalizado",
+      "available": "Disponible",
+      "last-day": "Último día",
+      "starting-today": "Iniciando hoy",
+      "paid": "Pagado",
+      "overdue": "Atrasado",
+      "today": "Vence hoy",
+      "future": "Vence en {{days}} días",
+      "tomorrow": "Vence mañana",
+      "no-due-date": "Sin vencimiento",
+      "complete": "Pago completo"
+    },
+    "card": {
+      "title": "Elemento",
+      "value": "Valor",
+      "date": "Fecha",
+      "period": "Período",
+      "recurrence": {
+        "title": "Recurrencia",
+        "weekly": "Semanal",
+        "monthly": "Mensual",
+        "yearly": "Anual",
+        "repetitions": "Repeticiones",
+        "indefinite": "Indefinido",
+        "times": "{{count}} veces",
+        "badge": "Recurrente"
+      },
+      "actions": {
+        "delete": "Eliminar",
+        "edit": "Editar",
+        "history": "Historial",
+        "recurring": "Recurrencia"
+      },
+      "status": {
+        "finished": "Finalizado",
+        "active": "Activo",
+        "future": "Futuro",
+        "today": "Vence hoy",
+        "overdue": "Atrasado",
+        "available": "Disponible en {{days}} días",
+        "tomorrow": "Vence mañana",
+        "no-due-date": "Sin vencimiento",
+        "complete": "Pago completo",
+        "unavailable": "No disponible",
+        "pending": "Pendiente",
+        "completed": "Completado",
+        "error": "Error"
+      }
+    },
+    "buttons": {
+      "cancel": "Cancelar",
+      "save": "Guardar",
+      "edit": "Editar",
+      "delete": "Eliminar",
+      "close": "Cerrar",
+      "confirm": "Confirmar",
+      "back": "Atrás",
+      "next": "Siguiente",
+      "previous": "Anterior"
+    }
+  },
+  "navigation": {
+    "toggle": "Alternar navegación",
+    "home": "Inicio",
+    "expenses": "Gastos",
+    "income": "Ingresos",
+    "categories": "Categorías",
+    "reminders": "Próximos",
+    "goals": "Objetivos",
+    "reports": "Informes",
+    "investments": "Inversiones",
+    "profile": "Perfil",
+    "register": "Registrarse",
+    "about": "Acerca de",
+    "contact": "Contacto",
+    "tests": "Informe de pruebas",
+    "login": "Iniciar sesión",
+    "main": "Principal",
+    "finances": "Finanzas",
+    "management": "Gestión",
+    "information": "Información",
+    "settings": "Configuración",
+    "resetPassword": "Recuperar contraseña",
+    "currency_converter": "Conversor"
+  },
+  "pages": {
+    "home": "Inicio - Save Money",
+    "expenses": "Gastos - Save Money",
+    "income": "Ingresos - Save Money",
+    "categories": "Categorías - Save Money",
+    "reminders": "Por Vencer - Save Money",
+    "goals": "Metas - Save Money",
+    "reports": "Informes - Save Money",
+    "investments": "Inversiones - Save Money",
+    "profile": "Perfil - Save Money",
+    "register": "Registrarse - Save Money",
+    "about": "Acerca de - Save Money",
+    "contact": "Contacto - Save Money",
+    "tests": "Informe de Pruebas - Save Money",
+    "login": "Iniciar Sesión - Save Money",
+    "resetPassword": "Restablecer Contraseña - Save Money",
+    "currency_converter": "Conversor de Monedas - Save Money",
+    "notFound": "Página no encontrada - Save Money"
+  },
+  "input": {
+    "password": {
+      "show": "Mostrar contraseña",
+      "hide": "Ocultar contraseña",
+      "requirements": "Requisitos de la contraseña:",
+      "minLength": "Mínimo 8 caracteres",
+      "uppercase": "Al menos una letra mayúscula",
+      "lowercase": "Al menos una letra minúscula",
+      "numbers": "Al menos un número",
+      "specialChar": "Al menos un carácter especial",
+      "errors": {
+        "minLength": "La contraseña debe tener al menos {{minLength}} caracteres",
+        "uppercase": "La contraseña debe contener al menos una letra mayúscula",
+        "lowercase": "La contraseña debe contener al menos una letra minúscula",
+        "numbers": "La contraseña debe contener al menos un número",
+        "specialChar": "La contraseña debe contener al menos un carácter especial"
+      }
+    },
+    "preventCopyPaste": {
+      "copy": "No está permitido copiar el contenido de este campo",
+      "paste": "No está permitido pegar contenido en este campo",
+      "cut": "No está permitido cortar el contenido de este campo",
+      "contextMenu": "Menú contextual desactivado para este campo"
+    },
+    "required": "Este campo es obligatorio",
+    "email": "Ingrese un correo electrónico válido",
+    "minlength": "El campo {{field}} debe tener al menos {{min}} caracteres",
+    "maxlength": "El campo {{field}} ha alcanzado el límite de {{max}} caracteres",
+    "min": "El campo {{field}} debe ser mayor o igual a {{min}}",
+    "max": "El campo {{field}} debe ser menor o igual a {{max}}"
+  },
+  "login": {
+    "title": "Iniciar sesión",
+    "email": {
+      "label": "Correo electrónico",
+      "placeholder": "Ingrese su correo electrónico",
+      "required": "Por favor ingrese el correo electrónico"
+    },
+    "password": {
+      "label": "Contraseña",
+      "placeholder": "Ingrese su contraseña",
+      "required": "Por favor ingrese la contraseña"
+    },
+    "button": "Iniciar sesión",
+    "forgotPassword": "¿Olvidó su inicio de sesión o contraseña?",
+    "forgotPasswordLink": "Haga clic aquí",
+    "register": "Registrarse",
+    "loading": "Iniciando sesión...",
+    "success": "¡Inicio de sesión exitoso!",
+    "error": "Error inesperado al intentar iniciar sesión.",
+    "fillFields": "Por favor complete todos los campos para continuar."
+  },
+  "remember": {
+    "title": "Recuperar contraseña",
+    "email": {
+      "label": "Correo electrónico",
+      "placeholder": "Ingrese su correo electrónico",
+      "required": "Por favor ingrese el correo electrónico"
+    },
+    "button": "Enviar instrucciones",
+    "loading": "Enviando instrucciones por correo electrónico...",
+    "success": "Las instrucciones para restablecer su contraseña han sido enviadas a su correo electrónico.",
+    "error": "Error al enviar instrucciones. Por favor intente nuevamente.",
+    "notFound": "Correo electrónico no encontrado en el sistema.",
+    "fillFields": "Por favor complete el campo de correo electrónico para continuar."
+  },
+  "registration": {
+    "title": "Crear Cuenta",
+    "name": {
+      "label": "Nombre completo",
+      "placeholder": "Ingrese su nombre completo",
+      "required": "El nombre es obligatorio"
+    },
+    "email": {
+      "label": "Correo electrónico",
+      "placeholder": "Ingrese su correo electrónico",
+      "required": "El correo electrónico es obligatorio",
+      "invalid": "Correo electrónico inválido",
+      "alreadyExists": "Este correo electrónico ya está registrado"
+    },
+    "document": {
+      "label": "Documento",
+      "cpf": {
+        "placeholder": "Ingrese su CPF",
+        "invalid": "CPF inválido"
+      },
+      "cnpj": {
+        "placeholder": "Ingrese su CNPJ",
+        "invalid": "CNPJ inválido"
+      },
+      "required": "Por favor ingrese el documento"
+    },
+    "password": {
+      "label": "Contraseña",
+      "placeholder": "Ingrese su contraseña",
+      "required": "Por favor ingrese la contraseña",
+      "requirements": {
+        "title": "Su contraseña debe tener:",
+        "minLength": "• Mínimo 8 caracteres",
+        "uppercase": "• Una letra mayúscula (A-Z)",
+        "lowercase": "• Una letra minúscula (a-z)",
+        "number": "• Un número (0-9)",
+        "special": "• Un carácter especial (!@#$%^&*(),.?\":{}|<>)"
+      }
+    },
+    "confirmPassword": {
+      "label": "Confirmar contraseña",
+      "placeholder": "Ingrese nuevamente su contraseña",
+      "required": "Por favor confirme la contraseña",
+      "mismatch": "¡Las contraseñas no coinciden!"
+    },
+    "terms": {
+      "label": "He leído y acepto los Términos de uso y la Política de privacidad",
+      "required": "Debe aceptar los Términos de uso y la Política de privacidad"
+    },
+    "button": "Crear cuenta",
+    "loading": "Creando su cuenta...",
+    "success": "¡Cuenta creada exitosamente!",
+    "error": "Error al crear la cuenta.",
+    "fillFields": "Por favor complete todos los campos para continuar."
+  },
+  "currency": {
+    "format": {
+      "style": "currency",
+      "currency": "EUR"
+    }
+  },
+  "logo": {
+    "title": "Save Money",
+    "subtitle": "PUC Minas Tecnologia",
+    "ariaLabel": "Logo Save Money PUC Minas Tecnologia"
+  },
+  "about": {
+    "title": "Sobre Nosotros",
+    "mission": {
+      "title": "Nuestra Misión",
+      "description": "SaveMoney es una aplicación web innovadora desarrollada para revolucionar la forma en que gestionas tus finanzas personales. Nuestra misión es empoderar a los individuos a través de herramientas financieras inteligentes y accesibles, ayudándoles a tomar decisiones financieras más conscientes y alcanzar sus objetivos de vida."
+    },
+    "features": {
+      "financialControl": {
+        "title": "Control Financiero",
+        "description": "Gestión integral de gastos e ingresos con categorías personalizadas e informes detallados."
+      },
+      "investments": {
+        "title": "Inversiones",
+        "description": "Seguimiento y crecimiento de tus inversiones con herramientas de análisis avanzadas."
+      },
+      "currencyConverter": {
+        "title": "Conversor de Monedas",
+        "description": "Conversión instantánea entre diferentes monedas con tasas de cambio actualizadas."
+      },
+      "teamContact": {
+        "title": "Contacto con el Equipo",
+        "description": "Comunicación directa con el equipo de soporte para obtener ayuda."
+      },
+      "personalAccount": {
+        "title": "Cuenta Personal",
+        "description": "Gestiona tus finanzas personales con facilidad y seguridad."
+      },
+      "businessAccount": {
+        "title": "Cuenta Empresarial",
+        "description": "Soluciones financieras integrales para pequeñas y medianas empresas."
+      },
+      "multipleLanguages": {
+        "title": "Múltiples Idiomas",
+        "description": "Interfaz multilingüe para apoyar a usuarios de diferentes países."
+      },
+      "multipleCurrencies": {
+        "title": "Múltiples Monedas",
+        "description": "Soporte para numerosas monedas globales."
+      },
+      "cryptocurrencies": {
+        "title": "Criptomonedas",
+        "description": "Gestión y seguimiento de tus inversiones en criptomonedas."
+      }
+    },
+    "team": {
+      "title": "Nuestro Equipo",
+      "description": "Nuestro equipo de desarrolladores talentosos y apasionados trabaja arduamente para crear la mejor experiencia financiera posible.",
+      "description1": "Save Money es desarrollado por un equipo dedicado de estudiantes del curso de Análisis y Desarrollo de Sistemas - EaD de la PUC Minas.",
+      "description2": "Nuestro equipo combina experiencia técnica con pasión por la innovación para crear una solución financiera completa y accesible."
+    },
+    "puc": {
+      "title": "Pontificia Universidad Católica de Minas Gerais",
+      "description": "La Pontificia Universidad Católica de Minas Gerais es una prestigiosa institución de educación superior, reconocida por su excelencia académica e investigativa. De este entorno distinguido, nació el proyecto Save Money, una iniciativa innovadora que busca mejorar la gestión de las finanzas personales. Durante el desarrollo del proyecto, el apoyo de los miembros de la facultad y el personal académico fue fundamental, proporcionando la orientación y experiencia necesarias para el éxito de la iniciativa.",
+      "sections": {
+        "assistentes": "Asistentes Académicos",
+        "microFund": "Profesores de Microfundamentos"
+      },
+      "roles": {
+        "graoChanceler": "Gran Canciller",
+        "reitor": "Rector",
+        "coordenacao": "Coordinadora",
+        "professor": "Profesor",
+        "professora": "Profesora",
+        "assistente": "Asistente"
+      },
+      "members": {
+        "walmor": {
+          "name": "Dom Walmor Oliveira de Azevedo",
+          "description": "Nacido en Côcos (Bahía), el Gran Canciller de la PUC Minas y Arzobispo Metropolitano de Belo Horizonte, Dom Walmor Oliveira de Azevedo, también es presidente de la Conferencia Nacional de Obispos de Brasil (CNBB). Es doctor en Teología Bíblica por la Pontificia Universidad Gregoriana (Roma, Italia) y máster en Ciencias Bíblicas por el Pontificio Instituto Bíblico (Roma, Italia)."
+        },
+        "luis": {
+          "name": "Profesor Dr. Pe. Luís Henrique Eloy e Silva",
+          "description": "Doctor y máster en Ciencias Bíblicas por el Pontificio Instituto Bíblico de Roma y licenciado en Teología por la Pontificia Universidad Católica de Río de Janeiro. Realizó estudios postdoctorales en la Facultad de Teología de la Universidad Ludwig-Maximilians de Múnich, Alemania."
+        },
+        "joyce": {
+          "name": "Joyce Christina de Paiva Carvalho",
+          "description": "Profesora en la PUC Minas y coordinadora del CST en Análisis y Desarrollo de Sistemas - EaD. Posee amplia experiencia en Tecnología de la Información y es profesora asistente IV en la Pontificia Universidad Católica de Minas Gerais. Sus áreas de interés incluyen bases de datos, BI, Analytics y Grafos, con enfoque en Ingeniería de Software."
+        },
+        "humberto": {
+          "name": "Humberto Azevedo Nigri do Carmo",
+          "description": "Profesor con 17 años de experiencia en enseñanza y 37 años en desarrollo de sistemas y software, habiendo impartido clases en instituciones como CEFET-MG, PUC-MG, Newton Paiva y UNA. Sus especialidades incluyen Lenguajes de Programación, Sistemas de Información, Ingeniería de Software e Ingeniería. También participa en materias como Arquitectura de Computadores."
+        },
+        "aline": {
+          "name": "Aline Luciane Candido",
+          "description": "Asistente académica, apoyo a estudiantes y procesos del curso de ADS EaD en la PUC Minas."
+        },
+        "ana": {
+          "name": "Ana Flávia Patricio de Barros",
+          "description": "Trabaja en el soporte académico y atención a estudiantes del curso de ADS EaD."
+        },
+        "camila": {
+          "name": "Camila Cristina Gonçalves Marques De Moura",
+          "description": "Responsable del soporte administrativo y académico del curso de ADS EaD."
+        },
+        "gabriela": {
+          "name": "Gabriela Araújo Batista",
+          "description": "Ayuda a estudiantes y profesores en las rutinas académicas del curso de ADS EaD."
+        },
+        "vanilda": {
+          "name": "Vanilda da Conceição De Oliveira",
+          "description": "Apoya la gestión académica y la atención a estudiantes del curso de ADS EaD."
+        },
+        "lucila": {
+          "description": "Doctora en Ciencias de la Computación por la UFMG, trabaja en PUC Minas en los cursos de posgrado en informática y cursos de computación, sus intereses de investigación incluyen educación, diseño centrado en el usuario y juegos serios."
+        },
+        "maria": {
+          "name": "Maria Augusta Vieira Nelson",
+          "description": "PhD en Ciencias de la Computación por la University of Waterloo, profesora y coordinadora de Ingeniería de Software en la PUC Minas, con experiencia en enseñanza, investigación y especializaciones en el área."
+        },
+        "jane": {
+          "name": "Jane Carmelita das Dores Garandy de Arruda Barroso",
+          "description": "Máster en Enseñanza de las Matemáticas, imparte Cálculo para TI e Ingenierías en la PUC Minas, participando también en proyectos de evaluación y extensión universitaria."
+        },
+        "zulka": {
+          "name": "Zulka Iale Moreira Ferreira",
+          "description": "Participa en procesos judiciales, principalmente en el estado de Minas Gerais. Participación con el Banco Santander S.A."
+        },
+        "livia": {
+          "name": "Lívia Borges Pádua",
+          "description": "Máster en Comunicación por la PUC Minas (2009) y es asociada a la Facultad de Comunicación y Artes (FCA)."
+        },
+        "rodrigo": {
+          "name": "Rodrigo Richard Gomes",
+          "description": "Doctor en Bioinformática por la UFMG, coordina el curso de Sistemas de Información y especializaciones en Ciencia de Datos en la PUC Minas, con experiencia en TI y música."
+        },
+        "rommel": {
+          "name": "Rommel Vieira Carneiro",
+          "description": "Máster en Informática por la PUC Minas, actúa como coordinador y profesor en cursos de Computación, con experiencia en gestión de proyectos y desarrollo de software."
+        },
+        "bernardo": {
+          "name": "Bernardo Jeunon de Alencar",
+          "description": "Doctor en Procesamiento de Información Espacial, profesor y coordinador de Sistemas de Información en la PUC Minas, con experiencia en Ingeniería Eléctrica, Computación y Geoprocesamiento."
+        },
+        "silvio": {
+          "name": "Silvio Jamil Ferzoli Guimarães",
+          "description": "Doctor en Ciencias de la Computación por la UFMG, profesor e investigador en la PUC Minas, con enfoque en procesamiento de imágenes, video y recuperación de información."
+        },
+        "henrique": {
+          "name": "Henrique Maia Veloso",
+          "description": "Doctor en Administración por la USP, profesor y consultor, con experiencia en gestión, investigación y enseñanza superior, actuando en temas como estrés ocupacional e identidad."
+        },
+        "raquel": {
+          "name": "Raquel Alves Furtado",
+          "description": "Doctora y máster en Administración, con MBA en RRHH y licenciatura en Comunicación Social. Profesora en PUC Minas desde 2002, actuando en Recursos Humanos, Comunicación, Marketing y Emprendimiento. Gerente del proyecto PUC Carreiras, coach certificada e investigadora, con más de 30 años de experiencia como gestora, consultora y autora de artículos científicos."
+        }
+      }
+    }
+  },
+  "contact": {
+    "title": "Contacto",
+    "description": "¿Tienes alguna pregunta, sugerencia o necesitas ayuda? Contáctanos a través del formulario a continuación o utiliza uno de nuestros canales de soporte.",
+    "form": {
+      "name": {
+        "label": "Nombre",
+        "placeholder": "Ingresa tu nombre completo",
+        "error": "El nombre es requerido"
+      },
+      "email": {
+        "label": "Correo electrónico",
+        "placeholder": "Ingresa tu correo electrónico",
+        "error": "El correo electrónico es requerido",
+        "invalid": "Ingresa un correo electrónico válido"
+      },
+      "recipient": {
+        "label": "Destinatario",
+        "placeholder": "Selecciona destinatario",
+        "error": "Selecciona un destinatario",
+        "options": {
+          "general": "Contacto General"
+        }
+      },
+      "subject": {
+        "label": "Asunto",
+        "placeholder": "Ingresa el asunto del mensaje",
+        "error": "El asunto es requerido"
+      },
+      "message": {
+        "label": "Mensaje",
+        "placeholder": "Ingresa tu mensaje",
+        "error": "El mensaje es requerido"
+      },
+      "submit": "Enviar Mensaje",
+      "success": "¡Mensaje enviado con éxito! Te contactaremos pronto.",
+      "error": "Error al enviar mensaje. Por favor, intenta nuevamente."
+    },
+    "info": {
+      "location": "América Latina, Brasil"
+    }
+  },
+  "home": {
+    "welcome": "¡Hola, {{name}}!",
+    "user": "Usuario",
+    "balance": {
+      "show": "Mostrar valores",
+      "hide": "Ocultar valores"
+    },
+    "total": "Total",
+    "converted": "Convertido",
+    "estimated": "Estimado",
+    "viewDetails": "Ver detalles",
+    "wallet": {
+      "alt": "Billetera"
+    },
+    "investments": {
+      "title": "Total en Inversiones"
+    },
+    "income": {
+      "title": "Total de Ingresos"
+    },
+    "expenses": {
+      "title": "Total de Gastos"
+    },
+    "empty": {
+      "title": "¡Bienvenido a SaveMoney!",
+      "description": "Comienza a organizar tus finanzas agregando tus inversiones, ingresos y gastos.",
+      "add_investment": "Agregar Inversión",
+      "add_income": "Agregar Ingreso",
+      "add_expense": "Agregar Gasto"
+    },
+    "recurring": {
+      "title": "Elementos Recurrentes",
+      "description": "Tienes elementos recurrentes que afectan tu balance total",
+      "info": "Los valores estimados incluyen elementos recurrentes que se repiten automáticamente en períodos futuros",
+      "investments": "Inversiones Recurrentes",
+      "expenses": "Gastos Recurrentes",
+      "income": "Ingresos Recurrentes",
+      "viewAll": "Ver Todos"
+    },
+    "hero": {
+      "title": "Gestiona tus finanzas de manera inteligente",
+      "description": "SaveMoney es la solución perfecta para controlar tus gastos, ahorrar y alcanzar tus objetivos financieros.",
+      "cta": "Comienza ahora"
+    },
+    "features": {
+      "title": "Características que marcan la diferencia",
+      "financialControl": {
+        "title": "Control Financiero",
+        "description": "Sigue tus ingresos y gastos en tiempo real, con categorización automática e informes detallados."
+      },
+      "reports": {
+        "title": "Informes Detallados",
+        "description": "Visualiza gráficos e informes que te ayudan a entender mejor tus hábitos financieros."
+      },
+      "savings": {
+        "title": "Metas de Ahorro",
+        "description": "Establece metas de ahorro y sigue tu progreso con herramientas intuitivas."
+      }
+    },
+    "testimonials": {
+      "title": "Lo que dicen nuestros usuarios",
+      "user1": {
+        "quote": "SaveMoney ha transformado completamente mi relación con el dinero. Ahora puedo ahorrar e invertir con más confianza.",
+        "name": "María García",
+        "role": "Usuaria desde 2023"
+      },
+      "user2": {
+        "quote": "La interfaz es intuitiva y los informes son muy útiles. Lo recomiendo para cualquiera que quiera tener más control sobre sus finanzas.",
+        "name": "Juan Pérez",
+        "role": "Usuario desde 2024"
+      }
+    },
+    "cta": {
+      "title": "Comienza a ahorrar hoy mismo",
+      "description": "Únete a miles de usuarios que ya están transformando sus vidas financieras con SaveMoney.",
+      "button": "Crear cuenta gratuita"
+    }
+  },
+  "expenses": {
+    "title": "Gastos",
+    "empty": {
+      "message": "No hay gastos registrados.",
+      "filter": "No se encontraron gastos con los filtros actuales."
+    },
+    "modal": {
+      "title": "Gasto",
+      "create": "Nuevo Gasto",
+      "edit": "Editar Gasto"
+    },
+    "form": {
+      "title": "Título:",
+      "value": "Valor:",
+      "date": "Fecha de Vencimiento:",
+      "recurring": "Recurrente",
+      "paid": "Marcar como pagado",
+      "recurrence": {
+        "type": "Tipo de recurrencia:",
+        "count": "Número de repeticiones:",
+        "tip": "Mínimo 1 y máximo 365",
+        "daily": "Diario",
+        "weekly": "Semanal",
+        "monthly": "Mensual",
+        "yearly": "Anual"
+      }
+    },
+    "validation": {
+      "title": "El título es obligatorio.",
+      "value": "El valor debe ser mayor que $0.00.",
+      "date": "La fecha de vencimiento es obligatoria.",
+      "recurrence": {
+        "min": "El número de repeticiones debe ser al menos 2.",
+        "max": "El número máximo de repeticiones es 365."
+      }
+    },
+    "success": {
+      "create": "¡Gasto creado con éxito!",
+      "update": "¡Gasto actualizado con éxito!",
+      "delete": "¡Gasto eliminado con éxito!",
+      "markPaid": "¡Estado de pago actualizado con éxito!",
+      "markRecurringPaid": "¡Estado de pago recurrente actualizado con éxito!"
+    },
+    "errors": {
+      "load": "Error al cargar gastos. Por favor, intente nuevamente.",
+      "save": "Error al guardar gasto. Por favor, intente nuevamente.",
+      "delete": "Error al eliminar gasto. Por favor, intente nuevamente.",
+      "markPaid": "Error al actualizar estado de pago. Por favor, intente nuevamente.",
+      "markRecurringPaid": "Error al actualizar estado de pago recurrente. Por favor, intente nuevamente."
+    },
+    "header": {
+      "total": "Total gastado",
+      "estimated": "Total estimado",
+      "items": "{{count}} gasto(s)",
+      "add": "Nuevo Gasto"
+    },
+    "filters": {
+      "all": "Todas",
+      "today": "Hoy",
+      "available": "Disponible",
+      "paid": "Pagado",
+      "overdue": "Atrasado",
+      "recurring": "Recurrente"
+    },
+    "history": {
+      "title": "Historial",
+      "changes": "Cambios",
+      "noChanges": "Ningún cambio registrado"
+    },
+    "confirmDelete": {
+      "title": "Eliminar gasto",
+      "message": "¿Estás seguro de que deseas eliminar este gasto?",
+      "warning": "Esta acción no se puede deshacer."
+    },
+    "card": {
+      "title": "Gasto",
+      "value": "Valor",
+      "date": "Fecha de vencimiento",
+      "period": "Fecha final",
+      "paid": "Pagado",
+      "status": {
+        "paid": "Pagado",
+        "overdue": "Atrasado",
+        "today": "Vence hoy",
+        "future": "Vence en {{days}} días",
+        "tomorrow": "Vence mañana",
+        "no-due-date": "Sin vencimiento",
+        "complete": "Pago completo"
+      }
+    }
+  },
+  "income": {
+    "title": "Ingresos",
+    "header": {
+      "total": "Total de Ingresos",
+      "items": "{{count}} ingreso",
+      "add": "Nuevo Ingreso"
+    },
+    "empty": {
+      "message": "No hay ingresos registrados.",
+      "filter": "No se encontraron ingresos con los filtros actuales."
+    },
+    "filters": {
+      "all": "Todos",
+      "pending": "Pendiente",
+      "today": "Hoy",
+      "thisMonth": "Este mes",
+      "available": "Disponible",
+      "recurring": "Recurrente"
+    },
+    "form": {
+      "title": "Título",
+      "value": "Valor",
+      "date": "Fecha de recepción",
+      "period": "Fecha final",
+      "received": "Recibido",
+      "isRecurring": "Recurrente",
+      "recurrenceType": "Tipo de recurrencia",
+      "recurrenceCount": "Número de repeticiones",
+      "currencyType": "Tipo de moneda",
+      "recurrenceTypes": {
+        "weekly": "Semanal",
+        "monthly": "Mensual",
+        "yearly": "Anual"
+      }
+    },
+    "history": {
+      "title": "Historial",
+      "changes": "Cambios",
+      "noChanges": "Ningún cambio registrado"
+    },
+    "confirmDelete": {
+      "title": "Eliminar ingreso",
+      "message": "¿Estás seguro de que deseas eliminar este ingreso?",
+      "warning": "Esta acción no se puede deshacer."
+    },
+    "card": {
+      "title": "Ingreso",
+      "value": "Valor",
+      "date": "Fecha de recepción",
+      "period": "Fecha final",
+      "received": "Recibido",
+      "status": {
+        "received": "Recibido",
+        "today": "Iniciando hoy",
+        "last-day": "Último día",
+        "available": "Disponible",
+        "complete": "Finalizado"
+      }
+    }
+  },
+  "categories": {
+    "title": "Categorías",
+    "add": "Agregar categoría",
+    "edit": "Editar categoría",
+    "delete": "Eliminar categoría",
+    "form": {
+      "name": {
+        "label": "Nombre",
+        "placeholder": "Ingrese el nombre",
+        "required": "El nombre es requerido"
+      },
+      "color": {
+        "label": "Color",
+        "placeholder": "Seleccione el color",
+        "required": "El color es requerido"
+      },
+      "icon": {
+        "label": "Icono",
+        "placeholder": "Seleccione el icono",
+        "required": "El icono es requerido"
+      }
+    }
+  },
+  "reminders": {
+    "title": "Recordatorios",
+    "add": "Agregar recordatorio",
+    "edit": "Editar recordatorio",
+    "delete": "Eliminar recordatorio",
+    "form": {
+      "description": {
+        "label": "Descripción",
+        "placeholder": "Ingrese la descripción",
+        "required": "La descripción es requerida"
+      },
+      "value": {
+        "label": "Valor",
+        "placeholder": "Ingrese el valor",
+        "required": "El valor es requerido",
+        "invalid": "Valor inválido"
+      },
+      "date": {
+        "label": "Fecha",
+        "placeholder": "Seleccione la fecha",
+        "required": "La fecha es requerida"
+      },
+      "category": {
+        "label": "Categoría",
+        "placeholder": "Seleccione la categoría",
+        "required": "La categoría es requerida"
+      }
+    }
+  },
+  "goals": {
+    "title": "Objetivos",
+    "add": "Agregar objetivo",
+    "edit": "Editar objetivo",
+    "delete": "Eliminar objetivo",
+    "form": {
+      "name": {
+        "label": "Nombre",
+        "placeholder": "Ingrese el nombre",
+        "required": "El nombre es requerido"
+      },
+      "target": {
+        "label": "Objetivo",
+        "placeholder": "Ingrese el objetivo",
+        "required": "El objetivo es requerido",
+        "invalid": "Objetivo inválido"
+      },
+      "current": {
+        "label": "Valor actual",
+        "placeholder": "Ingrese el valor actual",
+        "required": "El valor actual es requerido",
+        "invalid": "Valor actual inválido"
+      },
+      "deadline": {
+        "label": "Fecha límite",
+        "placeholder": "Seleccione la fecha límite",
+        "required": "La fecha límite es requerida"
+      }
+    }
+  },
+  "reports": {
+    "title": "Informes",
+    "generating": "Generando informe...",
+    "success": "¡Informe generado con éxito!",
+    "error": "Error al generar el informe",
+    "dateRangeRequired": "Seleccione el período del informe",
+    "quick": {
+      "expenses": "Informe de Gastos",
+      "income": "Informe de Ingresos",
+      "investments": "Informe de Inversiones",
+      "summary": "Informe General"
+    },
+    "form": {
+      "startDate": {
+        "label": "Fecha Inicial"
+      },
+      "endDate": {
+        "label": "Fecha Final",
+        "error": "La fecha final debe ser posterior a la fecha inicial"
+      },
+      "generate": "Generar Informe",
+      "type": {
+        "label": "Tipo de Informe",
+        "options": {
+          "summary": "Resumen General",
+          "expenses": "Gastos",
+          "income": "Ingresos",
+          "investments": "Inversiones"
+        }
+      }
+    },
+    "summary": {
+      "title": "Resumen del Período",
+      "income": "Total de Ingresos",
+      "expenses": "Total de Gastos",
+      "investments": "Total de Inversiones",
+      "balance": "Saldo Final"
+    },
+    "charts": {
+      "incomeVsExpenses": "Ingresos vs Gastos",
+      "investments": "Inversiones",
+      "distribution": "Distribución de Valores"
+    },
+    "empty": {
+      "title": "No se encontraron datos",
+      "description": "No hay datos para generar informes. Agregue ingresos, gastos o inversiones para comenzar.",
+      "addIncome": "Agregar Ingreso",
+      "addExpense": "Agregar Gasto",
+      "addInvestment": "Agregar Inversión"
+    }
+  },
+  "profile": {
+    "title": "Perfil",
+    "edit": "Editar perfil",
+    "form": {
+      "name": {
+        "label": "Nombre",
+        "placeholder": "Ingrese su nombre",
+        "required": "El nombre es requerido"
+      },
+      "email": {
+        "label": "Correo electrónico",
+        "placeholder": "Ingrese su correo electrónico",
+        "required": "El correo electrónico es requerido",
+        "invalid": "Correo electrónico inválido"
+      },
+      "currentPassword": {
+        "label": "Contraseña actual",
+        "placeholder": "Ingrese su contraseña actual",
+        "required": "La contraseña actual es requerida"
+      },
+      "newPassword": {
+        "label": "Nueva contraseña",
+        "placeholder": "Ingrese su nueva contraseña",
+        "required": "La nueva contraseña es requerida"
+      },
+      "confirmPassword": {
+        "label": "Confirmar contraseña",
+        "placeholder": "Ingrese su contraseña nuevamente",
+        "required": "La confirmación de la contraseña es requerida",
+        "mismatch": "Las contraseñas no coinciden"
+      }
+    },
+    "delete": {
+      "title": "Eliminar cuenta",
+      "confirm": "¿Está seguro de que desea eliminar su cuenta? Esta acción es irreversible.",
+      "button": "Eliminar cuenta",
+      "success": "Cuenta eliminada exitosamente",
+      "error": "Error al eliminar la cuenta"
+    },
+    "personalInfo": {
+      "title": "Información personal",
+      "fullName": "Nombre completo",
+      "accountType": "Tipo de cuenta",
+      "document": "Documento",
+      "birthDate": "Fecha de nacimiento",
+      "notInformed": "No informado",
+      "physicalPerson": "Persona física",
+      "legalPerson": "Persona jurídica"
+    },
+    "contactInfo": {
+      "title": "Información de contacto",
+      "email": "Correo electrónico",
+      "phone": "Teléfono"
+    },
+    "address": {
+      "title": "Dirección",
+      "street": "Calle",
+      "city": "Ciudad",
+      "state": "Estado",
+      "zipCode": "Código postal"
+    },
+    "accountSettings": {
+      "title": "Configuración de la cuenta",
+      "lgpdTerms": "Términos LGPD",
+      "accepted": "Aceptado",
+      "notAccepted": "No aceptado"
+    },
+    "actions": {
+      "editData": "Modificar datos",
+      "deleteAccount": "Eliminar cuenta",
+      "logout": "Cerrar sesión"
+    }
+  },
+  "modals": {
+    "logout": {
+      "title": "Cerrar sesión",
+      "message": "¿Está seguro de que desea cerrar sesión? Necesitará iniciar sesión nuevamente para acceder al sistema.",
+      "loading": "Cerrando sesión...",
+      "cancel": "Cancelar",
+      "confirm": "Cerrar sesión"
+    },
+    "deleteAccount": {
+      "title": "Eliminar cuenta",
+      "warning": "¡Esta acción es permanente y no se puede deshacer!",
+      "message": "Al eliminar tu cuenta, todos tus datos personales e información serán eliminados permanentemente del sistema, incluyendo:",
+      "data": {
+        "personal": "Datos personales",
+        "transactions": "Historial de transacciones",
+        "settings": "Configuración de la cuenta",
+        "preferences": "Preferencias y personalizaciones"
+      },
+      "lgpd": {
+        "title": "Información sobre protección de datos:",
+        "message": "De acuerdo con la Ley General de Protección de Datos (LGPD) de Brasil y el Reglamento General de Protección de Datos (GDPR) de la Unión Europea, tienes derecho a solicitar la eliminación de tus datos personales. Al confirmar esta acción, estarás ejerciendo este derecho y todos tus datos serán eliminados permanentemente de nuestros sistemas."
+      },
+      "cancel": "Volver",
+      "confirm": "Eliminar cuenta",
+      "success": "¡Cuenta eliminada con éxito!"
+    }
+  },
+  "notFound": {
+    "title": "Página no encontrada",
+    "description": "La página que intentas acceder no existe o ha sido eliminada.",
+    "notAuthDescription": "¡Ups! Parece que te has perdido.\nLa página que buscas no existe o ha sido movida."
+  },
+  "investments": {
+    "title": "Inversiones",
+    "header": {
+      "total": "Total Invertido",
+      "estimated": "Total Estimado",
+      "items": "{{count}} inversión",
+      "add": "Nueva Inversión"
+    },
+    "empty": {
+      "message": "No hay inversiones registradas.",
+      "filter": "No se encontraron inversiones con los filtros actuales."
+    },
+    "filters": {
+      "all": "Todos"
+    },
+    "status": {
+      "startsIn": "Comienza en {{days}} días",
+      "endsIn": "Termina en {{days}} días"
+    },
+    "rentability": {
+      "current": "Rentabilidad Actual",
+      "total": "Total con Rentabilidad",
+      "expected": "Rentabilidad Esperada",
+      "expectedTotal": "Total Esperado"
+    },
+    "history": {
+      "title": "Historial",
+      "changes": "Cambios",
+      "noChanges": "Ningún cambio registrado"
+    },
+    "confirmDelete": {
+      "title": "Eliminar Inversión",
+      "message": "¿Está seguro de que desea eliminar esta inversión?",
+      "warning": "Esta acción no se puede deshacer."
+    },
+    "card": {
+      "title": "Inversión",
+      "value": "Valor",
+      "date": "Fecha de Inicio",
+      "period": "Fecha Final",
+      "interestRate": "Tasa de Interés",
+      "interestTypes": {
+        "none": "Sin Interés",
+        "month": "Mensual",
+        "year": "Anual"
+      },
+      "status": {
+        "finished": "Finalizado",
+        "active": "Activo",
+        "future": "Futuro"
+      },
+      "rentability": {
+        "current": "Rentabilidad Actual",
+        "total": "Total con Rentabilidad",
+        "expected": "Rentabilidad Esperada",
+        "expectedTotal": "Total Esperado"
+      }
+    },
+    "modal": {
+      "title": "Inversión",
+      "create": "Nueva Inversión",
+      "edit": "Editar Inversión"
+    },
+    "form": {
+      "title": "Título:",
+      "value": "Valor:",
+      "startDate": "Fecha de Inicio:",
+      "endDate": "Fecha de Fin (opcional):",
+      "interestType": "Tipo de Rentabilidad:",
+      "interestRate": "Tasa de Interés:",
+      "interestTypes": {
+        "none": "Sin Rentabilidad",
+        "month": "Mensual",
+        "year": "Anual"
+      }
+    },
+    "validation": {
+      "title": "El título es obligatorio.",
+      "value": "El valor debe ser mayor que $0.00.",
+      "startDate": "La fecha de inicio es obligatoria.",
+      "endDate": "La fecha de fin debe ser posterior a la fecha de inicio.",
+      "interestRate": "La tasa de interés debe ser mayor que 0."
+    }
+  },
+  "converter": {
+    "title": "Conversor de Monedas",
+    "description": "Convierte valores entre diferentes monedas utilizando tasas de cambio actualizadas en tiempo real. Nuestro conversor utiliza datos precisos para garantizar la mejor experiencia.",
+    "features": {
+      "rates": {
+        "title": "Tasas Actualizadas",
+        "description": "Nuestras tasas de cambio se actualizan en tiempo real, garantizando precisión en tus conversiones."
+      },
+      "currencies": {
+        "title": "Múltiples Monedas",
+        "description": "Soporte para diversas monedas internacionales, incluyendo criptomonedas populares."
+      },
+      "history": {
+        "title": "Historial",
+        "description": "Sigue el historial de tus conversiones para referencia futura."
+      }
+    },
+    "amount": {
+      "label": "Monto",
+      "placeholder": "Ingrese el monto"
+    },
+    "to": "A",
+    "convert": "Convertir",
+    "loading": "Convirtiendo...",
+    "result": "Resultado de la Conversión",
+    "rate": "Tasa de Cambio",
+    "lastUpdate": "Última Actualización",
+    "error": {
+      "empty": "Ingrese un monto",
+      "invalid": "Monto inválido",
+      "zero": "El monto debe ser mayor que cero",
+      "same": "Las monedas no pueden ser iguales",
+      "generic": "Error al convertir moneda",
+      "rate": "No se pudo obtener la tasa de cambio"
+    },
+    "swap": "Intercambiar",
+    "history": "Historial",
+    "clearHistory": "Limpiar Historial"
+  },
+  "history": {
+    "title": "Historial de Cambios",
+    "empty": "No hay historial disponible.",
+    "itemCreated": "Elemento creado",
+    "createdAt": "Creado en",
+    "close": "OK, Entendido",
+    "notDefined": "No definido",
+    "indefinite": "Indefinido",
+    "oneRepetition": "1 repetición",
+    "multipleRepetitions": "{{count}} repeticiones",
+    "fieldLabels": {
+      "title": "Título",
+      "value": "Valor",
+      "date": "Fecha de Inicio",
+      "period": "Fecha de Fin",
+      "interestRate": "Tasa de Interés",
+      "interestType": "Tipo de Interés",
+      "received": "Estado de Recepción",
+      "isRecurring": "Recurrencia",
+      "recurrenceType": "Tipo de Recurrencia",
+      "recurrenceCount": "Número de Repeticiones"
+    }
+  }
+}

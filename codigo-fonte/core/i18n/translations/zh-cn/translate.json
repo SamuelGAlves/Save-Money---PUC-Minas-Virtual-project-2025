@@ -1,0 +1,873 @@
+{
+  "common": {
+    "currency": "CNY",
+    "language": "zh-CN",
+    "actions": {
+      "edit": "编辑",
+      "delete": "删除",
+      "save": "保存",
+      "cancel": "取消",
+      "confirm": "确认",
+      "close": "关闭",
+      "add": "添加新项目",
+      "select": "选择模式"
+    },
+    "filters": {
+      "search": "搜索",
+      "sort": "排序",
+      "status": "状态",
+      "show": "显示筛选",
+      "hide": "隐藏筛选",
+      "sortOptions": {
+        "value-desc": "最高价值",
+        "value-asc": "最低价值",
+        "date-desc": "最新",
+        "date-asc": "最早"
+      },
+      "clear": "清除"
+    },
+    "status": {
+      "active": "活跃",
+      "finished": "已完成",
+      "available": "可用",
+      "last-day": "最后一天",
+      "starting-today": "今天开始",
+      "paid": "已支付",
+      "overdue": "逾期",
+      "today": "今天到期",
+      "future": "{{days}}天后到期",
+      "tomorrow": "明天到期",
+      "no-due-date": "无到期日",
+      "complete": "完全支付"
+    },
+    "card": {
+      "title": "项目",
+      "value": "价值",
+      "date": "日期",
+      "recurrence": {
+        "title": "重复",
+        "weekly": "每周",
+        "monthly": "每月",
+        "yearly": "每年",
+        "repetitions": "重复次数",
+        "indefinite": "无限期",
+        "times": "{{count}}次",
+        "badge": "重复"
+      },
+      "actions": {
+        "delete": "删除",
+        "edit": "编辑",
+        "history": "历史",
+        "recurring": "重复"
+      },
+      "status": {
+        "today": "今天",
+        "overdue": "逾期",
+        "available": "{{days}}天后可用",
+        "future": "{{days}}天后到期",
+        "unavailable": "不可用",
+        "pending": "待处理",
+        "completed": "已完成",
+        "error": "错误"
+      }
+    },
+    "buttons": {
+      "cancel": "取消",
+      "save": "保存",
+      "edit": "编辑",
+      "delete": "删除",
+      "close": "关闭",
+      "confirm": "确认",
+      "back": "返回",
+      "next": "下一步",
+      "previous": "上一步"
+    }
+  },
+  "navigation": {
+    "toggle": "切换导航",
+    "home": "首页",
+    "expenses": "支出",
+    "income": "收入",
+    "categories": "类别",
+    "reminders": "即将到期",
+    "goals": "目标",
+    "reports": "报告",
+    "investments": "投资",
+    "profile": "个人资料",
+    "register": "注册",
+    "about": "关于",
+    "contact": "联系我们",
+    "tests": "测试报告",
+    "login": "登录",
+    "main": "主要",
+    "finances": "财务",
+    "management": "管理",
+    "information": "信息",
+    "settings": "设置",
+    "resetPassword": "重置密码",
+    "currency_converter": "转换器"
+  },
+  "input": {
+    "password": {
+      "show": "显示密码",
+      "hide": "隐藏密码",
+      "requirements": "密码要求：",
+      "minLength": "最少8个字符",
+      "uppercase": "至少一个大写字母",
+      "lowercase": "至少一个小写字母",
+      "numbers": "至少一个数字",
+      "specialChar": "至少一个特殊字符",
+      "errors": {
+        "minLength": "密码必须至少包含{{minLength}}个字符",
+        "uppercase": "密码必须包含至少一个大写字母",
+        "lowercase": "密码必须包含至少一个小写字母",
+        "numbers": "密码必须包含至少一个数字",
+        "specialChar": "密码必须包含至少一个特殊字符"
+      }
+    },
+    "preventCopyPaste": {
+      "copy": "不允许复制此字段的内容",
+      "paste": "不允许在此字段中粘贴内容",
+      "cut": "不允许剪切此字段的内容",
+      "contextMenu": "此字段的上下文菜单已禁用"
+    },
+    "required": "此字段为必填项",
+    "email": "请输入有效的电子邮件",
+    "minlength": "{{field}}字段至少需要{{min}}个字符",
+    "maxlength": "{{field}}字段已达到{{max}}个字符的限制",
+    "min": "{{field}}字段必须大于或等于{{min}}",
+    "max": "{{field}}字段必须小于或等于{{max}}"
+  },
+  "login": {
+    "title": "登录",
+    "email": {
+      "label": "电子邮件",
+      "placeholder": "请输入您的电子邮件",
+      "required": "请输入电子邮件"
+    },
+    "password": {
+      "label": "密码",
+      "placeholder": "请输入您的密码",
+      "required": "请输入密码"
+    },
+    "button": "登录",
+    "forgotPassword": "忘记登录或密码？",
+    "forgotPasswordLink": "点击这里",
+    "register": "注册",
+    "loading": "正在登录...",
+    "success": "登录成功！",
+    "error": "登录时发生意外错误。",
+    "fillFields": "请填写所有字段以继续。"
+  },
+  "remember": {
+    "title": "找回密码",
+    "email": {
+      "label": "邮箱",
+      "placeholder": "请输入您的邮箱",
+      "required": "请输入邮箱"
+    },
+    "button": "发送说明",
+    "loading": "正在向您的邮箱发送说明...",
+    "success": "重置密码的说明已发送到您的邮箱。",
+    "error": "发送说明时出错。请再试一次。",
+    "notFound": "系统中未找到该邮箱。",
+    "fillFields": "请填写邮箱字段以继续。"
+  },
+  "registration": {
+    "title": "创建账户",
+    "name": {
+      "label": "全名",
+      "placeholder": "请输入您的全名",
+      "required": "姓名是必需的"
+    },
+    "email": {
+      "label": "电子邮件",
+      "placeholder": "输入您的电子邮件",
+      "required": "电子邮件是必需的",
+      "invalid": "无效的电子邮件",
+      "alreadyExists": "此电子邮件已注册"
+    },
+    "document": {
+      "label": "证件",
+      "cpf": {
+        "placeholder": "请输入您的CPF",
+        "invalid": "CPF无效"
+      },
+      "cnpj": {
+        "placeholder": "请输入您的CNPJ",
+        "invalid": "CNPJ无效"
+      },
+      "required": "请输入证件号码"
+    },
+    "password": {
+      "label": "密码",
+      "placeholder": "请输入您的密码",
+      "required": "请输入密码",
+      "requirements": {
+        "title": "您的密码需要包含：",
+        "minLength": "• 最少8个字符",
+        "uppercase": "• 一个大写字母 (A-Z)",
+        "lowercase": "• 一个小写字母 (a-z)",
+        "number": "• 一个数字 (0-9)",
+        "special": "• 一个特殊字符 (!@#$%^&*(),.?\":{}|<>)"
+      }
+    },
+    "confirmPassword": {
+      "label": "确认密码",
+      "placeholder": "请再次输入您的密码",
+      "required": "请确认密码",
+      "mismatch": "密码不匹配！"
+    },
+    "terms": {
+      "label": "我已阅读并同意使用条款和隐私政策",
+      "required": "您必须同意使用条款和隐私政策"
+    },
+    "button": "创建账户",
+    "loading": "正在创建您的账户...",
+    "success": "账户创建成功！",
+    "error": "创建账户时出错。",
+    "fillFields": "请填写所有字段以继续。"
+  },
+  "currency": {
+    "format": {
+      "style": "currency",
+      "currency": "CNY"
+    }
+  },
+  "logo": {
+    "title": "省钱",
+    "subtitle": "PUC Minas 技术学院",
+    "ariaLabel": "省钱 PUC Minas 技术学院标志"
+  },
+  "home": {
+    "welcome": "你好，{{name}}！",
+    "user": "用户",
+    "balance": {
+      "title": "您的余额：",
+      "show": "显示余额",
+      "hide": "隐藏余额"
+    },
+    "wallet": {
+      "alt": "钱包"
+    },
+    "investments": {
+      "title": "总投资"
+    },
+    "income": {
+      "title": "总收入"
+    },
+    "expenses": {
+      "title": "总支出"
+    },
+    "empty": {
+      "title": "欢迎使用 SaveMoney！",
+      "description": "通过添加您的投资、收入和支出来开始管理您的财务。",
+      "add_investment": "添加投资",
+      "add_income": "添加收入",
+      "add_expense": "添加支出"
+    },
+    "converted": "已转换",
+    "estimated": "预估",
+    "viewDetails": "查看详情",
+    "hero": {
+      "title": "智能管理您的财务",
+      "description": "SaveMoney是您控制支出、储蓄和实现财务目标的完美解决方案。",
+      "cta": "立即开始"
+    },
+    "features": {
+      "title": "改变生活的功能",
+      "financialControl": {
+        "title": "财务控制",
+        "description": "实时跟踪您的收入和支出，自动分类和详细报告。"
+      },
+      "reports": {
+        "title": "详细报告",
+        "description": "查看帮助您更好地了解财务习惯的图表和报告。"
+      },
+      "savings": {
+        "title": "储蓄目标",
+        "description": "设置储蓄目标并使用直观的工具跟踪进度。"
+      }
+    },
+    "testimonials": {
+      "title": "用户评价",
+      "user1": {
+        "quote": "SaveMoney完全改变了我与金钱的关系。现在我可以更有信心地储蓄和投资。",
+        "name": "玛丽·张",
+        "role": "2023年用户"
+      },
+      "user2": {
+        "quote": "界面直观，报告非常有用。推荐给想要更好地控制财务的人。",
+        "name": "王强",
+        "role": "2024年用户"
+      }
+    },
+    "cta": {
+      "title": "今天开始储蓄",
+      "description": "加入数千名已经在用SaveMoney改变财务生活的用户。",
+      "button": "创建免费账户"
+    },
+    "recurring": {
+      "title": "定期项目",
+      "description": "您有影响总余额的定期项目",
+      "info": "估计值包括在未来期间自动重复的定期项目",
+      "investments": "定期投资",
+      "expenses": "定期支出",
+      "income": "定期收入",
+      "viewAll": "查看全部"
+    },
+    "total": "总计"
+  },
+  "contact": {
+    "title": "联系我们",
+    "description": "您有任何问题、建议或需要帮助吗？通过下面的表单联系我们或使用我们的服务渠道之一。",
+    "form": {
+      "name": {
+        "label": "姓名",
+        "placeholder": "输入您的全名",
+        "error": "请输入姓名"
+      },
+      "email": {
+        "label": "电子邮件",
+        "placeholder": "输入您的电子邮件",
+        "error": "请输入电子邮件",
+        "invalid": "请输入有效的电子邮件"
+      },
+      "recipient": {
+        "label": "收件人",
+        "placeholder": "选择收件人",
+        "error": "请选择收件人",
+        "options": {
+          "general": "一般联系"
+        }
+      },
+      "subject": {
+        "label": "主题",
+        "placeholder": "请输入消息主题",
+        "error": "请输入主题"
+      },
+      "message": {
+        "label": "消息",
+        "placeholder": "请输入您的消息",
+        "error": "请输入消息"
+      },
+      "submit": "发送消息",
+      "success": "消息发送成功！我们会尽快与您联系。",
+      "error": "发送消息时出错。请重试。"
+    },
+    "info": {
+      "location": "拉丁美洲，巴西"
+    }
+  },
+  "about": {
+    "title": "关于我们",
+    "mission": {
+      "title": "我们的使命",
+      "description": "SaveMoney是一个创新的网络应用程序，旨在彻底改变个人财务管理方式。我们的使命是通过智能和易用的金融工具，帮助人们做出更明智的财务决策，实现人生目标。"
+    },
+    "features": {
+      "financialControl": {
+        "title": "财务控制",
+        "description": "通过自定义类别和详细报告全面管理收支。"
+      },
+      "investments": {
+        "title": "投资",
+        "description": "使用先进的分析工具跟踪和增长您的投资。"
+      },
+      "currencyConverter": {
+        "title": "货币转换器",
+        "description": "使用实时汇率在不同货币之间进行即时转换。"
+      },
+      "teamContact": {
+        "title": "团队联系",
+        "description": "直接与支持团队沟通获取帮助。"
+      },
+      "personalAccount": {
+        "title": "个人账户",
+        "description": "轻松安全地管理您的个人财务。"
+      },
+      "businessAccount": {
+        "title": "商业账户",
+        "description": "为中小型企业提供全面的财务解决方案。"
+      },
+      "multipleLanguages": {
+        "title": "多语言",
+        "description": "多语言界面支持来自不同国家的用户。"
+      },
+      "multipleCurrencies": {
+        "title": "多币种",
+        "description": "支持各种世界货币。"
+      },
+      "cryptocurrencies": {
+        "title": "加密货币",
+        "description": "管理和跟踪您的加密货币投资。"
+      }
+    },
+    "puc": {
+      "title": "米纳斯吉拉斯天主教大学 (PUC Minas)",
+      "description": "米纳斯吉拉斯天主教大学（PUC Minas）是巴西乃至国际上享有盛誉的高等学府，以卓越的学术水平、全面的素质教育以及在科研和社会责任方面的突出表现而著称。\n\nSave Money 项目诞生于这一创新环境，由分析与系统开发（远程教育）专业的学生开发，旨在为财务管理提供技术解决方案。\n\n该项目的实现得到了 PUC Minas 教师团队的重要支持，他们在整个开发过程中给予了指导和鼓励。",
+      "sections": {
+        "assistentes": "学术助理",
+        "microFund": "微基础教授"
+      },
+      "roles": {
+        "graoChanceler": "大校长",
+        "reitor": "校长",
+        "coordenacao": "协调员",
+        "professor": "教授",
+        "professora": "女教授",
+        "assistente": "助理"
+      },
+      "members": {
+        "aline": {"name": "Aline Luciane Candido", "description": "学术助理，支持 PUC Minas ADS EaD 课程的学生和流程。"},
+        "ana": {"name": "Ana Flávia Patricio de Barros", "description": "负责 ADS EaD 课程的学术支持和学生服务。"},
+        "camila": {"name": "Camila Cristina Gonçalves Marques De Moura", "description": "负责 ADS EaD 课程的行政和学术支持。"},
+        "gabriela": {"name": "Gabriela Araújo Batista", "description": "协助 ADS EaD 课程的学术日常工作和教师。"},
+        "vanilda": {"name": "Vanilda da Conceição De Oliveira", "description": "支持 ADS EaD 课程的学术管理和学生服务。"},
+        "lucila": {"name": "Lucila Ishitani", "description": "计算机科学博士（UFMG），在 PUC Minas 研究生课程和计算机课程任教，研究方向包括教育、以用户为中心的设计和严肃游戏。"},
+        "maria": {"name": "Maria Augusta Vieira Nelson", "description": "滑铁卢大学计算机科学博士，PUC Minas 软件工程教授和协调员，拥有丰富的教学、研究和专业经验。"},
+        "jane": {"name": "Jane Carmelita das Dores Garandy de Arruda Barroso", "description": "数学教育硕士，在 PUC Minas 教授 IT 和工程学的微积分，并参与评估和大学扩展项目。"},
+        "raquel": {"name": "Raquel Alves Furtado", "description": "管理学博士和硕士，拥有 HR MBA 和社会传播学学士学位。自 2002 年起在 PUC Minas 任教，主要从事人力资源、传播、市场营销和创业领域。PUC Carreiras 项目经理，认证教练和研究员，拥有 30 多年管理、咨询和学术论文作者经验。"},
+        "livia": {"name": "Lívia Borges Pádua", "description": "PUC Minas 传播学硕士（2009），现为传播与艺术学院（FCA）成员。"},
+        "rodrigo": {"name": "Rodrigo Richard Gomes", "description": "UFMG 生物信息学博士，PUC Minas 信息系统课程和数据科学专业协调员，拥有 IT 和音乐领域经验。"},
+        "rommel": {"name": "Rommel Vieira Carneiro", "description": "PUC Minas 信息学硕士，计算机课程协调员和教授，拥有项目管理和软件开发经验。"},
+        "bernardo": {"name": "Bernardo Jeunon de Alencar", "description": "空间信息处理博士，PUC Minas 信息系统教授和协调员，拥有电气工程、计算和地理处理经验。"},
+        "silvio": {"name": "Silvio Jamil Ferzoli Guimarães", "description": "UFMG 计算机科学博士，PUC Minas 教授和研究员，专注于图像处理、视频和信息检索。"},
+        "henrique": {"name": "Henrique Maia Veloso", "description": "USP 管理学博士，教授和顾问，拥有管理、研究和高等教育经验，研究方向包括职业压力和身份认同。"},
+        "walmor": {"name": "Dom Walmor Oliveira de Azevedo", "description": "出生于巴伊亚州科科斯，PUC Minas 大校长兼贝洛奥里藏特大主教，同时也是巴西主教全国会议（CNBB）主席。拥有罗马教皇格里高利大学圣经神学博士学位和教皇圣经学院圣经科学硕士学位。"},
+        "luis": {"name": "Professor Dr. Pe. Luís Henrique Eloy e Silva", "description": "罗马教皇圣经学院圣经科学博士和硕士，里约热内卢教皇天主教大学神学学士。曾在德国慕尼黑路德维希-马克西米利安大学神学院进行博士后研究。"},
+        "joyce": {"name": "Joyce Christina de Paiva Carvalho", "description": "PUC Minas 教授，系统分析与开发（远程教育）CST 协调员。信息技术领域经验丰富，是 PUC Minas 四级副教授。研究方向包括数据库、BI、分析和图表，专注于软件工程。"},
+        "humberto": {"name": "Humberto Azevedo Nigri do Carmo", "description": "拥有 17 年教学经验和 37 年系统与软件开发经验，曾在 CEFET-MG、PUC-MG、Newton Paiva 和 UNA 等机构任教。专业领域包括编程语言、信息系统、软件工程和工程学，也参与计算机架构等课程教学。"}
+      }
+    },
+    "team": {
+      "title": "我们的团队",
+      "description1": "Save Money is developed by a dedicated team of students from the Analysis and Systems Development - Distance Learning course at PUC Minas.",
+      "description2": "Our team combines technical expertise with a passion for innovation to create a complete and accessible financial solution."
+    }
+  },
+  "investments": {
+    "title": "投资",
+    "header": {
+      "total": "总投资",
+      "estimated": "预计总额",
+      "items": "{{count}}笔投资",
+      "add": "新增投资"
+    },
+    "empty": {
+      "message": "没有注册的投资。",
+      "filter": "使用当前筛选条件未找到投资。"
+    },
+    "filters": {
+      "all": "全部"
+    },
+    "modal": {
+      "title": "投资",
+      "create": "新投资",
+      "edit": "编辑投资"
+    },
+    "form": {
+      "title": "标题：",
+      "value": "金额：",
+      "startDate": "开始日期：",
+      "endDate": "结束日期（可选）：",
+      "interestType": "收益类型：",
+      "interestRate": "利率：",
+      "interestTypes": {
+        "none": "无收益",
+        "month": "每月",
+        "year": "每年"
+      }
+    },
+    "validation": {
+      "title": "标题为必填项。",
+      "value": "金额必须大于$0.00。",
+      "startDate": "开始日期为必填项。",
+      "endDate": "结束日期必须晚于开始日期。",
+      "interestRate": "利率必须大于0。"
+    },
+    "status": {
+      "startsIn": "{{days}}天后开始",
+      "endsIn": "{{days}}天后结束"
+    },
+    "rentability": {
+      "current": "当前收益",
+      "total": "总收益",
+      "expected": "预期收益",
+      "expectedTotal": "预期总额"
+    },
+    "history": {
+      "title": "历史",
+      "changes": "变更",
+      "noChanges": "无变更记录"
+    },
+    "confirmDelete": {
+      "title": "删除投资",
+      "message": "确定要删除此投资吗？",
+      "warning": "此操作无法撤销。"
+    },
+    "card": {
+      "title": "投资",
+      "value": "价值",
+      "date": "开始日期",
+      "period": "结束日期",
+      "interestRate": "利率",
+      "interestTypes": {
+        "none": "无利息",
+        "month": "每月",
+        "year": "每年"
+      },
+      "status": {
+        "finished": "已完成",
+        "active": "活跃",
+        "future": "未来"
+      },
+      "rentability": {
+        "current": "当前收益",
+        "total": "总收益",
+        "expected": "预期收益",
+        "expectedTotal": "预期总额"
+      }
+    }
+  },
+  "income": {
+    "title": "收入",
+    "header": {
+      "total": "总收入",
+      "estimated": "预计总额",
+      "items": "{{count}}笔收入",
+      "add": "新增收入"
+    },
+    "empty": {
+      "message": "没有注册的收入。",
+      "filter": "使用当前筛选条件未找到收入。"
+    },
+    "form": {
+      "title": "标题",
+      "value": "价值",
+      "date": "收款日期",
+      "period": "结束日期",
+      "received": "已收到",
+      "isRecurring": "重复",
+      "recurrenceType": "重复类型",
+      "recurrenceCount": "重复次数",
+      "currencyType": "货币类型",
+      "recurrenceTypes": {
+        "weekly": "每周",
+        "monthly": "每月",
+        "yearly": "每年"
+      }
+    },
+    "history": {
+      "title": "历史",
+      "changes": "变更",
+      "noChanges": "无变更记录"
+    },
+    "confirmDelete": {
+      "title": "删除收入",
+      "message": "确定要删除此收入吗？",
+      "warning": "此操作无法撤销。"
+    },
+    "card": {
+      "title": "收入",
+      "value": "价值",
+      "date": "收款日期",
+      "period": "结束日期",
+      "received": "已收到",
+      "status": {
+        "received": "已收到",
+        "today": "今天开始",
+        "last-day": "最后一天",
+        "available": "可用",
+        "complete": "已完成"
+      }
+    },
+    "filters": {
+      "all": "全部",
+      "pending": "待处理",
+      "today": "今天",
+      "thisMonth": "本月",
+      "available": "可用",
+      "recurring": "定期"
+    }
+  },
+  "expenses": {
+    "title": "支出",
+    "header": {
+      "total": "总支出",
+      "estimated": "预计总额",
+      "items": "{{count}}笔支出",
+      "add": "新增支出"
+    },
+    "empty": {
+      "message": "没有已登记的支出。",
+      "filter": "使用当前筛选条件未找到支出。"
+    },
+    "modal": {
+      "title": "支出",
+      "create": "新建支出",
+      "edit": "编辑支出"
+    },
+    "form": {
+      "title": "标题：",
+      "value": "金额：",
+      "date": "到期日：",
+      "recurring": "定期",
+      "paid": "标记为已支付",
+      "recurrence": {
+        "type": "重复类型：",
+        "count": "重复次数：",
+        "tip": "最少1次，最多365次",
+        "daily": "每天",
+        "weekly": "每周",
+        "monthly": "每月",
+        "yearly": "每年"
+      }
+    },
+    "validation": {
+      "title": "标题为必填项。",
+      "value": "金额必须大于0.00元。",
+      "date": "到期日为必填项。",
+      "recurrence": {
+        "min": "重复次数必须至少为2次。",
+        "max": "最大重复次数为365次。"
+      }
+    },
+    "success": {
+      "create": "支出创建成功！",
+      "update": "支出更新成功！",
+      "delete": "支出删除成功！",
+      "markPaid": "支付状态更新成功！",
+      "markRecurringPaid": "定期支付状态更新成功！"
+    },
+    "errors": {
+      "load": "加载支出时出错。请重试。",
+      "save": "保存支出时出错。请重试。",
+      "delete": "删除支出时出错。请重试。",
+      "markPaid": "更新支付状态时出错。请重试。",
+      "markRecurringPaid": "更新定期支付状态时出错。请重试。"
+    },
+    "history": {
+      "title": "历史",
+      "changes": "变更",
+      "noChanges": "无变更记录"
+    },
+    "confirmDelete": {
+      "title": "删除支出",
+      "message": "确定要删除此支出吗？",
+      "warning": "此操作无法撤销。"
+    },
+    "card": {
+      "title": "支出",
+      "value": "价值",
+      "date": "到期日期",
+      "period": "结束日期",
+      "paid": "已支付",
+      "status": {
+        "paid": "已支付",
+        "overdue": "逾期",
+        "today": "今天到期",
+        "future": "{{days}}天后到期",
+        "tomorrow": "明天到期",
+        "no-due-date": "无到期日",
+        "complete": "已完全支付"
+      }
+    },
+    "filters": {
+      "all": "全部",
+      "today": "今天",
+      "available": "可用",
+      "paid": "已支付",
+      "overdue": "逾期",
+      "recurring": "定期"
+    }
+  },
+  "notFound": {
+    "title": "页面未找到",
+    "description": "您尝试访问的页面不存在或已被删除。",
+    "notAuthDescription": "哎呀！看起来您迷路了。\n您正在寻找的页面不存在或已被移动。"
+  },
+  "profile": {
+    "title": "个人资料",
+    "personalInfo": {
+      "title": "个人信息",
+      "fullName": "全名",
+      "accountType": "账户类型",
+      "document": "证件",
+      "birthDate": "出生日期",
+      "notInformed": "未提供",
+      "physicalPerson": "个人",
+      "legalPerson": "法人"
+    },
+    "contactInfo": {
+      "title": "联系信息",
+      "email": "电子邮件",
+      "phone": "电话"
+    },
+    "address": {
+      "title": "地址",
+      "street": "街道",
+      "city": "城市",
+      "state": "州/省",
+      "zipCode": "邮政编码"
+    },
+    "accountSettings": {
+      "title": "账户设置",
+      "lgpdTerms": "LGPD条款",
+      "accepted": "已接受",
+      "notAccepted": "未接受"
+    },
+    "actions": {
+      "editData": "编辑数据",
+      "deleteAccount": "删除账户",
+      "logout": "退出登录"
+    }
+  },
+  "modals": {
+    "logout": {
+      "title": "退出登录",
+      "message": "您确定要退出登录吗？您需要重新登录才能访问系统。",
+      "loading": "正在退出登录...",
+      "cancel": "取消",
+      "confirm": "退出"
+    },
+    "deleteAccount": {
+      "title": "删除账户",
+      "warning": "此操作是永久性的，无法撤销！",
+      "message": "删除账户后，您的所有个人数据和信息将从系统中永久删除，包括：",
+      "data": {
+        "personal": "个人数据",
+        "transactions": "交易历史",
+        "settings": "账户设置",
+        "preferences": "偏好设置和自定义"
+      },
+      "lgpd": {
+        "title": "数据保护信息：",
+        "message": "根据《中华人民共和国个人信息保护法》（PIPL），您有权要求删除您的个人数据。确认此操作后，您将行使此权利，您的所有数据将从我们的系统中永久删除。"
+      },
+      "cancel": "返回",
+      "confirm": "删除账户",
+      "success": "账户已成功删除！"
+    }
+  },
+  "converter": {
+    "title": "货币转换器",
+    "description": "使用实时汇率在不同货币之间转换价值。我们的转换器使用精确的数据来确保最佳体验。",
+    "features": {
+      "rates": {
+        "title": "实时汇率",
+        "description": "我们的汇率实时更新，确保转换的准确性。"
+      },
+      "currencies": {
+        "title": "多种货币",
+        "description": "支持各种国际货币，包括流行的加密货币。"
+      },
+      "history": {
+        "title": "历史记录",
+        "description": "跟踪您的转换历史以供将来参考。"
+      }
+    },
+    "amount": {
+      "label": "金额",
+      "placeholder": "输入金额"
+    },
+    "to": "转换为",
+    "convert": "转换",
+    "loading": "转换中...",
+    "result": "转换结果",
+    "rate": "汇率",
+    "lastUpdate": "最后更新",
+    "error": {
+      "empty": "请输入金额",
+      "invalid": "无效金额",
+      "zero": "金额必须大于零",
+      "same": "货币不能相同",
+      "generic": "货币转换错误",
+      "rate": "无法获取汇率"
+    },
+    "swap": "交换",
+    "history": "历史记录",
+    "clearHistory": "清除历史记录"
+  },
+  "reports": {
+    "title": "报告",
+    "generating": "正在生成报告...",
+    "success": "报告生成成功！",
+    "error": "生成报告时出错",
+    "dateRangeRequired": "请选择报告期间",
+    "quick": {
+      "expenses": "支出报告",
+      "income": "收入报告",
+      "investments": "投资报告",
+      "summary": "综合报告"
+    },
+    "form": {
+      "startDate": {
+        "label": "开始日期"
+      },
+      "endDate": {
+        "label": "结束日期",
+        "error": "结束日期必须晚于开始日期"
+      },
+      "generate": "生成报告",
+      "type": {
+        "label": "报告类型",
+        "options": {
+          "summary": "总体摘要",
+          "expenses": "支出",
+          "income": "收入",
+          "investments": "投资"
+        }
+      }
+    },
+    "summary": {
+      "title": "期间总结",
+      "income": "总收入",
+      "expenses": "总支出",
+      "investments": "总投资",
+      "balance": "最终余额"
+    },
+    "charts": {
+      "incomeVsExpenses": "收入 vs 支出",
+      "investments": "投资",
+      "distribution": "价值分布"
+    },
+    "empty": {
+      "title": "未找到数据",
+      "description": "没有数据可以生成报告。添加收入、支出或投资以开始。",
+      "addIncome": "添加收入",
+      "addExpense": "添加支出",
+      "addInvestment": "添加投资"
+    }
+  },
+  "pages": {
+    "home": "首页 - Save Money",
+    "expenses": "支出 - Save Money",
+    "income": "收入 - Save Money",
+    "categories": "类别 - Save Money",
+    "reminders": "提醒 - Save Money",
+    "goals": "目标 - Save Money",
+    "reports": "报告 - Save Money",
+    "investments": "投资 - Save Money",
+    "profile": "个人资料 - Save Money",
+    "register": "注册 - Save Money",
+    "about": "关于我们 - Save Money",
+    "contact": "联系我们 - Save Money",
+    "tests": "测试报告 - Save Money",
+    "login": "登录 - Save Money",
+    "resetPassword": "重置密码 - Save Money",
+    "currency_converter": "货币转换器 - Save Money",
+    "notFound": "页面未找到 - Save Money"
+  },
+  "history": {
+    "title": "历史记录",
+    "close": "关闭",
+    "noHistory": "未找到历史记录",
+    "date": "{{date}} {{time}}",
+    "action": {
+      "created": "已创建",
+      "updated": "已更新",
+      "deleted": "已删除"
+    }
+  }
+}

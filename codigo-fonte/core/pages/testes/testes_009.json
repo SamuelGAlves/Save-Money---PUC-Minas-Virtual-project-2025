@@ -1,0 +1,421 @@
+{
+  "stats": {
+    "suites": 6,
+    "tests": 12,
+    "passes": 12,
+    "pending": 0,
+    "failures": 0,
+    "start": "2025-06-18T09:12:48.220Z",
+    "end": "2025-06-18T09:13:49.192Z",
+    "duration": 60972,
+    "testsRegistered": 12,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "0b77b97f-32d2-4553-b07b-d9df813e98ea",
+      "title": "",
+      "fullFile": "cypress\\e2e\\paginas_loaders.spec.cy.js",
+      "file": "cypress\\e2e\\paginas_loaders.spec.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "d9691abd-5262-471f-a8ee-bb4d7bd1b85d",
+          "title": "Loaders nas Páginas [mobile, light-mode]",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "deve exibir loader na página de login ao tentar fazer login",
+              "fullTitle": "Loaders nas Páginas [mobile, light-mode] deve exibir loader na página de login ao tentar fazer login",
+              "timedOut": null,
+              "duration": 3938,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('/login', {\n  failOnStatusCode: false\n});\ncy.document().should('have.property', 'readyState', 'complete');\ncy.get('save-money-core', {\n  timeout: 20000\n}).should('exist');\ncy.wait(1000);\n// Preenche o formulário de login\ncy.get('app-input[label=\"E-mail\"]', {\n  timeout: 5000\n}).find('input').type('teste@teste.com');\ncy.get('app-input[label=\"Senha\"]').find('input').type('senha123');\n// Clica no botão de login\ncy.get('app-button#login-button').find('button').click({\n  force: true\n});\n// Verifica se o loader aparece durante a tentativa de login\ncy.get('app-loader', {\n  timeout: 5000\n}).should('exist').and('be.visible');\ncy.takeScreenshotWithContext({\n  device,\n  theme,\n  name: 'loader-pagina-login'\n});\ncy.get('app-loader', {\n  timeout: 10000\n}).should('not.exist');",
+              "err": {},
+              "uuid": "83e1d6f6-eef1-43bd-b172-11cfb53a5b88",
+              "parentUUID": "d9691abd-5262-471f-a8ee-bb4d7bd1b85d",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "deve exibir loader na página de cadastro",
+              "fullTitle": "Loaders nas Páginas [mobile, light-mode] deve exibir loader na página de cadastro",
+              "timedOut": null,
+              "duration": 6424,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('/registration', {\n  failOnStatusCode: false\n});\ncy.document().should('have.property', 'readyState', 'complete');\ncy.get('save-money-core', {\n  timeout: 20000\n}).should('exist');\nconst nome = 'Lucas Ferreira';\nconst email = `lucas_ferreira_${Date.now()}@sga.pucminas.br`;\nconst documento = '209.737.160-45';\nconst senha = 'Teste@123';\ncy.wait(1000);\n// Cadastro\ncy.get('app-input[label=\"Nome completo\"]').find('input').type(nome);\ncy.get('app-input[label=\"E-mail\"]').find('input').type(email);\ncy.get('app-input[label=\"Documento\"]').find('input').type(documento);\ncy.get('app-input[label=\"Senha\"]').find('input').type(senha);\ncy.get('app-input[label=\"Confirme a senha\"]').find('input').type(senha);\ncy.get('app-checkbox#termos').shadow().find('input[type=\"checkbox\"]').check({\n  force: true\n});\ncy.get('app-button#registration-button').find('button').click();\ncy.get('app-loader', {\n  timeout: 10000\n}).should('exist').and('be.visible');\ncy.takeScreenshotWithContext({\n  device,\n  theme,\n  name: 'loader-pagina-cadastro'\n});\ncy.get('app-loader', {\n  timeout: 10000\n}).should('not.exist');",
+              "err": {},
+              "uuid": "fb692576-72c3-4782-be14-2e2e14ac57ea",
+              "parentUUID": "d9691abd-5262-471f-a8ee-bb4d7bd1b85d",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "83e1d6f6-eef1-43bd-b172-11cfb53a5b88",
+            "fb692576-72c3-4782-be14-2e2e14ac57ea"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 10362,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "4ccd366b-80cd-4d99-8bf7-ac0707a0e82e",
+          "title": "Loaders nas Páginas [mobile, dark-mode]",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "deve exibir loader na página de login ao tentar fazer login",
+              "fullTitle": "Loaders nas Páginas [mobile, dark-mode] deve exibir loader na página de login ao tentar fazer login",
+              "timedOut": null,
+              "duration": 3614,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('/login', {\n  failOnStatusCode: false\n});\ncy.document().should('have.property', 'readyState', 'complete');\ncy.get('save-money-core', {\n  timeout: 20000\n}).should('exist');\ncy.wait(1000);\n// Preenche o formulário de login\ncy.get('app-input[label=\"E-mail\"]', {\n  timeout: 5000\n}).find('input').type('teste@teste.com');\ncy.get('app-input[label=\"Senha\"]').find('input').type('senha123');\n// Clica no botão de login\ncy.get('app-button#login-button').find('button').click({\n  force: true\n});\n// Verifica se o loader aparece durante a tentativa de login\ncy.get('app-loader', {\n  timeout: 5000\n}).should('exist').and('be.visible');\ncy.takeScreenshotWithContext({\n  device,\n  theme,\n  name: 'loader-pagina-login'\n});\ncy.get('app-loader', {\n  timeout: 10000\n}).should('not.exist');",
+              "err": {},
+              "uuid": "bc56f810-fc1f-4b10-bf5d-c2443d4f6873",
+              "parentUUID": "4ccd366b-80cd-4d99-8bf7-ac0707a0e82e",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "deve exibir loader na página de cadastro",
+              "fullTitle": "Loaders nas Páginas [mobile, dark-mode] deve exibir loader na página de cadastro",
+              "timedOut": null,
+              "duration": 6521,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('/registration', {\n  failOnStatusCode: false\n});\ncy.document().should('have.property', 'readyState', 'complete');\ncy.get('save-money-core', {\n  timeout: 20000\n}).should('exist');\nconst nome = 'Lucas Ferreira';\nconst email = `lucas_ferreira_${Date.now()}@sga.pucminas.br`;\nconst documento = '209.737.160-45';\nconst senha = 'Teste@123';\ncy.wait(1000);\n// Cadastro\ncy.get('app-input[label=\"Nome completo\"]').find('input').type(nome);\ncy.get('app-input[label=\"E-mail\"]').find('input').type(email);\ncy.get('app-input[label=\"Documento\"]').find('input').type(documento);\ncy.get('app-input[label=\"Senha\"]').find('input').type(senha);\ncy.get('app-input[label=\"Confirme a senha\"]').find('input').type(senha);\ncy.get('app-checkbox#termos').shadow().find('input[type=\"checkbox\"]').check({\n  force: true\n});\ncy.get('app-button#registration-button').find('button').click();\ncy.get('app-loader', {\n  timeout: 10000\n}).should('exist').and('be.visible');\ncy.takeScreenshotWithContext({\n  device,\n  theme,\n  name: 'loader-pagina-cadastro'\n});\ncy.get('app-loader', {\n  timeout: 10000\n}).should('not.exist');",
+              "err": {},
+              "uuid": "a8e1e002-d0df-4cc9-a2d8-4cbaaee1d74d",
+              "parentUUID": "4ccd366b-80cd-4d99-8bf7-ac0707a0e82e",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "bc56f810-fc1f-4b10-bf5d-c2443d4f6873",
+            "a8e1e002-d0df-4cc9-a2d8-4cbaaee1d74d"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 10135,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "fa85a378-2204-4d6d-a1d8-ee41ad1d7ded",
+          "title": "Loaders nas Páginas [tablet, light-mode]",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "deve exibir loader na página de login ao tentar fazer login",
+              "fullTitle": "Loaders nas Páginas [tablet, light-mode] deve exibir loader na página de login ao tentar fazer login",
+              "timedOut": null,
+              "duration": 3626,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('/login', {\n  failOnStatusCode: false\n});\ncy.document().should('have.property', 'readyState', 'complete');\ncy.get('save-money-core', {\n  timeout: 20000\n}).should('exist');\ncy.wait(1000);\n// Preenche o formulário de login\ncy.get('app-input[label=\"E-mail\"]', {\n  timeout: 5000\n}).find('input').type('teste@teste.com');\ncy.get('app-input[label=\"Senha\"]').find('input').type('senha123');\n// Clica no botão de login\ncy.get('app-button#login-button').find('button').click({\n  force: true\n});\n// Verifica se o loader aparece durante a tentativa de login\ncy.get('app-loader', {\n  timeout: 5000\n}).should('exist').and('be.visible');\ncy.takeScreenshotWithContext({\n  device,\n  theme,\n  name: 'loader-pagina-login'\n});\ncy.get('app-loader', {\n  timeout: 10000\n}).should('not.exist');",
+              "err": {},
+              "uuid": "9e8b8843-2caf-4235-a85b-982bbebe03e8",
+              "parentUUID": "fa85a378-2204-4d6d-a1d8-ee41ad1d7ded",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "deve exibir loader na página de cadastro",
+              "fullTitle": "Loaders nas Páginas [tablet, light-mode] deve exibir loader na página de cadastro",
+              "timedOut": null,
+              "duration": 6371,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('/registration', {\n  failOnStatusCode: false\n});\ncy.document().should('have.property', 'readyState', 'complete');\ncy.get('save-money-core', {\n  timeout: 20000\n}).should('exist');\nconst nome = 'Lucas Ferreira';\nconst email = `lucas_ferreira_${Date.now()}@sga.pucminas.br`;\nconst documento = '209.737.160-45';\nconst senha = 'Teste@123';\ncy.wait(1000);\n// Cadastro\ncy.get('app-input[label=\"Nome completo\"]').find('input').type(nome);\ncy.get('app-input[label=\"E-mail\"]').find('input').type(email);\ncy.get('app-input[label=\"Documento\"]').find('input').type(documento);\ncy.get('app-input[label=\"Senha\"]').find('input').type(senha);\ncy.get('app-input[label=\"Confirme a senha\"]').find('input').type(senha);\ncy.get('app-checkbox#termos').shadow().find('input[type=\"checkbox\"]').check({\n  force: true\n});\ncy.get('app-button#registration-button').find('button').click();\ncy.get('app-loader', {\n  timeout: 10000\n}).should('exist').and('be.visible');\ncy.takeScreenshotWithContext({\n  device,\n  theme,\n  name: 'loader-pagina-cadastro'\n});\ncy.get('app-loader', {\n  timeout: 10000\n}).should('not.exist');",
+              "err": {},
+              "uuid": "7ec2c2bf-c5ef-432d-84de-3fac61e9e1fa",
+              "parentUUID": "fa85a378-2204-4d6d-a1d8-ee41ad1d7ded",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "9e8b8843-2caf-4235-a85b-982bbebe03e8",
+            "7ec2c2bf-c5ef-432d-84de-3fac61e9e1fa"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 9997,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "e5386dde-a75a-4164-874d-489110d54a6a",
+          "title": "Loaders nas Páginas [tablet, dark-mode]",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "deve exibir loader na página de login ao tentar fazer login",
+              "fullTitle": "Loaders nas Páginas [tablet, dark-mode] deve exibir loader na página de login ao tentar fazer login",
+              "timedOut": null,
+              "duration": 3615,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('/login', {\n  failOnStatusCode: false\n});\ncy.document().should('have.property', 'readyState', 'complete');\ncy.get('save-money-core', {\n  timeout: 20000\n}).should('exist');\ncy.wait(1000);\n// Preenche o formulário de login\ncy.get('app-input[label=\"E-mail\"]', {\n  timeout: 5000\n}).find('input').type('teste@teste.com');\ncy.get('app-input[label=\"Senha\"]').find('input').type('senha123');\n// Clica no botão de login\ncy.get('app-button#login-button').find('button').click({\n  force: true\n});\n// Verifica se o loader aparece durante a tentativa de login\ncy.get('app-loader', {\n  timeout: 5000\n}).should('exist').and('be.visible');\ncy.takeScreenshotWithContext({\n  device,\n  theme,\n  name: 'loader-pagina-login'\n});\ncy.get('app-loader', {\n  timeout: 10000\n}).should('not.exist');",
+              "err": {},
+              "uuid": "f026c8cd-5ce0-4876-9db0-886c0f4ab91c",
+              "parentUUID": "e5386dde-a75a-4164-874d-489110d54a6a",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "deve exibir loader na página de cadastro",
+              "fullTitle": "Loaders nas Páginas [tablet, dark-mode] deve exibir loader na página de cadastro",
+              "timedOut": null,
+              "duration": 6397,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('/registration', {\n  failOnStatusCode: false\n});\ncy.document().should('have.property', 'readyState', 'complete');\ncy.get('save-money-core', {\n  timeout: 20000\n}).should('exist');\nconst nome = 'Lucas Ferreira';\nconst email = `lucas_ferreira_${Date.now()}@sga.pucminas.br`;\nconst documento = '209.737.160-45';\nconst senha = 'Teste@123';\ncy.wait(1000);\n// Cadastro\ncy.get('app-input[label=\"Nome completo\"]').find('input').type(nome);\ncy.get('app-input[label=\"E-mail\"]').find('input').type(email);\ncy.get('app-input[label=\"Documento\"]').find('input').type(documento);\ncy.get('app-input[label=\"Senha\"]').find('input').type(senha);\ncy.get('app-input[label=\"Confirme a senha\"]').find('input').type(senha);\ncy.get('app-checkbox#termos').shadow().find('input[type=\"checkbox\"]').check({\n  force: true\n});\ncy.get('app-button#registration-button').find('button').click();\ncy.get('app-loader', {\n  timeout: 10000\n}).should('exist').and('be.visible');\ncy.takeScreenshotWithContext({\n  device,\n  theme,\n  name: 'loader-pagina-cadastro'\n});\ncy.get('app-loader', {\n  timeout: 10000\n}).should('not.exist');",
+              "err": {},
+              "uuid": "a343eb98-df1f-44ed-8cdb-ed0c5b1a8650",
+              "parentUUID": "e5386dde-a75a-4164-874d-489110d54a6a",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "f026c8cd-5ce0-4876-9db0-886c0f4ab91c",
+            "a343eb98-df1f-44ed-8cdb-ed0c5b1a8650"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 10012,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "fc560afe-3e26-4d45-b2c5-3f7f0c5559c3",
+          "title": "Loaders nas Páginas [desktop, light-mode]",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "deve exibir loader na página de login ao tentar fazer login",
+              "fullTitle": "Loaders nas Páginas [desktop, light-mode] deve exibir loader na página de login ao tentar fazer login",
+              "timedOut": null,
+              "duration": 3623,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('/login', {\n  failOnStatusCode: false\n});\ncy.document().should('have.property', 'readyState', 'complete');\ncy.get('save-money-core', {\n  timeout: 20000\n}).should('exist');\ncy.wait(1000);\n// Preenche o formulário de login\ncy.get('app-input[label=\"E-mail\"]', {\n  timeout: 5000\n}).find('input').type('teste@teste.com');\ncy.get('app-input[label=\"Senha\"]').find('input').type('senha123');\n// Clica no botão de login\ncy.get('app-button#login-button').find('button').click({\n  force: true\n});\n// Verifica se o loader aparece durante a tentativa de login\ncy.get('app-loader', {\n  timeout: 5000\n}).should('exist').and('be.visible');\ncy.takeScreenshotWithContext({\n  device,\n  theme,\n  name: 'loader-pagina-login'\n});\ncy.get('app-loader', {\n  timeout: 10000\n}).should('not.exist');",
+              "err": {},
+              "uuid": "83391388-1950-4242-875f-f19b4a348a83",
+              "parentUUID": "fc560afe-3e26-4d45-b2c5-3f7f0c5559c3",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "deve exibir loader na página de cadastro",
+              "fullTitle": "Loaders nas Páginas [desktop, light-mode] deve exibir loader na página de cadastro",
+              "timedOut": null,
+              "duration": 6411,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('/registration', {\n  failOnStatusCode: false\n});\ncy.document().should('have.property', 'readyState', 'complete');\ncy.get('save-money-core', {\n  timeout: 20000\n}).should('exist');\nconst nome = 'Lucas Ferreira';\nconst email = `lucas_ferreira_${Date.now()}@sga.pucminas.br`;\nconst documento = '209.737.160-45';\nconst senha = 'Teste@123';\ncy.wait(1000);\n// Cadastro\ncy.get('app-input[label=\"Nome completo\"]').find('input').type(nome);\ncy.get('app-input[label=\"E-mail\"]').find('input').type(email);\ncy.get('app-input[label=\"Documento\"]').find('input').type(documento);\ncy.get('app-input[label=\"Senha\"]').find('input').type(senha);\ncy.get('app-input[label=\"Confirme a senha\"]').find('input').type(senha);\ncy.get('app-checkbox#termos').shadow().find('input[type=\"checkbox\"]').check({\n  force: true\n});\ncy.get('app-button#registration-button').find('button').click();\ncy.get('app-loader', {\n  timeout: 10000\n}).should('exist').and('be.visible');\ncy.takeScreenshotWithContext({\n  device,\n  theme,\n  name: 'loader-pagina-cadastro'\n});\ncy.get('app-loader', {\n  timeout: 10000\n}).should('not.exist');",
+              "err": {},
+              "uuid": "9f22a0d0-bdf9-415d-8ef4-1c47e121fb04",
+              "parentUUID": "fc560afe-3e26-4d45-b2c5-3f7f0c5559c3",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "83391388-1950-4242-875f-f19b4a348a83",
+            "9f22a0d0-bdf9-415d-8ef4-1c47e121fb04"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 10034,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "d015ccc2-e67d-4613-92b6-de1c862e6a75",
+          "title": "Loaders nas Páginas [desktop, dark-mode]",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "deve exibir loader na página de login ao tentar fazer login",
+              "fullTitle": "Loaders nas Páginas [desktop, dark-mode] deve exibir loader na página de login ao tentar fazer login",
+              "timedOut": null,
+              "duration": 3669,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('/login', {\n  failOnStatusCode: false\n});\ncy.document().should('have.property', 'readyState', 'complete');\ncy.get('save-money-core', {\n  timeout: 20000\n}).should('exist');\ncy.wait(1000);\n// Preenche o formulário de login\ncy.get('app-input[label=\"E-mail\"]', {\n  timeout: 5000\n}).find('input').type('teste@teste.com');\ncy.get('app-input[label=\"Senha\"]').find('input').type('senha123');\n// Clica no botão de login\ncy.get('app-button#login-button').find('button').click({\n  force: true\n});\n// Verifica se o loader aparece durante a tentativa de login\ncy.get('app-loader', {\n  timeout: 5000\n}).should('exist').and('be.visible');\ncy.takeScreenshotWithContext({\n  device,\n  theme,\n  name: 'loader-pagina-login'\n});\ncy.get('app-loader', {\n  timeout: 10000\n}).should('not.exist');",
+              "err": {},
+              "uuid": "06b38903-a4db-4d7e-8bd2-3678e7259817",
+              "parentUUID": "d015ccc2-e67d-4613-92b6-de1c862e6a75",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "deve exibir loader na página de cadastro",
+              "fullTitle": "Loaders nas Páginas [desktop, dark-mode] deve exibir loader na página de cadastro",
+              "timedOut": null,
+              "duration": 6386,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('/registration', {\n  failOnStatusCode: false\n});\ncy.document().should('have.property', 'readyState', 'complete');\ncy.get('save-money-core', {\n  timeout: 20000\n}).should('exist');\nconst nome = 'Lucas Ferreira';\nconst email = `lucas_ferreira_${Date.now()}@sga.pucminas.br`;\nconst documento = '209.737.160-45';\nconst senha = 'Teste@123';\ncy.wait(1000);\n// Cadastro\ncy.get('app-input[label=\"Nome completo\"]').find('input').type(nome);\ncy.get('app-input[label=\"E-mail\"]').find('input').type(email);\ncy.get('app-input[label=\"Documento\"]').find('input').type(documento);\ncy.get('app-input[label=\"Senha\"]').find('input').type(senha);\ncy.get('app-input[label=\"Confirme a senha\"]').find('input').type(senha);\ncy.get('app-checkbox#termos').shadow().find('input[type=\"checkbox\"]').check({\n  force: true\n});\ncy.get('app-button#registration-button').find('button').click();\ncy.get('app-loader', {\n  timeout: 10000\n}).should('exist').and('be.visible');\ncy.takeScreenshotWithContext({\n  device,\n  theme,\n  name: 'loader-pagina-cadastro'\n});\ncy.get('app-loader', {\n  timeout: 10000\n}).should('not.exist');",
+              "err": {},
+              "uuid": "b36e7882-86fb-43fe-9ebf-6f7447a0d364",
+              "parentUUID": "d015ccc2-e67d-4613-92b6-de1c862e6a75",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "06b38903-a4db-4d7e-8bd2-3678e7259817",
+            "b36e7882-86fb-43fe-9ebf-6f7447a0d364"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 10055,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "testes",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "../codigo-fonte/core/pages/testes",
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "charts": true,
+        "reportTitle": "Relatório de Testes Save Money",
+        "reportPageTitle": "Testes Automatizados - Save Money",
+        "embeddedScreenshots": true,
+        "inlineAssets": true,
+        "saveAllAttempts": true,
+        "reportFilename": "testes"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

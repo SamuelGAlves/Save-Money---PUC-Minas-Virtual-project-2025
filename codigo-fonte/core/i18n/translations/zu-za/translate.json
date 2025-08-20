@@ -1,0 +1,933 @@
+{
+  "common": {
+    "currency": "ZAR",
+    "language": "zu-ZA",
+    "actions": {
+      "edit": "Hlela",
+      "delete": "Susa",
+      "save": "Londoloza",
+      "cancel": "Khansela",
+      "confirm": "Qinisekisa",
+      "close": "Vala",
+      "add": "Engeza into entsha",
+      "select": "Imo Yokukhetha"
+    },
+    "filters": {
+      "search": "Sesha",
+      "sort": "Hlela",
+      "status": "Isimo",
+      "show": "Bonisa izihlungi",
+      "hide": "Fihla izihlungi",
+      "clear": "Sula",
+      "cleared": "Izihlungi zisulwe ngempumelelo!",
+      "sortOptions": {
+        "value-desc": "Inani eliphezulu",
+        "value-asc": "Inani eliphansi",
+        "date-desc": "Kusanda kudlula",
+        "date-asc": "Kudala"
+      }
+    },
+    "status": {
+      "active": "Iyasebenza",
+      "finished": "Kugcwele",
+      "available": "Iyatholakala",
+      "last-day": "Usuku lokugcina",
+      "starting-today": "Kuqala namhlanje",
+      "paid": "Ikhokhelwe",
+      "overdue": "Iphelelwe yisikhathi",
+      "today": "Kufanele namhlanje",
+      "future": "Kufanele ngemva kwezinsuku ezingu-{{days}}",
+      "tomorrow": "Kufanele kusasa",
+      "no-due-date": "Akunosuku lokufanele",
+      "complete": "Kukhokhelwe ngokugcwele"
+    },
+    "card": {
+      "title": "Into",
+      "value": "Inani",
+      "date": "Usuku",
+      "recurrence": {
+        "title": "Ukuphindaphinda",
+        "weekly": "Masonto onke",
+        "monthly": "Ngenyanga yonke",
+        "yearly": "Ngeminyaka yonke",
+        "repetitions": "Ukuphindaphinda",
+        "indefinite": "Okungapheli",
+        "times": "Izikhathi ezingu-{{count}}",
+        "badge": "Ephindaphindayo"
+      },
+      "actions": {
+        "delete": "Susa",
+        "edit": "Hlela",
+        "history": "Umlando",
+        "recurring": "Ukuphindaphinda"
+      },
+      "status": {
+        "today": "Kufuneka namhlanje",
+        "available": "Iyatholakala",
+        "unavailable": "Ayitholakali",
+        "pending": "Ilindile",
+        "completed": "Iqediwe",
+        "error": "Iphutha"
+      }
+    },
+    "buttons": {
+      "cancel": "Khansela",
+      "save": "Londoloza",
+      "edit": "Hlela",
+      "delete": "Susa",
+      "close": "Vala",
+      "confirm": "Qinisekisa",
+      "back": "Emuva",
+      "next": "Olandelayo",
+      "previous": "Owedlule"
+    }
+  },
+  "navigation": {
+    "toggle": "Shintsha ukuqondisa",
+    "home": "Ikhaya",
+    "expenses": "Izindleko",
+    "income": "Imali engenayo",
+    "categories": "Izigaba",
+    "reminders": "Ezizayo",
+    "goals": "Izinhloso",
+    "reports": "Imibiko",
+    "investments": "Ukutshalwa kwezimali",
+    "profile": "Iphrofayili",
+    "register": "Bhalisa",
+    "about": "Mayelana",
+    "contact": "Xhumana",
+    "tests": "Umbiko wokuhlola",
+    "login": "Ngena",
+    "main": "Okuyinhloko",
+    "finances": "Ezimali",
+    "management": "Ukuphatha",
+    "information": "Ulwazi",
+    "settings": "Izilungiselelo",
+    "resetPassword": "Setha kabusha iphasiwedi",
+    "currency_converter": "Iguquli"
+  },
+  "input": {
+    "password": {
+      "show": "Bonisa iphasiwedi",
+      "hide": "Fihla iphasiwedi",
+      "requirements": "Izidingo zephasiwedi:",
+      "minLength": "Okungenani izinhlamvu eziyi-8",
+      "uppercase": "Okungenani uhlamvu olukhulu olulodwa",
+      "lowercase": "Okungenani uhlamvu oluncane olulodwa",
+      "numbers": "Okungenani inombolo eyodwa",
+      "specialChar": "Okungenani uhlamvu olukhethekile olulodwa",
+      "errors": {
+        "minLength": "Iphasiwedi kumele ibe nezinhlamvu ezingu-{{minLength}} okungenani",
+        "uppercase": "Iphasiwedi kumele ibe nokungenani uhlamvu olukhulu olulodwa",
+        "lowercase": "Iphasiwedi kumele ibe nokungenani uhlamvu oluncane olulodwa",
+        "numbers": "Iphasiwedi kumele ibe nokungenani inombolo eyodwa",
+        "specialChar": "Iphasiwedi kumele ibe nokungenani uhlamvu olukhethekile olulodwa"
+      }
+    },
+    "preventCopyPaste": {
+      "copy": "Ukukopisha okuqukethwe kule ndawo akuvunyelwe",
+      "paste": "Ukunamathisela okuqukethwe kule ndawo akuvunyelwe",
+      "cut": "Ukucheba okuqukethwe kule ndawo akuvunyelwe",
+      "contextMenu": "Imenyu yomongo ivaliwe kule ndawo"
+    },
+    "required": "Le nkambu iyadingeka",
+    "email": "Faka i-imeyili evumelekile",
+    "minlength": "Inkambu {{field}} kumele ibe nezinhlamvu ezingu-{{min}} okungenani",
+    "maxlength": "Inkambu {{field}} ifinyelele emkhawulweni wezinhlamvu ezingu-{{max}}",
+    "min": "Inani lenkambu {{field}} kumele libe likhulu noma lilingane no-{{min}}",
+    "max": "Inani lenkambu {{field}} kumele libe lincane noma lilingane no-{{max}}"
+  },
+  "login": {
+    "title": "Ngena",
+    "email": {
+      "label": "I-imeyili",
+      "placeholder": "Faka i-imeyili yakho",
+      "required": "Faka i-imeyili"
+    },
+    "password": {
+      "label": "Iphasiwedi",
+      "placeholder": "Faka iphasiwedi yakho",
+      "required": "Faka iphasiwedi"
+    },
+    "button": "Ngena",
+    "forgotPassword": "Ukhohlwe i-imeyili noma iphasiwedi?",
+    "forgotPasswordLink": "Chofoza lapha",
+    "register": "Bhalisa",
+    "loading": "Iyangenisa...",
+    "success": "Ukungena kuphumelele!",
+    "error": "Iphutha elingalindelekile ekungeneni.",
+    "fillFields": "Gcwalisa wonke amasimu ukuze uqhubeke."
+  },
+  "remember": {
+    "title": "Buyisa Iphasiwedi",
+    "email": {
+      "label": "I-imeyili",
+      "placeholder": "Faka i-imeyili yakho",
+      "required": "Sicela ufake i-imeyili"
+    },
+    "button": "Thumela imiyalelo",
+    "loading": "Kuthunyelwa imiyalelo ku-imeyili yakho...",
+    "success": "Imiyalelo yokusetha kabusha iphasiwedi ithunyelwe ku-imeyili yakho.",
+    "error": "Iphutha ekuthumeleni imiyalelo. Sicela uzame futhi.",
+    "notFound": "I-imeyili ayitholakali ohlelweni.",
+    "fillFields": "Sicela ugcwalise inkambu ye-imeyili ukuze uqhubeke."
+  },
+  "registration": {
+    "title": "Dala i-akhawunti",
+    "name": {
+      "label": "Igama eliphelele",
+      "placeholder": "Faka igama lakho eliphelele",
+      "required": "Igama liyadingeka"
+    },
+    "email": {
+      "label": "I-imeyili",
+      "placeholder": "Faka i-imeyili yakho",
+      "required": "I-imeyili iyadingeka",
+      "invalid": "I-imeyili engavumelekile",
+      "alreadyExists": "Le imeyili isivele ibhalisiwe"
+    },
+    "document": {
+      "label": "Idokhumenti",
+      "cpf": {
+        "placeholder": "Faka i-CPF yakho",
+        "invalid": "I-CPF engavumelekile"
+      },
+      "cnpj": {
+        "placeholder": "Faka i-CNPJ yakho",
+        "invalid": "I-CNPJ engavumelekile"
+      },
+      "required": "Faka idokhumenti"
+    },
+    "password": {
+      "label": "Iphasiwedi",
+      "placeholder": "Faka iphasiwedi yakho",
+      "required": "Faka iphasiwedi",
+      "requirements": {
+        "title": "Iphasiwedi yakho kumele ibe:",
+        "minLength": "• Okungenani izinhlamvu eziyi-8",
+        "uppercase": "• Uhlamvu olukhulu olulodwa (A-Z)",
+        "lowercase": "• Uhlamvu oluncane olulodwa (a-z)",
+        "number": "• Inombolo eyodwa (0-9)",
+        "special": "• Uhlamvu olukhethekile olulodwa (!@#$%^&*(),.?\":{}|<>)"
+      }
+    },
+    "confirmPassword": {
+      "label": "Qinisekisa iphasiwedi",
+      "placeholder": "Faka iphasiwedi yakho futhi",
+      "required": "Qinisekisa iphasiwedi",
+      "mismatch": "Amaphasiwedi awafani!"
+    },
+    "terms": {
+      "label": "Ngifunde futhi ngivumelana nemigomo yokusebenzisa kanye nenqubomgomo yobumfihlo",
+      "required": "Kumele uvumele imigomo yokusebenzisa kanye nenqubomgomo yobumfihlo"
+    },
+    "button": "Dala i-akhawunti",
+    "loading": "Kudalwa i-akhawunti yakho...",
+    "success": "I-akhawunti idaliwe ngempumelelo!",
+    "error": "Iphutha ekudaleni i-akhawunti.",
+    "fillFields": "Gcwalisa wonke amasimu ukuze uqhubeke."
+  },
+  "currency": {
+    "format": {
+      "style": "currency",
+      "currency": "ZAR"
+    }
+  },
+  "logo": {
+    "title": "Save Money",
+    "subtitle": "Ubuchwepheshe be-PUC Minas",
+    "ariaLabel": "Ilogo ye-Save Money Ubuchwepheshe be-PUC Minas"
+  },
+  "home": {
+    "welcome": "Sawubona, {{name}}!",
+    "user": "Umsebenzisi",
+    "balance": {
+      "title": "I-balance yakho:",
+      "show": "Bonisa i-balance",
+      "hide": "Fihla i-balance"
+    },
+    "wallet": {
+      "alt": "Isikhwama"
+    },
+    "investments": {
+      "title": "Isamba Sokutshalwa Kwezimali"
+    },
+    "income": {
+      "title": "Isamba Semali Engenayo"
+    },
+    "expenses": {
+      "title": "Isamba Sezindleko"
+    },
+    "total": "Isamba",
+    "converted": "Kuguqulwe",
+    "estimated": "Kulinganiselwe",
+    "viewDetails": "Buka imininingwane",
+    "hero": {
+      "title": "Lawula Izimali Zakho Ngobuhlakani",
+      "description": "I-SaveMoney iyisixazululo esiphelele sokulawula izindleko, ukonga kanye nokufeza izinhloso zakho zezimali.",
+      "cta": "Qala Manje"
+    },
+    "features": {
+      "title": "Izici Ezibalulekile",
+      "financialControl": {
+        "title": "Ukulawula Kwezimali",
+        "description": "Landela imali yakho engenayo kanye nezindleko ngesikhathi sangempela ngokuhlukanisa ngokuzenzakalelayo kanye nemibiko enemininingwane."
+      },
+      "reports": {
+        "title": "Imibiko Enemininingwane",
+        "description": "Buka amagrafu kanye nemibiko ekusiza ukuba uqonde kangcono imikhuba yakho yezimali."
+      },
+      "savings": {
+        "title": "Izinhloso Zokonga",
+        "description": "Setha izinhloso zakho zokonga bese ulandela inqubekelaphambili yakho usebenzisa amathuluzi aqondile."
+      }
+    },
+    "testimonials": {
+      "title": "Abasebenzisi Bethu Bathini",
+      "user1": {
+        "quote": "I-SaveMoney ishintshe ngokuphelele indlela engibheka ngayo imali. Manje ngiyakwazi ukonga nokutshala imali ngenkolelo enkulu.",
+        "name": "Nokwanda Dlamini",
+        "role": "Umsebenzisi Kusukela ngo-2023"
+      },
+      "user2": {
+        "quote": "I-interface iqondile futhi imibiko iyasiza kakhulu. Ngiyayincoma kubo bonke abafuna ukulawula kangcono izimali zabo.",
+        "name": "Sipho Mkhize",
+        "role": "Umsebenzisi Kusukela ngo-2024"
+      }
+    },
+    "cta": {
+      "title": "Qala Ukonga Namhlanje",
+      "description": "Joyina izinkulungwane zabasebenzisi abasebevele bashintsha impilo yabo yezimali nge-SaveMoney.",
+      "button": "Dala I-akhawunti Yamahhala"
+    },
+    "recurring": {
+      "title": "Izinto Eziphindaphindayo",
+      "description": "Unezinto eziphindaphindayo ezithinta isamba sakho sezimali",
+      "info": "Amanani alinganiselwe afaka izinto eziphindaphindayo ezizophenduka ngokuzenzakalelayo ezikhathini ezizayo",
+      "investments": "Ukutshalwa Kwezimali Okuphendaphindayo",
+      "expenses": "Izindleko Eziphendaphindayo",
+      "income": "Imali Engenayo Ephendaphindayo",
+      "viewAll": "Buka Konke"
+    },
+    "empty": {
+      "title": "Wamukelekile ku-SaveMoney!",
+      "description": "Qala ukulawula izimali zakho ngokwengeza ukutshalwa kwezimali, imali engenayo kanye nezindleko zakho.",
+      "add_investment": "Engeza Ukutshalwa Kwezimali",
+      "add_income": "Engeza Imali Engenayo",
+      "add_expense": "Engeza Izindleko"
+    }
+  },
+  "contact": {
+    "title": "Xhumana",
+    "description": "Unemibuzo, iziphakamiso noma udinga usizo? Xhumana nathi ngefomu elingezansi noma usebenzise enye yezindlela zethu zokuxhasa.",
+    "form": {
+      "name": {
+        "label": "Igama",
+        "placeholder": "Faka igama lakho eliphelele",
+        "error": "Igama liyadingeka"
+      },
+      "email": {
+        "label": "I-imeyili",
+        "placeholder": "Faka i-imeyili yakho",
+        "error": "I-imeyili iyadingeka",
+        "invalid": "Sicela ufake ikheli le-imeyili elisebenzayo"
+      },
+      "recipient": {
+        "label": "Umamukeli",
+        "placeholder": "Khetha umamukeli",
+        "error": "Sicela ukhethe umamukeli",
+        "options": {
+          "general": "Ukuxhumana Okujwayelekile"
+        }
+      },
+      "subject": {
+        "label": "Isihloko",
+        "placeholder": "Faka isihloko somlayezo",
+        "error": "Isihloko siyadingeka"
+      },
+      "message": {
+        "label": "Umlayezo",
+        "placeholder": "Faka umlayezo wakho",
+        "error": "Umlayezo uyadingeka"
+      },
+      "submit": "Thumela Umlayezo",
+      "success": "Umlayezo uthunyelwe ngempumelelo! Sizokuxhumana nawe maduze.",
+      "error": "Kube nempazamo ekuthumeleni umlayezo. Sicela uzame futhi."
+    },
+    "info": {
+      "location": "I-Latin America, e-Brazil"
+    }
+  },
+  "about": {
+    "title": "Mayelana Nathi",
+    "mission": {
+      "title": "Umsebenzi Wethu",
+      "description": "I-SaveMoney iwuhlelo lwe-web olusha oluhlose ukuguqula indlela yokulawula izimali zomuntu siqu. Umsebenzi wethu ukusiza abantu ukuthi benze izinqumo ezihlakaniphile ngezimali nokufeza izinhloso zabo ngokusebenzisa amathuluzi ezimali ahlakaniphile nokulula ukuwasebenzisa."
+    },
+    "features": {
+      "financialControl": {
+        "title": "UkuLawula Kwezimali",
+        "description": "Lawula izimali zakho ngokuphelele ngokusebenzisa izigaba ezikhethekile nemibiko enemininingwane."
+      },
+      "investments": {
+        "title": "Ukutshalwa Kwezimali",
+        "description": "Landela futhi ukhulise ukutshalwa kwezimali zakho ngokusebenzisa amathuluzi okuhlaziya athuthukile."
+      },
+      "currencyConverter": {
+        "title": "Iguquli Yemali",
+        "description": "Guqula izimali ezahlukahlukene ngokushesha ngokusebenzisa amanani emali anamuhla."
+      },
+      "teamContact": {
+        "title": "Ukuxhumana Neqembu",
+        "description": "Xhumana ngqo neqembu lokusekela ukuze uthole usizo."
+      },
+      "personalAccount": {
+        "title": "I-akhawunti Yomuntu Siqu",
+        "description": "Lawula izimali zakho zomuntu siqu ngokulula nokuphepha."
+      },
+      "businessAccount": {
+        "title": "I-akhawunti Yebhizinisi",
+        "description": "Hlinzeka ngezixazululo ezimali eziphelele ezamabhizinisi amancane namaphakathi."
+      },
+      "multipleLanguages": {
+        "title": "Izilimi Eziningi",
+        "description": "Isikhombisi esinezilimi eziningi esisekela abasebenzisi abavela emazweni ahlukahlukene."
+      },
+      "multipleCurrencies": {
+        "title": "Izimali Eziningi",
+        "description": "Sekela izimali ezahlukahlukene zomhlaba."
+      },
+      "cryptocurrencies": {
+        "title": "Izimali Ze-Cryptocurrency",
+        "description": "Lawula futhi ulandele ukutshalwa kwezimali zakho ze-cryptocurrency."
+      }
+    },
+    "team": {
+      "title": "Iqembu Lethu",
+      "description": "Iqembu lethu labathuthukisi abanethalente futhi abanentshisekelo eliphezulu lisebenza ukwakha isipiliyoni sezimali esingcono kakhulu.",
+      "description1": "Save Money is developed by a dedicated team of students from the Analysis and Systems Development - Distance Learning course at PUC Minas.",
+      "description2": "Our team combines technical expertise with a passion for innovation to create a complete and accessible financial solution."
+    },
+    "puc": {
+      "title": "I-University Yase-Pontifical Catholic yase-Minas Gerais",
+      "description": "I-University Yase-Pontifical Catholic yase-Minas Gerais iyisikhungo esidumile semfundo ephakeme esaziwa ngokugqama kwayo kwezemfundo nokucwaninga. Kule ndawo ekhethekile, kuqalwe iphrojekthi ye-Save Money, uhlelo olusha oluhlose ukwenza ngcono ukuphathwa kwezimali zomuntu siqu. Ukusekelwa kwabafundisi kanye nabantu abasebenza ezemfundo kubalulekile ekuthuthukisweni kwephrojekthi, benikeza ukuhola kanye nezeluleko ezidingekayo ukuze iphumelele.",
+      "sections": {
+        "assistentes": "Abasizi Bezemfundo",
+        "microFund": "Othisha Besayensi Yemfundo Ephakeme"
+      },
+      "roles": {
+        "graoChanceler": "I-Chancellor Enkulu",
+        "reitor": "Umphathi",
+        "coordenacao": "Umlawuli",
+        "professor": "Uthisha",
+        "professora": "Uthisha",
+        "assistente": "Umsizi"
+      },
+      "members": {
+        "walmor": {
+          "name": "UDom Walmor Oliveira de Azevedo",
+          "description": "Ozalelwe eCocos (Bahia), uDom Walmor Oliveira de Azevedo ungumongameli we-University Yase-Pontifical Catholic yase-Minas Gerais kanye noMbhishobhi Omkhulu wase-Belo Horizonte, futhi ungumongameli we-Brazilian Episcopal Conference (CNBB). Uneziqu ze-PhD ku-Biblical Theology e-University yase-Pontifical Gregorian (Roma, Italy) kanye ne-Master's Degree ku-Biblical Sciences e-Pontifical Biblical Institute (Roma, Italy)."
+        },
+        "luis": {
+          "name": "UDkt. ULuis Henrique Eloy e Silva",
+          "description": "Uneziqu ze-PhD kanye ne-Master's Degree ku-Biblical Sciences e-Pontifical Biblical Institute kanye ne-Bachelor's Degree ku-Theology e-University yase-Pontifical Catholic yase-Rio de Janeiro. Waqeda izifundo zakhe ze-postdoctoral e-Theological Faculty yase-Ludwig-Maximilian University yase-Munich, eJalimane."
+        },
+        "joyce": {
+          "name": "UJoyce Christina de Paiva Carvalho",
+          "description": "Unguthisha kanye nomqondisi we-CST we-Systems Analysis and Development-EaD e-University Yase-Pontifical Catholic yase-Minas Gerais. Unolwazi oluningi ezobuchwepheshe bezolwazi, futhi unguthisha osezingeni lesine e-University Yase-Pontifical Catholic yase-Minas Gerais. Izindawo zakhe zokucwaninga zifaka i-databases, i-business intelligence, ukuhlaziya kanye nemidwebo, egxile ekuthuthukisweni kwesoftware."
+        },
+        "humberto": {
+          "name": "UHumberto Azevedo Negri do Carmo",
+          "description": "Uthisha oneminyaka engu-17 yokufundisa kanye neminyaka engu-37 yokuthuthukisa izinhlelo kanye nesoftware, osebenze e-CEFET-MG, PUC-MG, Newton Paiva kanye ne-UNA. Izindawo zakhe zobuchwepheshe zifaka izilimi zokuhlela, izinhlelo zolwazi, ubunjiniyela besoftware kanye nobunjiniyela. Ufunda nokwakhiwa kwekhompyutha."
+        },
+        "aline": {
+          "name": "UAline Luciana Cândido",
+          "description": "Umsizi wezemfundo, osekela abafundi kanye nezinqubo ze-ADS EaD course e-University Yase-Pontifical Catholic yase-Minas Gerais."
+        },
+        "ana": {
+          "name": "UAna Flávia Patrício de Barros",
+          "description": "Ophethe ukusekelwa kwezemfundo kanye nezinsizakalo zabafundi ze-ADS EaD course."
+        },
+        "camila": {
+          "name": "UCamila Cristina Gonçalves Marques de Moura",
+          "description": "Ophethe ukusekelwa kwezokuphatha kanye nezemfundo ze-ADS EaD course."
+        },
+        "gabriela": {
+          "name": "UGabriela Araújo Batista",
+          "description": "Osiza imisebenzi yansuku zonke yezemfundo kanye nothisha be-ADS EaD course."
+        },
+        "vanilda": {
+          "name": "UVanilda da Conceição de Oliveira",
+          "description": "Osekela ukuphathwa kwezemfundo kanye nezinsizakalo zabafundi ze-ADS EaD course."
+        },
+        "lucila": {
+          "name": "ULucila Ishiyuka",
+          "description": "Uneziqu ze-PhD ku-Computer Science e-UFMG, osebenza e-University Yase-Pontifical Catholic yase-Minas Gerais ezifundweni ze-postgraduate ze-computer science kanye nezifundo ze-computer, izintshisekelo zakhe zokucwaninga zifaka imfundo, ukwakhelwa kokusebenzisa umsebenzisi kanye nemidlalo yezemfundo."
+        },
+        "maria": {
+          "name": "UMaria Augusta Vieira Nelson",
+          "description": "Uneziqu ze-PhD ku-Computer Science e-University of Waterloo, unguthisha kanye nomqondisi wezifundo ze-Software Engineering e-University Yase-Pontifical Catholic yase-Minas Gerais, onolwazi oluningi ekufundiseni, ekucwaningeni kanye nasezindaweni, egxile ekuthuthukisweni kwesoftware."
+        },
+        "jane": {
+          "name": "UJane Carmelita das Dores Galvão de Aruda Barroso",
+          "description": "Uneziqu ze-Master's ku-Mathematics Education, ofundisa i-calculus kwezobuchwepheshe kanye nezobunjiniyela e-University Yase-Pontifical Catholic yase-Minas Gerais, futhi uhlanganyela nokuhlola kanye namaphrojekthi e-university extension."
+        },
+        "zulka": {
+          "name": "UZulka Iyalle Moreira Ferreira",
+          "description": "Isebenza kakhulu ezinhlelweni zomthetho e-Minas Gerais. Isebenza ne-Santander Bank S.A."
+        },
+        "livia": {
+          "name": "ULivia Borges Pádua",
+          "description": "Uneziqu ze-Master's ku-Communication e-University Yase-Pontifical Catholic yase-Minas Gerais (2009) futhi uhlobene ne-College of Communication and Arts (FCA)."
+        },
+        "rodrigo": {
+          "name": "URodrigo Richard Gomes",
+          "description": "Uneziqu ze-PhD ku-Bioinformatics e-UFMG, uqondisa izifundo ze-Information Systems kanye ne-Data Science specialization e-University Yase-Pontifical Catholic yase-Minas Gerais, onolwazi oluningi ezobuchwepheshe kanye nomculo."
+        },
+        "rommel": {
+          "name": "URommel Vieira Carneiro",
+          "description": "Uneziqu ze-Master's ku-Computer Science e-University Yase-Pontifical Catholic yase-Minas Gerais, ungumqondisi kanye nothisha wezifundo ze-Computer, onolwazi oluningi ekuphathweni kwephrojekthi kanye nokuthuthukiswa kwesoftware."
+        },
+        "bernardo": {
+          "name": "UBernardo Jeunon de Almeida",
+          "description": "Uneziqu ze-PhD ku-Spatial Information Processing, unguthisha kanye nomqondisi wezifundo ze-Information Systems e-University Yase-Pontifical Catholic yase-Minas Gerais, onolwazi oluningi kwezobunjiniyela kagesi, izibalo kanye nokucwaninga kwezindawo."
+        },
+        "silvio": {
+          "name": "USilvio Jamil Ferzoli Guimarães",
+          "description": "Uneziqu ze-PhD ku-Computer Science e-UFMG, unguthisha kanye nomcwaningi e-University Yase-Pontifical Catholic yase-Minas Gerais, egxile ekucubungulweni kwemifanekiso, amavidiyo kanye nokutholwa kolwazi."
+        },
+        "henrique": {
+          "name": "UHenrique Maia Veloso",
+          "description": "Uneziqu ze-PhD ku-Management e-USP, uthisha kanye umeluleki, onolwazi oluningi ekuphathweni, ekucwaningeni kanye nemfundo ephakeme, ocwaninga izihloko ezifana nokucindezeleka emsebenzini kanye nobunikazi."
+        },
+        "raquel": {
+          "name": "Raquel Alves Furtado",
+          "description": "PhD and Master in Administration, with an MBA in HR and a bachelor's in Social Communication. Professor at PUC Minas since 2002, working in Human Resources, Communication, Marketing, and Entrepreneurship. Manager of the PUC Carreiras project, certified coach, and researcher, with over 30 years of experience as a manager, consultant, and author of scientific articles."
+        }
+      }
+    }
+  },
+  "investments": {
+    "title": "Izimali Ezibekelwe",
+    "header": {
+      "total": "Isamba Esibekelwe",
+      "estimated": "Isamba Esilinganiselwe",
+      "items": "{{count}} isimali esibekelwe",
+      "add": "Isimali Esibekelwe Esisha"
+    },
+    "empty": {
+      "message": "Azikho izimali ezibhalisiwe.",
+      "filter": "Azikho izimali ezitholakele ngezihluzi zamanje."
+    },
+    "filters": {
+      "all": "Konke"
+    },
+    "modal": {
+      "title": "Ukutshalwa Kwezimali",
+      "create": "Ukutshalwa Kwezimali Okusha",
+      "edit": "Hlela Ukutshalwa Kwezimali"
+    },
+    "form": {
+      "title": "Isihloko:",
+      "value": "Inani:",
+      "startDate": "Usuku Lokuqala:",
+      "endDate": "Usuku Lokuqeda (okukhethwa kukho):",
+      "interestType": "Uhlobo Lwenzuzo:",
+      "interestRate": "Izinga Lenzuzo:",
+      "interestTypes": {
+        "none": "Akunanzuzo",
+        "month": "Ngenyanga",
+        "year": "Ngonyaka"
+      }
+    },
+    "validation": {
+      "title": "Isihloko siyadingeka.",
+      "value": "Inani kumele libe likhulu kune-$0.00.",
+      "startDate": "Usuku lokuqala luyadingeka.",
+      "endDate": "Usuku lokuqeda kumele lube ngemva kosuku lokuqala.",
+      "interestRate": "Izinga lenzuzo kumele libe likhulu kune-0."
+    },
+    "status": {
+      "startsIn": "Izoqala emalangeni angu-{{days}}",
+      "endsIn": "Izophela emalangeni angu-{{days}}"
+    },
+    "rentability": {
+      "current": "Inzuzo yamanje",
+      "total": "Inzuzo ephelele",
+      "expected": "Inzuzo elindelwe",
+      "expectedTotal": "Isamba esilindelwe"
+    },
+    "history": {
+      "title": "Umlando",
+      "changes": "Izinguquko",
+      "noChanges": "Azikho izinguquko ezirekhodiwe"
+    },
+    "confirmDelete": {
+      "title": "Susa ukutshalwa kwezimali",
+      "message": "Uqinisekile ukuthi ufuna ukususa lokhu kutshalwa kwezimali?",
+      "warning": "Lesi senzo asikwazi ukuhlehliswa."
+    },
+    "card": {
+      "title": "Ukutshalwa kwezimali",
+      "value": "Inani",
+      "date": "Usuku lokuqala",
+      "period": "Usuku lokuphela",
+      "interestRate": "Izinga lenzalo",
+      "interestTypes": {
+        "none": "Akunenzalo",
+        "month": "Ngenyanga",
+        "year": "Ngeminyaka"
+      },
+      "status": {
+        "finished": "Iqediwe",
+        "active": "Iyasebenza",
+        "future": "Ikusasa"
+      },
+      "rentability": {
+        "current": "Inzuzo yamanje",
+        "total": "Inzuzo ephelele",
+        "expected": "Inzuzo elindelwe",
+        "expectedTotal": "Isamba esilindelwe"
+      }
+    }
+  },
+  "income": {
+    "title": "Imali Egenayo",
+    "header": {
+      "total": "Isamba Semali Eningayo",
+      "items": "{{count}} imali eningayo",
+      "add": "Imali Egenayo Entsha"
+    },
+    "empty": {
+      "message": "Azikho izimali ezibhalisiwe.",
+      "filter": "Azikho izimali ezitholakele ngezihluzi zamanje."
+    },
+    "form": {
+      "title": "Isihloko",
+      "value": "Inani",
+      "date": "Usuku lokuthola",
+      "period": "Usuku lokuphela",
+      "received": "Itholakele",
+      "isRecurring": "Ephindaphindayo",
+      "recurrenceType": "Uhlobo lokuphindaphinda",
+      "recurrenceCount": "Inani lokuphindaphinda",
+      "currencyType": "Uhlobo lwemali",
+      "recurrenceTypes": {
+        "weekly": "Masonto onke",
+        "monthly": "Ngenyanga yonke",
+        "yearly": "Ngeminyaka yonke"
+      }
+    },
+    "history": {
+      "title": "Umlando",
+      "changes": "Izinguquko",
+      "noChanges": "Azikho izinguquko ezirekhodiwe"
+    },
+    "confirmDelete": {
+      "title": "Susa imali engenayo",
+      "message": "Uqinisekile ukuthi ufuna ukususa le mali engenayo?",
+      "warning": "Lesi senzo asikwazi ukuhlehliswa."
+    },
+    "card": {
+      "title": "Imali engenayo",
+      "value": "Inani",
+      "date": "Usuku lokuthola",
+      "period": "Usuku lokuphela",
+      "received": "Itholakele",
+      "status": {
+        "received": "Itholakele",
+        "today": "Iqala namhlanje",
+        "last-day": "Usuku lokugcina",
+        "available": "Iyatholakala",
+        "complete": "Iqediwe"
+      }
+    },
+    "filters": {
+      "all": "Konke",
+      "pending": "Kulindile",
+      "today": "Namhlanje",
+      "thisMonth": "Le nyanga",
+      "available": "Iyatholakala",
+      "recurring": "Iphindaphindayo"
+    }
+  },
+  "expenses": {
+    "title": "Izindleko",
+    "empty": {
+      "message": "Azikho izindleko ezibhalisiwe.",
+      "filter": "Azikho izindleko ezitholakele ngezihluzi zamanje."
+    },
+    "modal": {
+      "title": "Indleko",
+      "create": "Indleko Entsha",
+      "edit": "Hlela Indleko"
+    },
+    "form": {
+      "title": "Isihloko:",
+      "value": "Inani:",
+      "date": "Usuku lokugcina:",
+      "recurring": "Ephindaphindayo",
+      "paid": "Phawula njengokhokhiwe",
+      "recurrence": {
+        "type": "Uhlobo lokubuyela:",
+        "count": "Izikhathi zokubuyela:",
+        "tip": "Okungenani 1 kanye nomkhawulo ongu-365",
+        "daily": "Nsuku zonke",
+        "weekly": "Ngesonto",
+        "monthly": "Ngenyanga",
+        "yearly": "Nonyaka"
+      }
+    },
+    "validation": {
+      "title": "Isihloko siyadingeka.",
+      "value": "Inani kumele libe likhulu kuna-R0.00.",
+      "date": "Usuku lokugcina luyadingeka.",
+      "recurrence": {
+        "min": "Izikhathi zokubuyela kumele zibe okungenani 2.",
+        "max": "Izikhathi eziningi zokubuyela zingu-365."
+      }
+    },
+    "success": {
+      "create": "Indleko idaliwe ngempumelelo!",
+      "update": "Indleko ibuyekezwe ngempumelelo!",
+      "delete": "Indleko isusiwe ngempumelelo!",
+      "markPaid": "Isimo sokukhokha sibuyekezwe ngempumelelo!",
+      "markRecurringPaid": "Isimo sokukhokha esibuyelayo sibuyekezwe ngempumelelo!"
+    },
+    "errors": {
+      "load": "Iphutha ekulayisheni izindleko. Sicela uzame futhi.",
+      "save": "Iphutha ekulondolozweni kwendleko. Sicela uzame futhi.",
+      "delete": "Iphutha ekususeni indleko. Sicela uzame futhi.",
+      "markPaid": "Iphutha ekubuyekezweni kwesimo sokukhokha. Sicela uzame futhi.",
+      "markRecurringPaid": "Iphutha ekubuyekezweni kwesimo sokukhokha esibuyelayo. Sicela uzame futhi."
+    },
+    "header": {
+      "total": "Isamba Esichithiwe",
+      "estimated": "Isamba Esilinganiselwe",
+      "items": "{{count}} indleko",
+      "add": "Indleko Entsha"
+    },
+    "history": {
+      "title": "Umlando",
+      "changes": "Izinguquko",
+      "noChanges": "Azikho izinguquko ezirekhodiwe"
+    },
+    "confirmDelete": {
+      "title": "Susa indleko",
+      "message": "Uqinisekile ukuthi ufuna ukususa le ndleko?",
+      "warning": "Lesi senzo asikwazi ukuhlehliswa."
+    },
+    "card": {
+      "title": "Indleko",
+      "value": "Inani",
+      "date": "Usuku olubekiwe",
+      "period": "Usuku lokuphela",
+      "paid": "Ikhokhelwe",
+      "status": {
+        "paid": "Ikhokhelwe",
+        "overdue": "Iphelelwe yisikhathi",
+        "today": "Usuku lwamanje",
+        "future": "Kusukela emalangeni angu-{{days}}",
+        "tomorrow": "Kusasa",
+        "no-due-date": "Akunosuku olubekiwe",
+        "complete": "Iqediwe"
+      }
+    },
+    "filters": {
+      "all": "Konke",
+      "today": "Namhlanje",
+      "available": "Iyatholakala",
+      "paid": "Ikhokhelwe",
+      "overdue": "Iphelelwe yisikhathi",
+      "recurring": "Iphindaphindayo"
+    }
+  },
+  "notFound": {
+    "title": "Ikhasi Alitholakali",
+    "description": "Ikhasi ozama ukulifinyelela alikho noma lisuswe.",
+    "notAuthDescription": "Hhayi! Kubonakala sengathi ulahlekile.\nIkhasi olifunayo alikho noma lihanjiswe."
+  },
+  "profile": {
+    "title": "Iphrofayili",
+    "personalInfo": {
+      "title": "Ulwazi Lwakho",
+      "fullName": "Igama Eliphelele",
+      "accountType": "Uhlobo Lwe-akhawunti",
+      "document": "Idokhumenti",
+      "birthDate": "Usuku Lokuzalwa",
+      "notInformed": "Alinikezelwanga",
+      "physicalPerson": "Umuntu Ngamunye",
+      "legalPerson": "Inkampani"
+    },
+    "contactInfo": {
+      "title": "Ulwazi Lokuxhumana",
+      "email": "I-imeyili",
+      "phone": "Ucingo"
+    },
+    "address": {
+      "title": "Ikheli",
+      "street": "Umzila",
+      "city": "Idolobha",
+      "state": "Isifundazwe",
+      "zipCode": "Ikhodi Yeposi"
+    },
+    "accountSettings": {
+      "title": "Izilungiselelo Ze-akhawunti",
+      "lgpdTerms": "Imigomo Ye-LGPD",
+      "accepted": "Kuyamukelwe",
+      "notAccepted": "Akukamukelwa"
+    },
+    "actions": {
+      "editData": "Hlela Idatha",
+      "deleteAccount": "Susa I-akhawunti",
+      "logout": "Phuma"
+    }
+  },
+  "modals": {
+    "logout": {
+      "title": "Phuma",
+      "message": "Uqinisekile ukuthi ufuna ukuphuma? Uzodinga ukungena futhi ukuze ufinyelele ohlelweni.",
+      "loading": "Iyaphuma...",
+      "cancel": "Khansela",
+      "confirm": "Phuma"
+    },
+    "deleteAccount": {
+      "title": "Susa I-akhawunti",
+      "warning": "Lesi senzo asinakuhlehliswa futhi asinakuhlehliswa!",
+      "message": "Uma ususa i-akhawunti, yonke idatha yakho yomuntu siqu kanye nemininingwane izosuswa unomphela ohlelweni, okuhlanganisa:",
+      "data": {
+        "personal": "Idatha yomuntu siqu",
+        "transactions": "Umlando wokuthengiselana",
+        "settings": "Izilungiselelo ze-akhawunti",
+        "preferences": "Okuthandwayo kanye nokwenza ngokwezifiso"
+      },
+      "lgpd": {
+        "title": "Ulwazi Lokuvikela Idatha:",
+        "message": "Ngokomthetho Wokuvikela Ulwazi Lwabantu Siqu (POPIA) waseNingizimu Afrika, unelungelo lokucela ukususwa kwedatha yakho yomuntu siqu. Ngokugcina lesi senzo, usebenzisa leli lungelo, futhi yonke idatha yakho izosuswa unomphela ezinhlelweni zethu."
+      },
+      "cancel": "Buyela Emuva",
+      "confirm": "Susa I-akhawunti",
+      "success": "I-akhawunti isuswe ngempumelelo!"
+    }
+  },
+  "converter": {
+    "title": "I-Currency Converter",
+    "description": "Guqula amanani phakathi kwezimali ezahlukene usebenzisa amanani okushintshana asesikhathini sangempela. I-converter yethu isebenzisa idatha enembile ukuqinisekisa isipiliyoni esihle kakhulu.",
+    "features": {
+      "rates": {
+        "title": "Amanani Avuselelwe",
+        "description": "Amanani ethu okushintshana avuselelwa ngesikhathi sangempela, aqinisekisa ukunemba kwezinguquko zakho."
+      },
+      "currencies": {
+        "title": "Izimali Eziningi",
+        "description": "Ukusekelwa kwezimali ezahlukene zamazwe ngamazwe, kufaka phakathi ama-cryptocurrency adumile."
+      },
+      "history": {
+        "title": "Umlando",
+        "description": "Landela umlando wezinguquko zakho ukuze uzibhekele esikhathini esizayo."
+      }
+    },
+    "amount": {
+      "label": "Inani",
+      "placeholder": "Faka inani"
+    },
+    "to": "Kuya",
+    "convert": "Guqula",
+    "loading": "Iyaguqula...",
+    "result": "Umphumela Wokuguqula",
+    "rate": "Izinga Lokushintshana",
+    "lastUpdate": "Ukuvuselelwa Kokugcina",
+    "error": {
+      "empty": "Faka inani",
+      "invalid": "Inani elingavumelekile",
+      "zero": "Inani kumele libe likhulu kuneqanda",
+      "same": "Izimali azikwazi ukufana",
+      "generic": "Iphutha lokuguqula imali",
+      "rate": "Ayikwazanga ukuthola izinga lokushintshana"
+    },
+    "swap": "Shintsha",
+    "history": "Umlando",
+    "clearHistory": "Sula Umlando"
+  },
+  "reports": {
+    "title": "Imibiko",
+    "generating": "Kuyakhiwa umbiko...",
+    "success": "Umbiko wenziwe ngempumelelo!",
+    "error": "Iphutha ekwakhiweni kombiko",
+    "dateRangeRequired": "Sicela ukhethe isikhathi sombiko",
+    "quick": {
+      "expenses": "Umbiko Wezindleko",
+      "income": "Umbiko Wemali Eningayo",
+      "investments": "Umbiko Wokutshalwa Kwezimali",
+      "summary": "Umbiko Ojwayelekile"
+    },
+    "form": {
+      "startDate": {
+        "label": "Usuku Lokuqala"
+      },
+      "endDate": {
+        "label": "Usuku Lokuqeda",
+        "error": "Usuku lokuqeda kumele lube ngemva kosuku lokuqala"
+      },
+      "generate": "Dala Umbiko",
+      "type": {
+        "label": "Uhlobo Lombiko",
+        "options": {
+          "summary": "Isifinyezo Esivamile",
+          "expenses": "Izindleko",
+          "income": "Imali Eningayo",
+          "investments": "Ukutshalwa Kwezimali"
+        }
+      }
+    },
+    "summary": {
+      "title": "Isifinyezo Sesikhathi",
+      "income": "Isamba Semali Eningayo",
+      "expenses": "Isamba Sezindleko",
+      "investments": "Isamba Sokutshalwa Kwezimali",
+      "balance": "Isamba Sokugcina"
+    },
+    "charts": {
+      "incomeVsExpenses": "Imali Engenayo vs Izindleko",
+      "investments": "Izimali Ezifakwayo",
+      "distribution": "Ukusabalalisa Amanani"
+    },
+    "empty": {
+      "title": "Ayikho idatha etholakele",
+      "description": "Ayikho idatha yokwakha imibiko. Engeza imali engenayo, izindleko noma izimali ezibekelwe ukuze uqale.",
+      "addIncome": "Engeza Imali Eningayo",
+      "addExpense": "Engeza Indleko",
+      "addInvestment": "Engeza Isimali Esibekelwe"
+    }
+  },
+  "pages": {
+    "home": "Ikhaya - Save Money",
+    "expenses": "Izindleko - Save Money",
+    "income": "Imali Engenayo - Save Money",
+    "categories": "Izigaba - Save Money",
+    "reminders": "Izikhumbuzo - Save Money",
+    "goals": "Izinhloso - Save Money",
+    "reports": "Imibiko - Save Money",
+    "investments": "Ukutshalwa Kwezimali - Save Money",
+    "profile": "Iphrofayili - Save Money",
+    "register": "Bhalisa - Save Money",
+    "about": "Mayelana Nathi - Save Money",
+    "contact": "Xhumana - Save Money",
+    "tests": "Umbiko Wokuhlola - Save Money",
+    "login": "Ngena - Save Money",
+    "resetPassword": "Setha Kabusha Iphasiwedi - Save Money",
+    "currency_converter": "Iguquli Yemali - Save Money",
+    "notFound": "Ikhasi Alitholakali - Save Money"
+  },
+  "history": {
+    "title": "Umlando",
+    "close": "Vala",
+    "noHistory": "Alukho umlando otholakele",
+    "date": "{{date}} ngo {{time}}",
+    "action": {
+      "created": "Kwenziwe",
+      "updated": "Kubuyekezwe",
+      "deleted": "Kususiwe"
+    }
+  }
+}

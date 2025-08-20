@@ -1,0 +1,28 @@
+{
+  "liveServer.settings.root": ".",
+  "liveServer.settings.file": "index.html",
+  "liveServer.settings.https": {
+    "enable": false
+  },
+  "liveServer.settings.proxy": {
+    "enable": false
+  },
+  "liveServer.settings.donotShowInfoMsg": true,
+  "liveServer.settings.donotVerifyTags": true,
+  "liveServer.settings.wait": 100,
+  "liveServer.settings.CustomBrowser": "chrome",
+  "liveServer.settings.port": 5500,
+  "liveServer.settings.useWebExt": true,
+  "liveServer.settings.donotShowMissingFiles": true,
+  "liveServer.settings.rewriteRules": [
+    {
+      "match": "^/[^.]*$",
+      "replace": "/index.html"
+    }
+  ],
+  "liveServer.settings.mount": [["/", "."]],
+  "liveServer.settings.openOnStart": true,
+  "liveServer.settings.fullReload": true,
+  "liveServer.settings.cors": true,
+  "liveServer.settings.host": "127.0.0.1"
+}

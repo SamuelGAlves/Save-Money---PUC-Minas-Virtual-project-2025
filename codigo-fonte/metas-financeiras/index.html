@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Minhas Metas Financeiras</title>
+  <link rel="stylesheet" href="style.css">
+  <script type="module" src="../investimentos/components/common/button.js"></script>
+  <script type="module" src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Minhas Metas</h1>
+    <app-button id="btnNovaMeta" variant="primary">+ Nova Meta</app-button>
+  </header>
+
+  <section id="metasContainer"></section>
+
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <h2 id="modalTitle">Nova Meta</h2>
+      <form id="metaForm">
+        <input type="hidden" id="metaId">
+        <div class="content-inputs">
+            <label>
+                Nome:
+                <input type="text" id="metaNome" required>
+              </label>
+              <label>
+                Valor Alvo:
+                <input type="text" id="metaValor" required>
+              </label>
+              <label id="campoAtualWrapper">
+                Valor Atual:
+                <input type="text" id="metaAtual" required>
+              </label>
+              <label>
+                Data para atingir a meta:
+                <input type="date" id="metaDataLimite">
+              </label>
+        </div>
+        <div class="actions">
+          <app-button id="btnSalvar" variant="primary">Salvar</app-button>
+          <app-button type="button" id="btnCancelar" variant="secondary">Cancelar</app-button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Modal de Incluir Valor -->
+    <div id="modalIncluir" class="modal">
+        <div class="modal-content">
+        <h2>Incluir valor na meta</h2>
+        <form id="formIncluir">
+            <input type="number" id="valorIncremento" placeholder="Valor a incluir" min="0" required />
+            <div class="actions">
+                <app-button id="btnConfirmarIncluir" variant="primary">Confirmar</app-button>
+                <app-button type="button" id="btnCancelarIncluir" variant="secondary">Cancelar</app-button>
+            </div>
+        </form>
+        </div>
+    </div>
+</body>
+</html>

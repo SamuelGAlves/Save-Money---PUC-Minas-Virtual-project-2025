@@ -1,0 +1,307 @@
+{
+  "stats": {
+    "suites": 6,
+    "tests": 6,
+    "passes": 6,
+    "pending": 0,
+    "failures": 0,
+    "start": "2025-06-18T08:53:41.805Z",
+    "end": "2025-06-18T08:54:48.098Z",
+    "duration": 66293,
+    "testsRegistered": 6,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "157954b0-1896-4d1a-b327-193334eae2df",
+      "title": "",
+      "fullFile": "cypress\\e2e\\pagina_alterar-usuario.cy.js",
+      "file": "cypress\\e2e\\pagina_alterar-usuario.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "0ff7925c-6ab6-41ea-873b-08f9795e85df",
+          "title": "Página de Alterar Usuário [mobile, light-mode]",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "deve conseguir alterar usuário",
+              "fullTitle": "Página de Alterar Usuário [mobile, light-mode] deve conseguir alterar usuário",
+              "timedOut": null,
+              "duration": 13424,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get(\"input#nome\").clear().type('Matheus Carlos');\ncy.get(\"input#senha\").clear().type('Teste@123');\ncy.get(\"input#confirme-senha\").clear().type('Teste@123');\ncy.wait(1000);\ncy.takeScreenshotWithContext({\n  device,\n  theme\n});\ncy.get(\"button[type='submit']\").click({\n  force: true\n});",
+              "err": {},
+              "uuid": "c2ab0ea9-aa97-4702-8ea1-860a74332994",
+              "parentUUID": "0ff7925c-6ab6-41ea-873b-08f9795e85df",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "c2ab0ea9-aa97-4702-8ea1-860a74332994"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 13424,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "79fb6583-031a-43dd-81b5-06843c76da05",
+          "title": "Página de Alterar Usuário [mobile, dark-mode]",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "deve conseguir alterar usuário",
+              "fullTitle": "Página de Alterar Usuário [mobile, dark-mode] deve conseguir alterar usuário",
+              "timedOut": null,
+              "duration": 10527,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get(\"input#nome\").clear().type('Matheus Carlos');\ncy.get(\"input#senha\").clear().type('Teste@123');\ncy.get(\"input#confirme-senha\").clear().type('Teste@123');\ncy.wait(1000);\ncy.takeScreenshotWithContext({\n  device,\n  theme\n});\ncy.get(\"button[type='submit']\").click({\n  force: true\n});",
+              "err": {},
+              "uuid": "d958d0fc-22b4-4a8f-a2ca-0935af153a39",
+              "parentUUID": "79fb6583-031a-43dd-81b5-06843c76da05",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "d958d0fc-22b4-4a8f-a2ca-0935af153a39"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 10527,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "e4cc5cac-4e0e-43d3-9054-513fbf3bdbf6",
+          "title": "Página de Alterar Usuário [tablet, light-mode]",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "deve conseguir alterar usuário",
+              "fullTitle": "Página de Alterar Usuário [tablet, light-mode] deve conseguir alterar usuário",
+              "timedOut": null,
+              "duration": 10578,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get(\"input#nome\").clear().type('Matheus Carlos');\ncy.get(\"input#senha\").clear().type('Teste@123');\ncy.get(\"input#confirme-senha\").clear().type('Teste@123');\ncy.wait(1000);\ncy.takeScreenshotWithContext({\n  device,\n  theme\n});\ncy.get(\"button[type='submit']\").click({\n  force: true\n});",
+              "err": {},
+              "uuid": "66e24aea-e387-4624-b8db-b2d3c30da080",
+              "parentUUID": "e4cc5cac-4e0e-43d3-9054-513fbf3bdbf6",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "66e24aea-e387-4624-b8db-b2d3c30da080"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 10578,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "68d2e830-e57a-4f63-b06d-ce3360d17ac0",
+          "title": "Página de Alterar Usuário [tablet, dark-mode]",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "deve conseguir alterar usuário",
+              "fullTitle": "Página de Alterar Usuário [tablet, dark-mode] deve conseguir alterar usuário",
+              "timedOut": null,
+              "duration": 10504,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get(\"input#nome\").clear().type('Matheus Carlos');\ncy.get(\"input#senha\").clear().type('Teste@123');\ncy.get(\"input#confirme-senha\").clear().type('Teste@123');\ncy.wait(1000);\ncy.takeScreenshotWithContext({\n  device,\n  theme\n});\ncy.get(\"button[type='submit']\").click({\n  force: true\n});",
+              "err": {},
+              "uuid": "a649cfc5-7cde-492b-b3a8-5e0b3f46ca90",
+              "parentUUID": "68d2e830-e57a-4f63-b06d-ce3360d17ac0",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "a649cfc5-7cde-492b-b3a8-5e0b3f46ca90"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 10504,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "5232d4d8-e7e9-4d9b-9033-98203445dc3c",
+          "title": "Página de Alterar Usuário [desktop, light-mode]",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "deve conseguir alterar usuário",
+              "fullTitle": "Página de Alterar Usuário [desktop, light-mode] deve conseguir alterar usuário",
+              "timedOut": null,
+              "duration": 10559,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get(\"input#nome\").clear().type('Matheus Carlos');\ncy.get(\"input#senha\").clear().type('Teste@123');\ncy.get(\"input#confirme-senha\").clear().type('Teste@123');\ncy.wait(1000);\ncy.takeScreenshotWithContext({\n  device,\n  theme\n});\ncy.get(\"button[type='submit']\").click({\n  force: true\n});",
+              "err": {},
+              "uuid": "e2eff4b4-e260-448d-a203-ca54ed9a52ab",
+              "parentUUID": "5232d4d8-e7e9-4d9b-9033-98203445dc3c",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "e2eff4b4-e260-448d-a203-ca54ed9a52ab"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 10559,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "1393b3ca-5863-42df-8e3e-8d10acb58476",
+          "title": "Página de Alterar Usuário [desktop, dark-mode]",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "deve conseguir alterar usuário",
+              "fullTitle": "Página de Alterar Usuário [desktop, dark-mode] deve conseguir alterar usuário",
+              "timedOut": null,
+              "duration": 10577,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get(\"input#nome\").clear().type('Matheus Carlos');\ncy.get(\"input#senha\").clear().type('Teste@123');\ncy.get(\"input#confirme-senha\").clear().type('Teste@123');\ncy.wait(1000);\ncy.takeScreenshotWithContext({\n  device,\n  theme\n});\ncy.get(\"button[type='submit']\").click({\n  force: true\n});",
+              "err": {},
+              "uuid": "8d2e0b1f-9737-45a9-b156-e92287906918",
+              "parentUUID": "1393b3ca-5863-42df-8e3e-8d10acb58476",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "8d2e0b1f-9737-45a9-b156-e92287906918"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 10577,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "testes",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "../codigo-fonte/core/pages/testes",
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "charts": true,
+        "reportTitle": "Relatório de Testes Save Money",
+        "reportPageTitle": "Testes Automatizados - Save Money",
+        "embeddedScreenshots": true,
+        "inlineAssets": true,
+        "saveAllAttempts": true,
+        "reportFilename": "testes"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

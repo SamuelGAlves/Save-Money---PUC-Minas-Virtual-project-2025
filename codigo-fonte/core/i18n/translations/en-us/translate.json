@@ -1,0 +1,1010 @@
+{
+  "common": {
+    "currency": "USD",
+    "language": "en-US",
+    "actions": {
+      "edit": "Edit",
+      "delete": "Delete",
+      "save": "Save",
+      "cancel": "Cancel",
+      "confirm": "Confirm",
+      "close": "Close",
+      "add": "Add new item",
+      "select": "Selection Mode"
+    },
+    "filters": {
+      "search": "Search",
+      "sort": "Sort",
+      "status": "Status",
+      "show": "Show filters",
+      "hide": "Hide filters",
+      "sortOptions": {
+        "value-desc": "Highest value",
+        "value-asc": "Lowest value",
+        "date-desc": "Most recent",
+        "date-asc": "Oldest"
+      },
+      "clear": "Clear"
+    },
+    "status": {
+      "active": "Active",
+      "finished": "Finished",
+      "available": "Available",
+      "last-day": "Last day",
+      "starting-today": "Starting today",
+      "paid": "Paid",
+      "overdue": "Overdue",
+      "today": "Due today",
+      "future": "Due in {{days}} days",
+      "tomorrow": "Due tomorrow",
+      "no-due-date": "No due date",
+      "complete": "Fully Paid"
+    },
+    "card": {
+      "title": "Item",
+      "value": "Value",
+      "date": "Date",
+      "period": "Period",
+      "recurrence": {
+        "title": "Recurrence",
+        "weekly": "Weekly",
+        "monthly": "Monthly",
+        "yearly": "Yearly",
+        "repetitions": "Repetitions",
+        "indefinite": "Indefinite",
+        "times": "{{count}} times",
+        "badge": "Recurring"
+      },
+      "actions": {
+        "delete": "Delete",
+        "edit": "Edit",
+        "history": "History",
+        "recurring": "Recurrence"
+      },
+      "status": {
+        "finished": "Finished",
+        "active": "Active",
+        "future": "Future",
+        "today": "Due today",
+        "available": "Available",
+        "unavailable": "Unavailable",
+        "pending": "Pending",
+        "completed": "Completed",
+        "error": "Error"
+      }
+    },
+    "buttons": {
+      "cancel": "Cancel",
+      "save": "Save",
+      "edit": "Edit",
+      "delete": "Delete",
+      "close": "Close",
+      "confirm": "Confirm",
+      "back": "Back",
+      "next": "Next",
+      "previous": "Previous"
+    }
+  },
+  "navigation": {
+    "toggle": "Toggle navigation",
+    "home": "Home",
+    "expenses": "Expenses",
+    "income": "Income",
+    "categories": "Categories",
+    "reminders": "Due",
+    "goals": "Goals",
+    "reports": "Reports",
+    "investments": "Investments",
+    "profile": "Profile",
+    "register": "Register",
+    "about": "About",
+    "contact": "Contact",
+    "tests": "Test Report",
+    "login": "Login",
+    "main": "Main",
+    "finances": "Finances",
+    "management": "Management",
+    "information": "Information",
+    "settings": "Settings",
+    "resetPassword": "Reset Password",
+    "currency_converter": "Converter"
+  },
+  "pages": {
+    "home": "Home - Save Money",
+    "expenses": "Expenses - Save Money",
+    "income": "Income - Save Money",
+    "categories": "Categories - Save Money",
+    "reminders": "Due Soon - Save Money",
+    "goals": "Goals - Save Money",
+    "reports": "Reports - Save Money",
+    "investments": "Investments - Save Money",
+    "profile": "Profile - Save Money",
+    "register": "Register - Save Money",
+    "about": "About - Save Money",
+    "contact": "Contact - Save Money",
+    "tests": "Test Report - Save Money",
+    "login": "Login - Save Money",
+    "resetPassword": "Reset Password - Save Money",
+    "currency_converter": "Currency Converter - Save Money",
+    "remember": "Recover Password - Save Money",
+    "notFound": "Page not found - Save Money"
+  },
+  "input": {
+    "password": {
+      "show": "Show password",
+      "hide": "Hide password",
+      "requirements": "Password requirements:",
+      "minLength": "Minimum 8 characters",
+      "uppercase": "At least one uppercase letter",
+      "lowercase": "At least one lowercase letter",
+      "numbers": "At least one number",
+      "specialChar": "At least one special character",
+      "errors": {
+        "minLength": "Password must be at least {{minLength}} characters",
+        "uppercase": "Password must contain at least one uppercase letter",
+        "lowercase": "Password must contain at least one lowercase letter",
+        "numbers": "Password must contain at least one number",
+        "specialChar": "Password must contain at least one special character"
+      }
+    },
+    "preventCopyPaste": {
+      "copy": "Copying content from this field is not allowed",
+      "paste": "Pasting content into this field is not allowed",
+      "cut": "Cutting content from this field is not allowed",
+      "contextMenu": "Context menu is disabled for this field"
+    },
+    "required": "This field is required",
+    "email": "Enter a valid email",
+    "minlength": "The {{field}} field must have at least {{min}} characters",
+    "maxlength": "The {{field}} field has reached the limit of {{max}} characters",
+    "min": "The {{field}} field must be greater than or equal to {{min}}",
+    "max": "The {{field}} field must be less than or equal to {{max}}"
+  },
+  "login": {
+    "title": "Login",
+    "email": {
+      "label": "Email",
+      "placeholder": "Enter your email",
+      "required": "Email is required"
+    },
+    "password": {
+      "label": "Password",
+      "placeholder": "Enter your password",
+      "required": "Password is required"
+    },
+    "button": "Login",
+    "forgotPassword": "Forgot your login or password?",
+    "forgotPasswordLink": "Click here",
+    "register": "Register",
+    "loading": "Logging in...",
+    "success": "Login successful!",
+    "error": "Unexpected error while trying to login.",
+    "fillFields": "Please fill in all fields to continue."
+  },
+  "remember": {
+    "title": "Recover Password",
+    "email": {
+      "label": "Email",
+      "placeholder": "Enter your email",
+      "required": "Email is required",
+      "notFound": "Email not found",
+      "token": "Your recovery token",
+      "link": "Recovery link"
+    },
+    "button": "Send",
+    "loading": "Sending...",
+    "success": "Recovery email sent successfully!",
+    "error": "Error sending recovery email. Please try again."
+  },
+  "registration": {
+    "title": "Create Account",
+    "name": {
+      "label": "Full Name",
+      "placeholder": "Enter your full name",
+      "required": "Name is required"
+    },
+    "email": {
+      "label": "E-mail",
+      "placeholder": "Enter your e-mail",
+      "required": "E-mail is required",
+      "invalid": "Invalid e-mail",
+      "alreadyExists": "This e-mail is already registered"
+    },
+    "document": {
+      "label": "Document",
+      "cpf": {
+        "placeholder": "Enter your CPF",
+        "invalid": "Invalid CPF"
+      },
+      "cnpj": {
+        "placeholder": "Enter your CNPJ",
+        "invalid": "Invalid CNPJ"
+      },
+      "required": "Document is required"
+    },
+    "password": {
+      "label": "Password",
+      "placeholder": "Enter your password",
+      "required": "Password is required",
+      "requirements": {
+        "title": "Your password must have:",
+        "minLength": "• Minimum 8 characters",
+        "uppercase": "• One uppercase letter (A-Z)",
+        "lowercase": "• One lowercase letter (a-z)",
+        "number": "• One number (0-9)",
+        "special": "• One special character (!@#$%^&*(),.?\":{}|<>)"
+      }
+    },
+    "confirmPassword": {
+      "label": "Confirm password",
+      "placeholder": "Enter your password again",
+      "required": "Please confirm your password",
+      "mismatch": "Passwords don't match!"
+    },
+    "terms": {
+      "label": "I have read and accept the Terms of Use and Privacy Policy",
+      "required": "You must accept the Terms of Use and Privacy Policy"
+    },
+    "button": "Create Account",
+    "loading": "Creating your account...",
+    "success": "Account created successfully!",
+    "error": "Error creating account.",
+    "fillFields": "Please fill in all fields to continue."
+  },
+  "currency": {
+    "format": {
+      "style": "currency",
+      "currency": "USD"
+    }
+  },
+  "converter": {
+    "title": "Currency Converter",
+    "description": "Convert values between different currencies using real-time exchange rates. Our converter uses accurate data to ensure the best experience.",
+    "features": {
+      "rates": {
+        "title": "Updated Rates",
+        "description": "Our exchange rates are updated in real-time, ensuring accuracy in your conversions."
+      },
+      "currencies": {
+        "title": "Multiple Currencies",
+        "description": "Support for various international currencies, including popular cryptocurrencies."
+      },
+      "history": {
+        "title": "History",
+        "description": "Track your conversion history for future reference."
+      }
+    },
+    "amount": {
+      "label": "Amount",
+      "placeholder": "Enter amount"
+    },
+    "to": "To",
+    "convert": "Convert",
+    "loading": "Converting...",
+    "result": "Conversion Result",
+    "rate": "Exchange Rate",
+    "lastUpdate": "Last Update",
+    "error": {
+      "empty": "Enter an amount",
+      "invalid": "Invalid amount",
+      "zero": "Amount must be greater than zero",
+      "same": "Currencies cannot be the same",
+      "generic": "Error converting currency",
+      "rate": "Could not get exchange rate"
+    },
+    "swap": "Swap",
+    "history": "History",
+    "clearHistory": "Clear History"
+  },
+  "logo": {
+    "title": "Save Money",
+    "subtitle": "PUC Minas Technology",
+    "ariaLabel": "Save Money PUC Minas Technology Logo"
+  },
+  "home": {
+    "welcome": "Hello, {{name}}!",
+    "user": "User",
+    "balance": {
+      "show": "Show values",
+      "hide": "Hide values"
+    },
+    "total": "Total",
+    "converted": "Converted",
+    "estimated": "Estimated",
+    "viewDetails": "View details",
+    "wallet": {
+      "alt": "Wallet"
+    },
+    "investments": {
+      "title": "Total Investments"
+    },
+    "income": {
+      "title": "Total Income"
+    },
+    "expenses": {
+      "title": "Total Expenses"
+    },
+    "empty": {
+      "title": "Welcome to SaveMoney!",
+      "description": "Start organizing your finances by adding your investments, income, and expenses.",
+      "add_investment": "Add Investment",
+      "add_income": "Add Income",
+      "add_expense": "Add Expense"
+    },
+    "recurring": {
+      "title": "Recurring Items",
+      "description": "You have recurring items that affect your total balance",
+      "info": "Estimated values include recurring items that automatically repeat in future periods",
+      "investments": "Recurring Investments",
+      "expenses": "Recurring Expenses",
+      "income": "Recurring Income",
+      "viewAll": "View All"
+    },
+    "hero": {
+      "title": "Manage your finances intelligently",
+      "description": "SaveMoney is the perfect solution for you to control your expenses, save money, and achieve your financial goals.",
+      "cta": "Start now"
+    },
+    "features": {
+      "title": "Features that make a difference",
+      "financialControl": {
+        "title": "Financial Control",
+        "description": "Track your income and expenses in real-time, with automatic categorization and detailed reports."
+      },
+      "reports": {
+        "title": "Detailed Reports",
+        "description": "View graphs and reports that help you better understand your financial habits."
+      },
+      "savings": {
+        "title": "Savings Goals",
+        "description": "Set savings goals and track your progress with intuitive tools."
+      }
+    },
+    "testimonials": {
+      "title": "What our users say",
+      "user1": {
+        "quote": "SaveMoney has completely transformed my relationship with money. Now I can save and invest with more confidence.",
+        "name": "Mary Smith",
+        "role": "User since 2023"
+      },
+      "user2": {
+        "quote": "The interface is intuitive and the reports are very useful. I recommend it for anyone who wants to have more control over their finances.",
+        "name": "John Doe",
+        "role": "User since 2024"
+      }
+    },
+    "cta": {
+      "title": "Start saving today",
+      "description": "Join thousands of users who are already transforming their financial lives with SaveMoney.",
+      "button": "Create free account"
+    }
+  },
+  "contact": {
+    "title": "Contact",
+    "description": "Do you have any questions, suggestions, or need help? Contact us through the form below or use one of our support channels.",
+    "form": {
+      "name": {
+        "label": "Name",
+        "placeholder": "Enter your full name",
+        "error": "Name is required"
+      },
+      "email": {
+        "label": "Email",
+        "placeholder": "Enter your email",
+        "error": "Email is required",
+        "invalid": "Enter a valid email"
+      },
+      "recipient": {
+        "label": "Recipient",
+        "placeholder": "Select recipient",
+        "error": "Select a recipient",
+        "options": {
+          "general": "General Contact"
+        }
+      },
+      "subject": {
+        "label": "Subject",
+        "placeholder": "Enter message subject",
+        "error": "Subject is required"
+      },
+      "message": {
+        "label": "Message",
+        "placeholder": "Enter your message",
+        "error": "Message is required"
+      },
+      "submit": "Send Message",
+      "success": "Message sent successfully! We'll contact you soon.",
+      "error": "Error sending message. Please try again."
+    },
+    "info": {
+      "location": "Latin America, Brazil"
+    }
+  },
+  "about": {
+    "title": "About Us",
+    "mission": {
+      "title": "Our Mission",
+      "description": "Save Money is an innovative platform that aims to simplify personal and business financial management, offering intuitive tools for expense control, investments, and financial planning."
+    },
+    "features": {
+      "financialControl": {
+        "title": "Financial Control",
+        "description": "Efficiently manage your income and expenses with automatic categorization and detailed reports."
+      },
+      "investments": {
+        "title": "Investments",
+        "description": "Track your investments and receive personalized recommendations based on your risk profile."
+      },
+      "currencyConverter": {
+        "title": "Currency Converter",
+        "description": "Convert values between different currencies in real-time with automatically updated rates."
+      },
+      "teamContact": {
+        "title": "Team Contact",
+        "description": "Contact our support team for questions or to report issues."
+      },
+      "personalAccount": {
+        "title": "Personal Account",
+        "description": "Manage your personal finances with specific tools for budget control and financial goals."
+      },
+      "businessAccount": {
+        "title": "Business Account",
+        "description": "Complete solutions for business financial management, including cash flow and management reports."
+      },
+      "multipleLanguages": {
+        "title": "Multiple Languages",
+        "description": "Interface available in multiple languages to serve users from different countries."
+      },
+      "multipleCurrencies": {
+        "title": "Multiple Currencies",
+        "description": "Support for various currencies to facilitate international transactions."
+      },
+      "cryptocurrencies": {
+        "title": "Cryptocurrencies",
+        "description": "Track and manage your cryptocurrency investments with real-time updates."
+      }
+    },
+    "team": {
+      "title": "Our Team",
+      "description1": "Save Money is developed by a dedicated team of students from the Analysis and Systems Development - Distance Learning course at PUC Minas.",
+      "description2": "Our team combines technical expertise with a passion for innovation to create a complete and accessible financial solution."
+    },
+    "puc": {
+      "title": "PUC Minas",
+      "description": "The Pontifical Catholic University of Minas Gerais (PUC Minas) is a national and international reference in higher education, standing out for academic excellence, integral formation, and strong performance in research and social responsibility.\n\nThe Save Money project was born from this innovative environment, being developed by students from the Analysis and Systems Development - Distance Learning course, with the objective of offering a technological solution for financial management.\n\nThe project's realization was made possible by the essential support of PUC Minas' teaching staff, who guided and encouraged the students throughout the development process.",
+      "sections": {
+        "assistentes": "Academic Assistants",
+        "microFund": "Micro Fundamentals Professors"
+      },
+      "roles": {
+        "graoChanceler": "Grand Chancellor",
+        "reitor": "Rector",
+        "coordenacao": "Coordinator",
+        "professor": "Professor",
+        "professora": "Professor",
+        "assistente": "Assistant"
+      },
+      "members": {
+        "walmor": {
+          "name": "Dom Walmor Oliveira de Azevedo",
+          "description": "Born in Côcos (Bahia), the Grand Chancellor of PUC Minas and Metropolitan Archbishop of Belo Horizonte, Dom Walmor Oliveira de Azevedo, is also president of the National Conference of Brazilian Bishops (CNBB). He holds a doctorate in Biblical Theology from the Pontifical Gregorian University (Rome, Italy) and a master's degree in Biblical Sciences from the Pontifical Biblical Institute (Rome, Italy)."
+        },
+        "luis": {
+          "name": "Professor Dr. Pe. Luís Henrique Eloy e Silva",
+          "description": "Doctor and master in Biblical Science from the Pontifical Biblical Institute of Rome and graduated in Theology from the Pontifical Catholic University of Rio de Janeiro. He completed a post-doctoral internship at the Faculty of Theology of the Ludwig-Maximilians University of Munich, Germany."
+        },
+        "joyce": {
+          "name": "Joyce Christina de Paiva Carvalho",
+          "description": "Professor at PUC Minas and coordinator of the CST in Systems Analysis and Development - Distance Learning. She has extensive experience in Information Technology and is an Assistant Professor IV at the Pontifical Catholic University of Minas Gerais. Her areas of interest include databases, BI, Analytics, and Graphs, with a focus on Software Engineering."
+        },
+        "humberto": {
+          "name": "Humberto Azevedo Nigri do Carmo",
+          "description": "Professor with 17 years of teaching experience and 37 years in systems and software development, having taught at institutions such as CEFET-MG, PUC-MG, Newton Paiva, and UNA. His specialties include Programming Languages, Information Systems, Software Engineering, and Engineering. He also participates in disciplines such as Computer Architecture."
+        },
+        "aline": {
+          "name": "Aline Luciane Candido",
+          "description": "Academic assistant, supporting students and processes of the ADS EaD course at PUC Minas."
+        },
+        "ana": {
+          "name": "Ana Flávia Patricio de Barros",
+          "description": "Works in academic support and student service for the ADS EaD course."
+        },
+        "camila": {
+          "name": "Camila Cristina Gonçalves Marques De Moura",
+          "description": "Responsible for administrative and academic support of the ADS EaD course."
+        },
+        "gabriela": {
+          "name": "Gabriela Araújo Batista",
+          "description": "Assists students and professors in the academic routines of the ADS EaD course."
+        },
+        "vanilda": {
+          "name": "Vanilda da Conceição De Oliveira",
+          "description": "Supports academic management and student service for the ADS EaD course."
+        },
+        "lucila": {
+          "description": "PhD in Computer Science from UFMG, works at PUC Minas in the postgraduate courses in computer science and computing courses, her research interests include education, user-centered design, and serious games."
+        },
+        "maria": {
+          "name": "Maria Augusta Vieira Nelson",
+          "description": "PhD in Computer Science from the University of Waterloo, professor and coordinator of Software Engineering at PUC Minas, with experience in teaching, research, and specializations in the area."
+        },
+        "jane": {
+          "name": "Jane Carmelita das Dores Garandy de Arruda Barroso",
+          "description": "Master in Mathematics Education, teaches Calculus for IT and Engineering at PUC Minas, also working in evaluation and university extension projects."
+        },
+        "zulka": {
+          "name": "Zulka Iale Moreira Ferreira",
+          "description": "Involved in legal processes, mainly in the state of Minas Gerais. Involvement with Banco Santander S.A."
+        },
+        "livia": {
+          "name": "Lívia Borges Pádua",
+          "description": "Master's degree in Communication from PUC Minas (2009) and is associated with the Faculty of Communication and Arts (FCA)."
+        },
+        "rodrigo": {
+          "name": "Rodrigo Richard Gomes",
+          "description": "PhD in Bioinformatics from UFMG, coordinates the Information Systems course and specializations in Data Science at PUC Minas, with experience in IT and music."
+        },
+        "rommel": {
+          "name": "Rommel Vieira Carneiro",
+          "description": "Master in Informatics from PUC Minas, works as coordinator and professor in Computing courses, with experience in project management and software development."
+        },
+        "bernardo": {
+          "name": "Bernardo Jeunon de Alencar",
+          "description": "PhD in Spatial Information Processing, professor and coordinator of Information Systems at PUC Minas, with experience in Electrical Engineering, Computing, and Geoprocessing."
+        },
+        "silvio": {
+          "name": "Silvio Jamil Ferzoli Guimarães",
+          "description": "PhD in Computer Science from UFMG, professor and researcher at PUC Minas, focusing on image processing, video, and information retrieval."
+        },
+        "henrique": {
+          "name": "Henrique Maia Veloso",
+          "description": "PhD in Administration from USP, professor and consultant, with experience in management, research, and higher education, working on topics such as occupational stress and identity."
+        },
+        "raquel": {
+          "name": "Raquel Alves Furtado",
+          "description": "PhD and Master in Administration, with an MBA in HR and a bachelor's in Social Communication. Professor at PUC Minas since 2002, working in Human Resources, Communication, Marketing, and Entrepreneurship. Manager of the PUC Carreiras project, certified coach, and researcher, with over 30 years of experience as a manager, consultant, and author of scientific articles."
+        }
+      }
+    }
+  },
+  "investments": {
+    "title": "Investments",
+    "header": {
+      "total": "Total Invested",
+      "estimated": "Estimated Total",
+      "items": "{{count}} investment",
+      "add": "New Investment"
+    },
+    "empty": {
+      "message": "No investments registered.",
+      "filter": "No investments found with current filters."
+    },
+    "filters": {
+      "all": "All"
+    },
+    "modal": {
+      "title": "Investment",
+      "create": "New Investment",
+      "edit": "Edit Investment"
+    },
+    "form": {
+      "title": "Title:",
+      "value": "Value:",
+      "startDate": "Start Date:",
+      "endDate": "End Date (optional):",
+      "interestType": "Return Type:",
+      "interestRate": "Interest Rate:",
+      "interestTypes": {
+        "none": "No Return",
+        "month": "Monthly",
+        "year": "Yearly"
+      }
+    },
+    "validation": {
+      "title": "Title is required.",
+      "value": "Value must be greater than $0.00.",
+      "startDate": "Start date is required.",
+      "endDate": "End date must be after start date.",
+      "interestRate": "Interest rate must be greater than 0."
+    },
+    "status": {
+      "startsIn": "Starts in {{days}} days",
+      "endsIn": "Ends in {{days}} days"
+    },
+    "rentability": {
+      "current": "Current Return",
+      "total": "Total with Return",
+      "expected": "Expected Return",
+      "expectedTotal": "Expected Total"
+    },
+    "history": {
+      "title": "History",
+      "changes": "Changes",
+      "noChanges": "No changes recorded"
+    },
+    "confirmDelete": {
+      "title": "Delete Investment",
+      "message": "Are you sure you want to delete this investment?",
+      "warning": "This action cannot be undone."
+    },
+    "card": {
+      "title": "Investment",
+      "value": "Value",
+      "date": "Start Date",
+      "period": "End Date",
+      "interestRate": "Interest Rate",
+      "interestTypes": {
+        "none": "No Interest",
+        "month": "Monthly",
+        "year": "Yearly"
+      },
+      "status": {
+        "finished": "Finished",
+        "active": "Active",
+        "future": "Future"
+      },
+      "rentability": {
+        "current": "Current Return",
+        "total": "Total with Return",
+        "expected": "Expected Return",
+        "expectedTotal": "Expected Total"
+      }
+    }
+  },
+  "income": {
+    "title": "Income",
+    "header": {
+      "total": "Total Income",
+      "items": "{{count}} income",
+      "add": "New Income"
+    },
+    "empty": {
+      "message": "No income registered.",
+      "filter": "No income found with current filters."
+    },
+    "form": {
+      "title": "Title",
+      "value": "Value",
+      "date": "Receipt Date",
+      "period": "End Date",
+      "received": "Received",
+      "isRecurring": "Recurring",
+      "recurrenceType": "Recurrence Type",
+      "recurrenceCount": "Number of Repetitions",
+      "currencyType": "Currency Type",
+      "recurrenceTypes": {
+        "weekly": "Weekly",
+        "monthly": "Monthly",
+        "yearly": "Yearly"
+      }
+    },
+    "history": {
+      "title": "History",
+      "changes": "Changes",
+      "noChanges": "No changes recorded"
+    },
+    "confirmDelete": {
+      "title": "Delete Income",
+      "message": "Are you sure you want to delete this income?",
+      "warning": "This action cannot be undone."
+    },
+    "card": {
+      "title": "Income",
+      "value": "Value",
+      "date": "Receipt Date",
+      "period": "End Date",
+      "received": "Received",
+      "status": {
+        "received": "Received",
+        "today": "Starting today",
+        "last-day": "Last day",
+        "available": "Available",
+        "complete": "Finished"
+      }
+    },
+    "filters": {
+      "all": "All",
+      "pending": "Pending",
+      "today": "Today",
+      "thisMonth": "This Month",
+      "available": "Available",
+      "recurring": "Recurring"
+    }
+  },
+  "expenses": {
+    "title": "Expenses",
+    "header": {
+      "total": "Total Spent",
+      "estimated": "Estimated Total",
+      "items": "{{count}} expense",
+      "add": "New Expense"
+    },
+    "empty": {
+      "message": "No expenses registered.",
+      "filter": "No expenses found with current filters."
+    },
+    "modal": {
+      "title": "Expense",
+      "create": "New Expense",
+      "edit": "Edit Expense"
+    },
+    "form": {
+      "title": "Title:",
+      "value": "Value:",
+      "date": "Due Date:",
+      "recurring": "Recurring",
+      "paid": "Mark as paid",
+      "recurrence": {
+        "type": "Recurrence type:",
+        "count": "Number of repetitions:",
+        "tip": "Minimum 1 and maximum 365",
+        "daily": "Daily",
+        "weekly": "Weekly",
+        "monthly": "Monthly",
+        "yearly": "Yearly"
+      }
+    },
+    "validation": {
+      "title": "Title is required.",
+      "value": "Value must be greater than $0.00.",
+      "date": "Due date is required.",
+      "recurrence": {
+        "min": "Number of repetitions must be at least 2.",
+        "max": "Maximum number of repetitions is 365."
+      }
+    },
+    "success": {
+      "create": "Expense created successfully!",
+      "update": "Expense updated successfully!",
+      "delete": "Expense deleted successfully!",
+      "markPaid": "Payment status updated successfully!",
+      "markRecurringPaid": "Recurring payment status updated successfully!"
+    },
+    "errors": {
+      "load": "Error loading expenses. Please try again.",
+      "save": "Error saving expense. Please try again.",
+      "delete": "Error deleting expense. Please try again.",
+      "markPaid": "Error updating payment status. Please try again.",
+      "markRecurringPaid": "Error updating recurring payment status. Please try again."
+    },
+    "history": {
+      "title": "History",
+      "changes": "Changes",
+      "noChanges": "No changes recorded"
+    },
+    "confirmDelete": {
+      "title": "Delete Expense",
+      "message": "Are you sure you want to delete this expense?",
+      "warning": "This action cannot be undone."
+    },
+    "card": {
+      "title": "Expense",
+      "value": "Value",
+      "date": "Due Date",
+      "period": "End Date",
+      "paid": "Paid",
+      "status": {
+        "paid": "Paid",
+        "overdue": "Overdue",
+        "today": "Due today",
+        "future": "Due in {{days}} days",
+        "tomorrow": "Due tomorrow",
+        "no-due-date": "No due date",
+        "complete": "Fully Paid"
+      }
+    },
+    "filters": {
+      "all": "All",
+      "today": "Today",
+      "available": "Available",
+      "paid": "Paid",
+      "overdue": "Overdue",
+      "recurring": "Recurring"
+    }
+  },
+  "notFound": {
+    "title": "Page not found",
+    "description": "The page you are trying to access does not exist or has been removed.",
+    "notAuthDescription": "Oops! Looks like you're lost.\nThe page you're looking for doesn't exist or has been moved."
+  },
+  "profile": {
+    "personalInfo": {
+      "title": "Personal Information",
+      "fullName": "Full Name",
+      "accountType": "Account Type",
+      "document": "Document",
+      "birthDate": "Birth Date",
+      "notInformed": "Not informed",
+      "physicalPerson": "Individual",
+      "legalPerson": "Legal Entity"
+    },
+    "contactInfo": {
+      "title": "Contact Information",
+      "email": "Email",
+      "phone": "Phone"
+    },
+    "address": {
+      "title": "Address",
+      "street": "Street",
+      "city": "City",
+      "state": "State",
+      "zipCode": "ZIP Code"
+    },
+    "accountSettings": {
+      "title": "Account Settings",
+      "lgpdTerms": "LGPD Terms",
+      "accepted": "Accepted",
+      "notAccepted": "Not accepted"
+    },
+    "actions": {
+      "editData": "Edit Data",
+      "deleteAccount": "Delete Account",
+      "logout": "Logout"
+    }
+  },
+  "modals": {
+    "logout": {
+      "title": "Logout",
+      "message": "Are you sure you want to log out? You will need to log in again to access the system.",
+      "loading": "Logging out...",
+      "cancel": "Cancel",
+      "confirm": "Logout"
+    },
+    "deleteAccount": {
+      "title": "Delete Account",
+      "warning": "This action is permanent and cannot be undone!",
+      "message": "By deleting your account, all your personal data and information will be permanently removed from the system, including:",
+      "data": {
+        "personal": "Personal data",
+        "transactions": "Transaction history",
+        "settings": "Account settings",
+        "preferences": "Preferences and customizations"
+      },
+      "lgpd": {
+        "title": "Data Protection Information:",
+        "message": "According to Brazil's General Data Protection Law (LGPD) and the European Union's General Data Protection Regulation (GDPR), you have the right to request the deletion of your personal data. By confirming this action, you will be exercising this right and all your data will be permanently removed from our systems."
+      },
+      "cancel": "Back",
+      "confirm": "Delete Account",
+      "success": "Account deleted successfully!"
+    }
+  },
+  "currencies": {
+    "BRL": "Brazilian Real",
+    "CHF": "Swiss Franc",
+    "RUB": "Russian Ruble",
+    "CNY": "Chinese Yuan",
+    "GBP": "British Pound",
+    "USD": "US Dollar",
+    "CAD": "Canadian Dollar",
+    "AUD": "Australian Dollar",
+    "SGD": "Singapore Dollar",
+    "NZD": "New Zealand Dollar",
+    "HKD": "Hong Kong Dollar",
+    "ARS": "Argentine Peso",
+    "MXN": "Mexican Peso",
+    "COP": "Colombian Peso",
+    "SEK": "Swedish Krona",
+    "NOK": "Norwegian Krone",
+    "DKK": "Danish Krone",
+    "INR": "Indian Rupee",
+    "ZAR": "South African Rand",
+    "TRY": "Turkish Lira",
+    "SAR": "Saudi Riyal",
+    "AED": "UAE Dirham",
+    "PLN": "Polish Zloty",
+    "ILS": "Israeli Shekel",
+    "THB": "Thai Baht",
+    "EUR": "Euro",
+    "BTC": "Bitcoin",
+    "ETH": "Ethereum",
+    "BNB": "Binance Coin",
+    "XRP": "Ripple",
+    "ADA": "Cardano",
+    "SOL": "Solana",
+    "DOT": "Polkadot",
+    "DOGE": "Dogecoin",
+    "AVAX": "Avalanche",
+    "MATIC": "Polygon"
+  },
+  "reports": {
+    "title": "Reports",
+    "generating": "Generating report...",
+    "success": "Report generated successfully!",
+    "error": "Error generating report",
+    "dateRangeRequired": "Select the report period",
+    "quick": {
+      "expenses": "Expenses Report",
+      "income": "Income Report",
+      "investments": "Investments Report",
+      "summary": "General Report"
+    },
+    "form": {
+      "startDate": {
+        "label": "Start Date"
+      },
+      "endDate": {
+        "label": "End Date",
+        "error": "End date must be after start date"
+      },
+      "generate": "Generate Report",
+      "type": {
+        "label": "Report Type",
+        "options": {
+          "summary": "General Summary",
+          "expenses": "Expenses",
+          "income": "Income",
+          "investments": "Investments"
+        }
+      }
+    },
+    "summary": {
+      "title": "Period Summary",
+      "income": "Total Income",
+      "expenses": "Total Expenses",
+      "investments": "Total Investments",
+      "balance": "Final Balance"
+    },
+    "charts": {
+      "incomeVsExpenses": "Income vs Expenses",
+      "investments": "Investments",
+      "distribution": "Value Distribution"
+    },
+    "empty": {
+      "title": "No data found",
+      "description": "There is no data to generate reports. Add income, expenses, or investments to get started.",
+      "addIncome": "Add Income",
+      "addExpense": "Add Expense",
+      "addInvestment": "Add Investment"
+    }
+  },
+  "history": {
+    "title": "Change History",
+    "empty": "No history available.",
+    "itemCreated": "Item created",
+    "createdAt": "Created at",
+    "close": "OK, Got it",
+    "notDefined": "Not defined",
+    "indefinite": "Indefinite",
+    "oneRepetition": "1 repetition",
+    "multipleRepetitions": "{{count}} repetitions",
+    "fieldLabels": {
+      "title": "Title",
+      "value": "Value",
+      "date": "Start Date",
+      "period": "End Date",
+      "interestRate": "Interest Rate",
+      "interestType": "Interest Type",
+      "received": "Receipt Status",
+      "isRecurring": "Recurrence",
+      "recurrenceType": "Recurrence Type",
+      "recurrenceCount": "Number of Repetitions"
+    }
+  },
+  "reset-password": {
+    "title": "Reset Password",
+    "password": {
+      "label": "New Password",
+      "placeholder": "Enter your new password"
+    },
+    "confirmPassword": {
+      "label": "Confirm Password",
+      "placeholder": "Confirm your new password"
+    },
+    "button": "Reset Password",
+    "loading": "Resetting password...",
+    "success": "Password reset successfully!",
+    "error": "Error resetting password. Please try again.",
+    "invalidToken": "Invalid or expired token.",
+    "tokenExpired": "Token expired. Please request a new one.",
+    "token": {
+      "label": "Recovery Token",
+      "placeholder": "Enter the token received by email",
+      "verify": "Verify Token",
+      "required": "Token is required",
+      "verifying": "Verifying token...",
+      "success": "Token verified successfully!",
+      "error": "Error verifying token. Please try again."
+    }
+  }
+}

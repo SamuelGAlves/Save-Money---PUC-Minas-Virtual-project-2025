@@ -1,0 +1,1064 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  min-height: 100vh;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: var(--background-color);
+  color: var(--color-text);
+}
+
+/* Estilo para a seleção de texto */
+::selection {
+  background-color: #1f6b6b;
+  color: var(--color-white);
+}
+
+::-moz-selection {
+  background-color: #1f6b6b;
+  color: var(--color-white);
+}
+
+.page-title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  margin-top: 0;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+@media (max-width: 800px) {
+  .page-title {
+    font-size: 1.2rem;
+  }
+}
+
+.page-main {
+  padding: 2rem;
+  padding-left: 270px;
+  overflow-y: auto;
+  overflow-x: hidden;
+
+  &.collapsed {
+    padding-left: 90px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .page-main {
+    padding-left: 2rem;
+  }
+}
+
+/* Estilos globais da scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--scrollbar-track);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--scrollbar-thumb);
+  border-radius: 5px;
+  transition: background 0.2s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--scrollbar-thumb-hover);
+}
+
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--scrollbar-thumb) var(--scrollbar-track);
+}
+
+/* Para elementos com overflow */
+.overflow-auto,
+.overflow-scroll,
+.overflow-y-auto,
+.overflow-y-scroll,
+.overflow-x-auto,
+.overflow-x-scroll {
+  scrollbar-gutter: stable;
+}
+
+body.light-mode {
+  /* Cores básicas */
+  --color-primary: #339999;
+  --color-secondary: #2d8c8c;
+  --color-danger: #c82333;
+  --color-background: #f8f9fa;
+  --color-text: #333;
+  --color-text-muted: #555;
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --color-gray-light: #e0e0e0;
+  --color-gray-dark: #6c757d;
+  --color-warning: #ffc107;
+  --color-success: #3f9954;
+  --color-info: #007bff;
+  --progress-border-color: #ffffff;
+
+  /* Overlay */
+  --overlay-opacity: 0;
+  --overlay-brightness: 1;
+
+  /* Scrollbar */
+  --scrollbar-track: transparent;
+  --scrollbar-thumb: #216e6e;
+  --scrollbar-thumb-hover: #216e6e;
+
+  /* Gradientes */
+  --gradient-primary-to-bottom: linear-gradient(
+    to bottom,
+    #339999 0%,
+    #2d8c8c 100%
+  );
+  --gradient-primary: linear-gradient(90deg, #339999 0%, var(--color-success) 100%);
+  --gradient-secondary: linear-gradient(90deg, #e0e0e0 0%, #b0b0b0 100%);
+  --gradient-danger: linear-gradient(90deg, #ff6b6b 0%, #c0392b 100%);
+  --gradient-ghost: linear-gradient(90deg, #ffffff 0%, #f7f7f7 100%);
+
+  /* Backgrounds */
+  --background-color: var(--color-background);
+  --background-card-color: var(--color-white);
+  --background-gradient-transparent: rgba(255, 255, 255, 0);
+
+  /* Text Colors */
+  --text-color: var(--color-text);
+  --text-muted-color: var(--color-text-muted);
+
+  /* Header */
+  --header-background-color: #339999;
+  --header-font-family: Arial, sans-serif;
+  --header-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  --header-collapsed-width: 60px;
+  --header-mobile-box-shadow: 5px 0 10px rgba(0, 0, 0, 0.2);
+  --header-collapsed-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+  /* InvestmentCard */
+  --border-color: var(--color-gray-light);
+  --badge-text-color: var(--color-white);
+  --status-last-day-color: #c56c00;
+  --status-future-color: var(--color-gray-dark);
+  --status-today-color: var(--color-secondary);
+  --status-active-color: #4CAF50;
+  --status-finished-color: #4CAF50;
+  --rentability-color: #4CAF50;
+  --rentability-total-color: #4CAF50;
+  --expected-rentability-color:#4CAF50;
+  --expected-rentability-total-color: var(--color-info);
+
+  /* ReceitaCard */
+  --status-received-color: var(--despesa-status-paid-color);
+  --status-received-color-light: var(--despesa-status-paid-color-light);
+  --status-pending-color: #FFD54F;
+  --status-this-month-color: #42A5F5;
+  --status-next-month-color: #42A5F5;
+  --status-available-color: #FF9800;
+  --status-overdue-color: #f44336;
+  --status-overdue-color-light: rgba(244, 67, 54, 0.15);
+  --status-today-color: #ff9800;
+  --status-today-color-light: rgba(255, 152, 0, 0.15);
+
+  /* DespesaCard */
+  --despesa-status-paid-color: #4caf50;
+  --despesa-status-paid-color-light: rgba(76, 175, 80, 0.15);
+  --despesa-status-overdue-color: #f44336;
+  --despesa-status-overdue-color-light: rgba(244, 67, 54, 0.15);
+  --despesa-status-today-color: #ff9800;
+  --despesa-status-today-color-light: rgba(255, 152, 0, 0.15);
+  --despesa-status-future-color: #2196f3;
+  --despesa-status-future-color-light: rgba(33, 150, 243, 0.15);
+  --despesa-badge-text-color: var(--color-white);
+
+  /* Toast */
+  --toast-shadow-color: rgba(0, 0, 0, 0.1);
+  --toast-text-color: var(--color-white);
+  --toast-info-bg-color: var(--color-info);
+  --toast-success-bg-color: var(--color-success);
+  --toast-warning-bg-color: var(--color-warning);
+  --toast-warning-text-color: var(--color-text);
+  --toast-error-bg-color: var(--color-danger);
+
+  /* Input */
+  --input-label-color: var(--color-text);
+  --input-border-color: var(--color-gray-light);
+  --input-text-color: var(--color-black);
+  --input-background-color: var(--color-white);
+  --input-error-border-color: var(--color-danger);
+  --input-error-text-color: var(--color-danger);
+  --input-calendar-filter: invert(0);
+
+  /* Input disabled */
+  --input-disabled-background-color: #f0f0f0;
+  --input-disabled-text-color: #555555;
+  --input-disabled-border-color: var(--color-gray-light);
+
+  /* Input readonly */
+  --input-readonly-background-color: #eee;
+  --input-readonly-text-color: #555555;
+  --input-readonly-border-color: var(--color-gray-light);
+
+  /* Button */
+  --button-border-radius: 6px;
+  --button-box-shadow: inset 0px 4px 4px rgba(255, 255, 255, 0.25);
+
+  --button-primary-bg: var(--gradient-primary);
+  --button-primary-text-color: var(--color-white);
+  --button-primary-border: 1px solid #2d8c8c;
+  --button-primary-hover-bg: linear-gradient(90deg, #2d8c8c 0%, var(--color-warning) 100%);
+
+  --button-secondary-bg: var(--gradient-secondary);
+  --button-secondary-text-color: var(--color-text);
+  --button-secondary-border: 1px solid #b0b0b0;
+  --button-secondary-hover-bg: linear-gradient(90deg, #d6d6d6 0%, #a5a5a5 100%);
+
+  --button-danger-bg: var(--gradient-danger);
+  --button-danger-text-color: var(--color-white);
+  --button-danger-border: 1px solid #c0392b;
+  --button-danger-hover-bg: linear-gradient(90deg, #ff4c4c 0%, #a93226 100%);
+
+  --button-ghost-bg: var(--gradient-ghost);
+  --button-ghost-text-color: var(--color-text);
+  --button-ghost-border: 1px solid var(--color-gray-light);
+  --button-ghost-hover-bg: linear-gradient(90deg, #f0f0f0 0%, #e0e0e0 100%);
+
+  /* Button Sizes */
+  --button-sm-font-size: 0.7rem;
+  --button-sm-padding: 0.6em 1.2em;
+
+  --button-md-font-size: 0.8rem;
+  --button-md-padding: 0.8em 1.6em;
+
+  --button-lg-font-size: 1rem;
+  --button-lg-padding: 1em 2em;
+
+  --button-disabled-opacity: 0.6;
+
+  /* Logo */
+  --logo-text-color: #fff;
+
+  /* Navbar */
+  --navbar-toggle-bg: var(--header-background-color);
+  --navbar-toggle-hover-color: var(--color-white);
+  --navbar-toggle-icon-color: var(--color-white);
+
+  --navbar-group-title-color: #165555;
+  --navbar-link-color: #fff;
+  --navbar-link-hover-color: var(--color-white);
+  --navbar-link-hover-bg: #2d8c8c;
+  --navbar-link-active-color: var(--color-white);
+  --navbar-link-active-bg: #1f6b6b;
+  --navbar-link-active-hover-bg: #165555;
+  --navbar-border-color: #2d8c8c;
+
+  /* Mobile Overlay */
+  --mobile-overlay-background: rgba(30, 30, 30, 0.5);
+  --mobile-overlay-backdrop-filter: blur(5px) grayscale(1);
+
+  /* Filtro para logo da PUC Minas */
+  --puc-logo-filter: none;
+}
+
+/* Estilos específicos por idioma */
+html[lang="pt-BR"] body.light-mode {
+  --gradient-loader: linear-gradient(90deg,
+    var(--color-success) 0%,
+    var(--color-warning) 12.5%,
+    var(--color-primary) 25%,
+    var(--color-warning) 37.5%,
+    var(--color-success) 50%,
+    var(--color-warning) 62.5%,
+    var(--color-primary) 75%,
+    var(--color-warning) 87.5%,
+    var(--color-success) 100%
+  );
+  --gradient-logo: linear-gradient(90deg,
+    var(--color-success) 0%,
+    var(--color-warning) 12.5%,
+    var(--color-primary) 25%,
+    var(--color-warning) 37.5%,
+    var(--color-success) 50%,
+    var(--color-warning) 62.5%,
+    var(--color-primary) 75%,
+    var(--color-warning) 87.5%,
+    var(--color-success) 100%
+  );
+  --gradient-loader-vertical: linear-gradient(180deg,
+    var(--color-success) 0%,
+    var(--color-warning) 12.5%,
+    var(--color-primary) 25%,
+    var(--color-warning) 37.5%,
+    var(--color-success) 50%,
+    var(--color-warning) 62.5%,
+    var(--color-primary) 75%,
+    var(--color-warning) 87.5%,
+    var(--color-success) 100%
+  );
+}
+
+html[lang="en-US"] body.light-mode {
+  --gradient-loader: linear-gradient(90deg,
+    #002868 0%,
+    #bf0a30 12.5%,
+    #001f54 25%,
+    #bf0a30 37.5%,
+    #002868 50%,
+    #bf0a30 62.5%,
+    #001f54 75%,
+    #bf0a30 87.5%,
+    #002868 100%
+  );
+  --gradient-logo: linear-gradient(90deg,
+    #002868 0%,
+    #bf0a30 12.5%,
+    #001f54 25%,
+    #bf0a30 37.5%,
+    #002868 50%,
+    #bf0a30 62.5%,
+    #001f54 75%,
+    #bf0a30 87.5%,
+    #002868 100%
+  );
+  --gradient-loader-vertical: linear-gradient(180deg,
+    #002868 0%,
+    #bf0a30 12.5%,
+    #001f54 25%,
+    #bf0a30 37.5%,
+    #002868 50%,
+    #bf0a30 62.5%,
+    #001f54 75%,
+    #bf0a30 87.5%,
+    #002868 100%
+  );
+}
+
+html[lang="es-ES"] body.light-mode {
+  --gradient-loader: linear-gradient(90deg,
+    #c62828 0%,
+    #fbc02d 12.5%,
+    #b71c1c 25%,
+    #fbc02d 37.5%,
+    #c62828 50%,
+    #fbc02d 62.5%,
+    #b71c1c 75%,
+    #fbc02d 87.5%,
+    #c62828 100%
+  );
+  --gradient-logo: linear-gradient(90deg,
+    #c62828 0%,
+    #fbc02d 12.5%,
+    #b71c1c 25%,
+    #fbc02d 37.5%,
+    #c62828 50%,
+    #fbc02d 62.5%,
+    #b71c1c 75%,
+    #fbc02d 87.5%,
+    #c62828 100%
+  );
+  --gradient-loader-vertical: linear-gradient(180deg,
+    #c62828 0%,
+    #fbc02d 12.5%,
+    #b71c1c 25%,
+    #fbc02d 37.5%,
+    #c62828 50%,
+    #fbc02d 62.5%,
+    #b71c1c 75%,
+    #fbc02d 87.5%,
+    #c62828 100%
+  );
+}
+
+html[lang="fr-FR"] body.light-mode {
+  --gradient-loader: linear-gradient(90deg,
+    #1565c0 0%,
+    #d32f2f 12.5%,
+    #0d47a1 25%,
+    #d32f2f 37.5%,
+    #1565c0 50%,
+    #d32f2f 62.5%,
+    #0d47a1 75%,
+    #d32f2f 87.5%,
+    #1565c0 100%
+  );
+  --gradient-logo: linear-gradient(90deg,
+    #1565c0 0%,
+    #d32f2f 12.5%,
+    #0d47a1 25%,
+    #d32f2f 37.5%,
+    #1565c0 50%,
+    #d32f2f 62.5%,
+    #0d47a1 75%,
+    #d32f2f 87.5%,
+    #1565c0 100%
+  );
+  --gradient-loader-vertical: linear-gradient(180deg,
+    #1565c0 0%,
+    #d32f2f 12.5%,
+    #0d47a1 25%,
+    #d32f2f 37.5%,
+    #1565c0 50%,
+    #d32f2f 62.5%,
+    #0d47a1 75%,
+    #d32f2f 87.5%,
+    #1565c0 100%
+  );
+}
+
+html[lang="ar-SA"] body.light-mode {
+  --gradient-loader: linear-gradient(90deg,
+    #00695c 0%,
+    #b8860b 12.5%,
+    #004d40 25%,
+    #b8860b 37.5%,
+    #00695c 50%,
+    #b8860b 62.5%,
+    #004d40 75%,
+    #b8860b 87.5%,
+    #00695c 100%
+  );
+  --gradient-logo: linear-gradient(90deg,
+    #00695c 0%,
+    #b8860b 12.5%,
+    #004d40 25%,
+    #b8860b 37.5%,
+    #00695c 50%,
+    #b8860b 62.5%,
+    #004d40 75%,
+    #b8860b 87.5%,
+    #00695c 100%
+  );
+  --gradient-loader-vertical: linear-gradient(180deg,
+    #00695c 0%,
+    #b8860b 12.5%,
+    #004d40 25%,
+    #b8860b 37.5%,
+    #00695c 50%,
+    #b8860b 62.5%,
+    #004d40 75%,
+    #b8860b 87.5%,
+    #00695c 100%
+  );
+}
+
+html[lang="zh-CN"] body.light-mode {
+  --gradient-loader: linear-gradient(90deg,
+    #c62828 0%,
+    #ffd700 12.5%,
+    #b71c1c 25%,
+    #ffd700 37.5%,
+    #c62828 50%,
+    #ffd700 62.5%,
+    #b71c1c 75%,
+    #ffd700 87.5%,
+    #c62828 100%
+  );
+  --gradient-logo: linear-gradient(90deg,
+    #c62828 0%,
+    #ffd700 12.5%,
+    #b71c1c 25%,
+    #ffd700 37.5%,
+    #c62828 50%,
+    #ffd700 62.5%,
+    #b71c1c 75%,
+    #ffd700 87.5%,
+    #c62828 100%
+  );
+  --gradient-loader-vertical: linear-gradient(180deg,
+    #c62828 0%,
+    #ffd700 12.5%,
+    #b71c1c 25%,
+    #ffd700 37.5%,
+    #c62828 50%,
+    #ffd700 62.5%,
+    #b71c1c 75%,
+    #ffd700 87.5%,
+    #c62828 100%
+  );
+}
+
+html[lang="ru-RU"] body.light-mode {
+  --gradient-loader: linear-gradient(90deg,
+    #0039a6 0%,
+    #8b0000 12.5%,
+    #002a7d 25%,
+    #8b0000 37.5%,
+    #0039a6 50%,
+    #8b0000 62.5%,
+    #002a7d 75%,
+    #8b0000 87.5%,
+    #0039a6 100%
+  );
+  --gradient-loader-vertical: linear-gradient(180deg,
+    #0039a6 0%,
+    #8b0000 12.5%,
+    #002a7d 25%,
+    #8b0000 37.5%,
+    #0039a6 50%,
+    #8b0000 62.5%,
+    #002a7d 75%,
+    #8b0000 87.5%,
+    #0039a6 100%
+  );
+  --gradient-logo: linear-gradient(90deg,
+    #0039a6 0%,
+    #8b0000 12.5%,
+    #002a7d 25%,
+    #8b0000 37.5%,
+    #0039a6 50%,
+    #8b0000 62.5%,
+    #002a7d 75%,
+    #8b0000 87.5%,
+    #0039a6 100%
+  );
+}
+
+html[lang="hi-IN"] body.light-mode {
+  --gradient-loader: linear-gradient(90deg,
+    #2e7d32 0%,
+    #ff9800 12.5%,
+    #1b5e20 25%,
+    #ff9800 37.5%,
+    #2e7d32 50%,
+    #ff9800 62.5%,
+    #1b5e20 75%,
+    #ff9800 87.5%,
+    #2e7d32 100%
+  );
+  --gradient-logo: linear-gradient(90deg,
+    #2e7d32 0%,
+    #ff9800 12.5%,
+    #1b5e20 25%,
+    #ff9800 37.5%,
+    #2e7d32 50%,
+    #ff9800 62.5%,
+    #1b5e20 75%,
+    #ff9800 87.5%,
+    #2e7d32 100%
+  );
+  --gradient-loader-vertical: linear-gradient(180deg,
+    #2e7d32 0%,
+    #ff9800 12.5%,
+    #1b5e20 25%,
+    #ff9800 37.5%,
+    #2e7d32 50%,
+    #ff9800 62.5%,
+    #1b5e20 75%,
+    #ff9800 87.5%,
+    #2e7d32 100%
+  );
+}
+
+html[lang="zu-ZA"] body.light-mode {
+  --gradient-loader: linear-gradient(90deg,
+    #2e7d32 0%,
+    #d32f2f 12.5%,
+    #1b5e20 25%,
+    #d32f2f 37.5%,
+    #2e7d32 50%,
+    #d32f2f 62.5%,
+    #1b5e20 75%,
+    #d32f2f 87.5%,
+    #2e7d32 100%
+  );
+  --gradient-logo: linear-gradient(90deg,
+    #2e7d32 0%,
+    #d32f2f 12.5%,
+    #1b5e20 25%,
+    #d32f2f 37.5%,
+    #2e7d32 50%,
+    #d32f2f 62.5%,
+    #1b5e20 75%,
+    #d32f2f 87.5%,
+    #2e7d32 100%
+  );
+  --gradient-loader-vertical: linear-gradient(180deg,
+    #2e7d32 0%,
+    #d32f2f 12.5%,
+    #1b5e20 25%,
+    #d32f2f 37.5%,
+    #2e7d32 50%,
+    #d32f2f 62.5%,
+    #1b5e20 75%,
+    #d32f2f 87.5%,
+    #2e7d32 100%
+  );
+}
+
+body.dark-mode {
+  /* Cores básicas */
+  --color-primary: #2d8c8c;
+  --color-secondary: #1f6b6b;
+  --color-danger: #ff6b6b;
+  --color-background: #121212;
+  --color-text: #f1f3f5;
+  --color-text-muted: #ced4da;
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --color-gray-light: #2b2b2b;
+  --color-gray-dark: #adb5bd;
+  --color-warning: #ffe066;
+  --color-success: #69db7c;
+  --color-info: #339af0;
+  --progress-border-color: #000000;
+
+  /* Overlay */
+  --overlay-opacity: 0.6;
+  --overlay-brightness: 0.5;
+
+  /* Scrollbar */
+  --scrollbar-track: transparent;
+  --scrollbar-thumb: #333333;
+  --scrollbar-thumb-hover: #404040;
+
+  /* Gradientes */
+  --gradient-primary-to-bottom: linear-gradient(
+    to bottom,
+    #2d8c8c 0%,
+    #1f6b6b 100%
+  );
+  --gradient-primary: linear-gradient(90deg, #2d8c8c 0%, var(--color-success) 100%);
+  --gradient-secondary: linear-gradient(90deg, #495057 0%, #343a40 100%);
+  --gradient-danger: linear-gradient(90deg, #872626 0%, #c92a2a 100%);
+  --gradient-ghost: linear-gradient(90deg, #2b2b2b 0%, #1f1f1f 100%);
+
+  /* Backgrounds */
+  --background-color: var(--color-background);
+  --background-card-color: #1c1c1c;
+  --background-gradient-transparent: rgba(18, 18, 18, 0);
+
+  /* Text Colors */
+  --text-color: var(--color-text);
+  --text-muted-color: var(--color-text-muted);
+
+  /* Header */
+  --header-background-color: #1c1c1c;
+  --header-font-family: Arial, sans-serif;
+  --header-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+  --header-collapsed-width: 60px;
+  --header-mobile-box-shadow: 5px 0 10px rgba(0, 0, 0, 0.7);
+  --header-collapsed-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+
+  /* InvestmentCard */
+  --border-color: var(--color-gray-light);
+  --badge-text-color: var(--color-black);
+  --status-last-day-color: #ffc107;
+  --status-future-color: var(--color-gray-dark);
+  --status-today-color: #4CAF50;
+  --status-active-color: #4CAF50;
+  --status-finished-color: #4CAF50;
+  --rentability-color: #4CAF50;
+  --rentability-total-color: #4CAF50;
+  --expected-rentability-color:#4CAF50;
+  --expected-rentability-total-color: var(--color-info);
+
+  /* ReceitaCard */
+  --status-received-color: var(--despesa-status-paid-color);
+  --status-received-color-light: var(--despesa-status-paid-color-light);
+  --status-pending-color: #FFD54F;
+  --status-this-month-color: #42A5F5;
+  --status-next-month-color: #42A5F5;
+  --status-available-color: #FF9800;
+  --status-overdue-color: #f44336;
+  --status-overdue-color-light: var(--background-card-color);
+  --status-today-color: #ff9800;
+  --status-today-color-light: var(--background-card-color);
+
+  /* DespesaCard */
+  --despesa-status-paid-color: #4caf50;
+  --despesa-status-paid-color-light: var(--background-card-color);
+  --despesa-status-overdue-color: #f44336;
+  --despesa-status-overdue-color-light: var(--background-card-color);
+  --despesa-status-today-color: #ff9800;
+  --despesa-status-today-color-light: var(--background-card-color);
+  --despesa-status-future-color: #2196f3;
+  --despesa-status-future-color-light: var(--background-card-color);
+  --despesa-badge-text-color: var(--color-white);
+
+  /* Toast */
+  --toast-shadow-color: rgba(0, 0, 0, 0.6);
+  --toast-text-color: var(--color-black);
+  --toast-info-bg-color: var(--color-info);
+  --toast-success-bg-color: var(--color-success);
+  --toast-warning-bg-color: var(--color-warning);
+  --toast-warning-text-color: var(--color-black);
+  --toast-error-bg-color: var(--color-danger);
+
+  /* Input */
+  --input-label-color: var(--color-text);
+  --input-border-color: var(--color-gray-light);
+  --input-text-color: var(--color-white);
+  --input-background-color: #1e1e1e;
+  --input-error-border-color: var(--color-danger);
+  --input-error-text-color: var(--color-danger);
+  --input-calendar-filter: invert(1) saturate(5);
+
+  /* Input disabled */
+  --input-disabled-background-color: #3a3a3a;
+  --input-disabled-text-color: #777777;
+  --input-disabled-border-color: #555555;
+
+  /* Input readonly */
+  --input-readonly-background-color: #2f2f2f;
+  --input-readonly-text-color: #999999;
+  --input-readonly-border-color: #666666;
+
+  /* Button */
+  --button-border-radius: 6px;
+  --button-box-shadow: inset 0px -4px 4px rgba(0, 0, 0, 0.5);
+
+  --button-primary-bg: var(--gradient-primary);
+  --button-primary-text-color: var(--color-white);
+  --button-primary-border: 1px solid #1f6b6b;
+  --button-primary-hover-bg: linear-gradient(90deg, #1f6b6b 0%, var(--color-warning) 100%);
+
+  --button-secondary-bg: var(--gradient-secondary);
+  --button-secondary-text-color: var(--color-text);
+  --button-secondary-border: 1px solid #495057;
+  --button-secondary-hover-bg: linear-gradient(90deg, #6c757d 0%, #343a40 100%);
+
+  --button-danger-bg: var(--gradient-danger);
+  --button-danger-text-color: var(--color-white);
+  --button-danger-border: 1px solid #c92a2a;
+  --button-danger-hover-bg: linear-gradient(90deg, #ff4c4c 0%, #a4161a 100%);
+
+  --button-ghost-bg: var(--gradient-ghost);
+  --button-ghost-text-color: var(--color-text);
+  --button-ghost-border: 1px solid var(--color-gray-light);
+  --button-ghost-hover-bg: linear-gradient(90deg, #3b3b3b 0%, #2b2b2b 100%);
+
+  /* Button Sizes */
+  --button-sm-font-size: 0.7rem;
+  --button-sm-padding: 0.6em 1.2em;
+
+  --button-md-font-size: 0.8rem;
+  --button-md-padding: 0.8em 1.6em;
+
+  --button-lg-font-size: 1rem;
+  --button-lg-padding: 1em 2em;
+
+  /* Logo */
+  --logo-text-color: var(--color-white);
+
+  /* Navbar */
+  --navbar-toggle-bg: var(--header-background-color);
+  --navbar-toggle-hover-color: var(--color-white);
+  --navbar-toggle-icon-color: var(--color-white);
+
+  --navbar-link-color: var(--color-text);
+  --navbar-link-hover-color: var(--color-white);
+  --navbar-link-hover-bg: #2d8c8c;
+  --navbar-link-active-color: var(--color-white);
+  --navbar-link-active-bg: #1f6b6b;
+  --navbar-link-active-hover-bg: #165555;
+  --navbar-border-color: #333;
+
+  /* Mobile Overlay */
+  --mobile-overlay-background: rgba(0, 0, 0, 0.6);
+  --mobile-overlay-backdrop-filter: blur(5px) grayscale(0.5);
+
+  /* Filtro para logo da PUC Minas */
+  --puc-logo-filter: grayscale(1) invert(0.92) brightness(0.9);
+}
+
+/* Estilos específicos por idioma - Dark Mode */
+html[lang="pt-BR"] body.dark-mode {
+  --gradient-loader: linear-gradient(90deg,
+    var(--color-success) 0%,
+    var(--color-warning) 12.5%,
+    var(--color-primary) 25%,
+    var(--color-warning) 37.5%,
+    var(--color-success) 50%,
+    var(--color-warning) 62.5%,
+    var(--color-primary) 75%,
+    var(--color-warning) 87.5%,
+    var(--color-success) 100%
+  );
+  --gradient-logo: linear-gradient(90deg,
+    var(--color-success) 0%,
+    var(--color-warning) 12.5%,
+    var(--color-primary) 25%,
+    var(--color-warning) 37.5%,
+    var(--color-success) 50%,
+    var(--color-warning) 62.5%,
+    var(--color-primary) 75%,
+    var(--color-warning) 87.5%,
+    var(--color-success) 100%
+  );
+  --gradient-loader-vertical: linear-gradient(180deg,
+    var(--color-success) 0%,
+    var(--color-warning) 12.5%,
+    var(--color-primary) 25%,
+    var(--color-warning) 37.5%,
+    var(--color-success) 50%,
+    var(--color-warning) 62.5%,
+    var(--color-primary) 75%,
+    var(--color-warning) 87.5%,
+    var(--color-success) 100%
+  );
+}
+
+html[lang="en-US"] body.dark-mode {
+  --gradient-loader: linear-gradient(90deg,
+    #001f54 0%,
+    #8b0000 12.5%,
+    #001233 25%,
+    #8b0000 37.5%,
+    #001f54 50%,
+    #8b0000 62.5%,
+    #001233 75%,
+    #8b0000 87.5%,
+    #001f54 100%
+  );
+  --gradient-logo: linear-gradient(90deg,
+    #001f54 0%,
+    #8b0000 12.5%,
+    #001233 25%,
+    #8b0000 37.5%,
+    #001f54 50%,
+    #8b0000 62.5%,
+    #001233 75%,
+    #8b0000 87.5%,
+    #001f54 100%
+  );
+  --gradient-loader-vertical: linear-gradient(180deg,
+    #001f54 0%,
+    #8b0000 12.5%,
+    #001233 25%,
+    #8b0000 37.5%,
+    #001f54 50%,
+    #8b0000 62.5%,
+    #001233 75%,
+    #8b0000 87.5%,
+    #001f54 100%
+  );
+}
+
+html[lang="es-ES"] body.dark-mode {
+  --gradient-loader: linear-gradient(90deg,
+    #8b0000 0%,
+    #fbc02d 12.5%,
+    #5c0000 25%,
+    #fbc02d 37.5%,
+    #8b0000 50%,
+    #fbc02d 62.5%,
+    #5c0000 75%,
+    #fbc02d 87.5%,
+    #8b0000 100%
+  );
+  --gradient-logo: linear-gradient(90deg,
+    #8b0000 0%,
+    #fbc02d 12.5%,
+    #5c0000 25%,
+    #fbc02d 37.5%,
+    #8b0000 50%,
+    #fbc02d 62.5%,
+    #5c0000 75%,
+    #fbc02d 87.5%,
+    #8b0000 100%
+  );
+  --gradient-loader-vertical: linear-gradient(180deg,
+    #8b0000 0%,
+    #fbc02d 12.5%,
+    #5c0000 25%,
+    #fbc02d 37.5%,
+    #8b0000 50%,
+    #fbc02d 62.5%,
+    #5c0000 75%,
+    #fbc02d 87.5%,
+    #8b0000 100%
+  );
+}
+
+html[lang="fr-FR"] body.dark-mode {
+  --gradient-loader: linear-gradient(90deg,
+    #0d47a1 0%,
+    #b71c1c 12.5%,
+    #01579b 25%,
+    #b71c1c 37.5%,
+    #0d47a1 50%,
+    #b71c1c 62.5%,
+    #01579b 75%,
+    #b71c1c 87.5%,
+    #0d47a1 100%
+  );
+  --gradient-logo: linear-gradient(90deg,
+    #0d47a1 0%,
+    #b71c1c 12.5%,
+    #01579b 25%,
+    #b71c1c 37.5%,
+    #0d47a1 50%,
+    #b71c1c 62.5%,
+    #01579b 75%,
+    #b71c1c 87.5%,
+    #0d47a1 100%
+  );
+  --gradient-loader-vertical: linear-gradient(180deg,
+    #0d47a1 0%,
+    #b71c1c 12.5%,
+    #01579b 25%,
+    #b71c1c 37.5%,
+    #0d47a1 50%,
+    #b71c1c 62.5%,
+    #01579b 75%,
+    #b71c1c 87.5%,
+    #0d47a1 100%
+  );
+}
+
+html[lang="ar-SA"] body.dark-mode {
+  --gradient-loader: linear-gradient(90deg,
+    #004d40 0%,
+    #8b6914 12.5%,
+    #00251a 25%,
+    #8b6914 37.5%,
+    #004d40 50%,
+    #8b6914 62.5%,
+    #00251a 75%,
+    #8b6914 87.5%,
+    #004d40 100%
+  );
+  --gradient-logo: linear-gradient(90deg,
+    #004d40 0%,
+    #8b6914 12.5%,
+    #00251a 25%,
+    #8b6914 37.5%,
+    #004d40 50%,
+    #8b6914 62.5%,
+    #00251a 75%,
+    #8b6914 87.5%,
+    #004d40 100%
+  );
+  --gradient-loader-vertical: linear-gradient(180deg,
+    #004d40 0%,
+    #8b6914 12.5%,
+    #00251a 25%,
+    #8b6914 37.5%,
+    #004d40 50%,
+    #8b6914 62.5%,
+    #00251a 75%,
+    #8b6914 87.5%,
+    #004d40 100%
+  );
+}
+
+html[lang="zh-CN"] body.dark-mode {
+  --gradient-loader: linear-gradient(90deg,
+    #8b0000 0%,
+    #ffd700 12.5%,
+    #5c0000 25%,
+    #ffd700 37.5%,
+    #8b0000 50%,
+    #ffd700 62.5%,
+    #5c0000 75%,
+    #ffd700 87.5%,
+    #8b0000 100%
+  );
+  --gradient-logo: linear-gradient(90deg,
+    #8b0000 0%,
+    #ffd700 12.5%,
+    #5c0000 25%,
+    #ffd700 37.5%,
+    #8b0000 50%,
+    #ffd700 62.5%,
+    #5c0000 75%,
+    #ffd700 87.5%,
+    #8b0000 100%
+  );
+  --gradient-loader-vertical: linear-gradient(180deg,
+    #8b0000 0%,
+    #ffd700 12.5%,
+    #5c0000 25%,
+    #ffd700 37.5%,
+    #8b0000 50%,
+    #ffd700 62.5%,
+    #5c0000 75%,
+    #ffd700 87.5%,
+    #8b0000 100%
+  );
+}
+
+html[lang="ru-RU"] body.dark-mode {
+  --gradient-loader: linear-gradient(90deg, #002a7d 0%, #8b0000 12.5%, #001f5c 25%, #8b0000 37.5%, #002a7d 50%, #8b0000 62.5%, #001f5c 75%, #8b0000 87.5%, #002a7d 100%);
+  --gradient-logo: linear-gradient(90deg, #002a7d 0%, #8b0000 12.5%, #001f5c 25%, #8b0000 37.5%, #002a7d 50%, #8b0000 62.5%, #001f5c 75%, #8b0000 87.5%, #002a7d 100%);
+  --gradient-loader-vertical: linear-gradient(180deg, #002a7d 0%, #8b0000 12.5%, #001f5c 25%, #8b0000 37.5%, #002a7d 50%, #8b0000 62.5%, #001f5c 75%, #8b0000 87.5%, #002a7d 100%);
+}
+
+html[lang="hi-IN"] body.dark-mode {
+  --gradient-loader: linear-gradient(90deg,
+    #2e7d32 0%,
+    #ff9800 12.5%,
+    #1b5e20 25%,
+    #ff9800 37.5%,
+    #2e7d32 50%,
+    #ff9800 62.5%,
+    #1b5e20 75%,
+    #ff9800 87.5%,
+    #2e7d32 100%
+  );
+  --gradient-logo: linear-gradient(90deg,
+    #2e7d32 0%,
+    #ff9800 12.5%,
+    #1b5e20 25%,
+    #ff9800 37.5%,
+    #2e7d32 50%,
+    #ff9800 62.5%,
+    #1b5e20 75%,
+    #ff9800 87.5%,
+    #2e7d32 100%
+  );
+  --gradient-loader-vertical: linear-gradient(180deg,
+    #2e7d32 0%,
+    #ff9800 12.5%,
+    #1b5e20 25%,
+    #ff9800 37.5%,
+    #2e7d32 50%,
+    #ff9800 62.5%,
+    #1b5e20 75%,
+    #ff9800 87.5%,
+    #2e7d32 100%
+  );
+}
+
+html[lang="zu-ZA"] body.dark-mode {
+  --gradient-loader: linear-gradient(90deg,
+    #2e7d32 0%,
+    #d32f2f 12.5%,
+    #1b5e20 25%,
+    #d32f2f 37.5%,
+    #2e7d32 50%,
+    #d32f2f 62.5%,
+    #1b5e20 75%,
+    #d32f2f 87.5%,
+    #2e7d32 100%
+  );
+  --gradient-logo: linear-gradient(90deg,
+    #2e7d32 0%,
+    #d32f2f 12.5%,
+    #1b5e20 25%,
+    #d32f2f 37.5%,
+    #2e7d32 50%,
+    #d32f2f 62.5%,
+    #1b5e20 75%,
+    #d32f2f 87.5%,
+    #2e7d32 100%
+  );
+  --gradient-loader-vertical: linear-gradient(180deg,
+    #2e7d32 0%,
+    #d32f2f 12.5%,
+    #1b5e20 25%,
+    #d32f2f 37.5%,
+    #2e7d32 50%,
+    #d32f2f 62.5%,
+    #1b5e20 75%,
+    #d32f2f 87.5%,
+    #2e7d32 100%
+  );
+}
