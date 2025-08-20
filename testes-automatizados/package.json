@@ -1,0 +1,40 @@
+{
+  "name": "save-money-testes",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "start-server-and-test start:server http://localhost:4200 'cypress open --config-file cypress.local.config.js'",
+    "test:docs": "npm run clean:reporter && start-server-and-test start:server http://localhost:4200 'cypress run --config-file cypress.docs.config.js'",
+    "test:open": "start-server-and-test start:server http://localhost:4200 'cypress open'",
+    "test:reporter": "npm run clean:reporter && start-server-and-test start:server http://localhost:4200 'cypress run --config-file cypress.reporter.config.js'",
+    "start:server": "cd ../ && npx http-server -c-1 -p 4200 --cors --push-state > NUL 2>&1",
+    "clean:reporter": "node clean-reports.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2025-1-e1-proj-web-t6-v2-pmv-ads-2025-1-e1-proj-savemoney.git"
+  },
+  "author": "Lucas Ferreira de Lima <lucasferreiralimax@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2025-1-e1-proj-web-t6-v2-pmv-ads-2025-1-e1-proj-savemoney/issues"
+  },
+  "homepage": "https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2025-1-e1-proj-web-t6-v2-pmv-ads-2025-1-e1-proj-savemoney#readme",
+  "description": "Testes automatizados do projeto Save Money - Gerencie seus investimentos e finanças pessoais de forma inteligente.",
+  "keywords": [
+    "save-money",
+    "testes",
+    "automatizados",
+    "finanças",
+    "investimentos",
+    "economia"
+  ],
+  "devDependencies": {
+    "cypress": "^14.4.0",
+    "mochawesome": "^7.1.3",
+    "mochawesome-merge": "^4.4.1",
+    "mochawesome-report-generator": "^6.2.0",
+    "start-server-and-test": "^2.0.3",
+    "rimraf": "^5.0.5"
+  }
+}

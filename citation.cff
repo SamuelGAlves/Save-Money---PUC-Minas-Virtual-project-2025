@@ -1,0 +1,26 @@
+message: Por favor, cite este trabalho utilizando os metadados fornecidos.
+title: Save Money PUC Minas
+authors:
+  - family-names: Ferreira de Lima
+    given-names: Lucas
+  - family-names: Eller A. M
+    given-names: Breno
+  - family-names: Gomes Alves
+    given-names: Samuel
+  - family-names: Lellis Moreira
+    given-names: Thais
+  - family-names: Reck Tavares
+    given-names: Vitor
+  - family-names: Carlos de S. B. de Oliveira
+    given-names: Matheus
+  - name-suffix: Professor
+    affiliation: PUC Minas
+    family-names: Azevedo Nigri do Carmo
+    given-names: Humberto
+keywords:
+  - gestão financeira
+  - controle de despesas
+  - planejamento financeiro
+repository-code: https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2025-1-e1-proj-save-money
+version: 1.0.0
+date-released: 2025-03-22

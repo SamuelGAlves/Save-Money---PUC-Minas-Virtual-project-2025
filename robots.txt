@@ -1,0 +1,9 @@
+# Permitir que todos os bots acessem o site
+User-agent: *
+Allow: /
+
+# Bloquear a pasta de ativos para evitar indexação desnecessária
+Disallow: /assets/
+
+# Bloquear arquivos específicos
+Disallow: /service-worker.js

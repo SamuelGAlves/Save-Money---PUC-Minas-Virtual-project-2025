@@ -1,0 +1,33 @@
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+
+# Logs
+logs/
+*.log
+*.log.*
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Build output
+dist/build/
+out/
+testes-automatizados/cypress/ignore-files-developer-screenshots
+
+# IDEs and editors
+.idea/
+*.swp
+*.swo
+
+# Dependency directories
+bower_components/
